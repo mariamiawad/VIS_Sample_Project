@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../../../../sbAdminTemplate/all.css" rel="stylesheet">
+
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	
+	</head>
+
+	<body>
+
+    <div id="wrapper">
+
+	<!-- jQuery -->
+    <script src="../../../../../sbAdminTemplate/all.js"></script>
+	
+	<script>
+	var allFeatures = [];
+	var allGroups = [];
+	var allFwSteps = [];
+	 
+	  function addFeature(feature){
+		allFeatures.push(feature);
+	 }
+	 
+	  function addGroup(group){
+		allGroups.push(group);
+	 }
+	 
+	  function addFwStep(fwstep){
+		allFwSteps.push(fwstep);
+	 }
+	</script>        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				<img class="navbar-brand img-responsive" src="../../../../../sbAdminTemplate/img/valeo_logo.png" >
+				<a class="navbar-brand" href="../../../../../dashboard.html">
+				  VTD Report
+				</a>				
+				
+            </div>
+            <!-- /.navbar-header -->
+			<div>
+				<li>
+					<button class="collapse-sidenav w3-opennav w3-xlarge" onclick="w3_open()">&#9776;</button>
+				</li>
+			</div>
+
+            <div class="navsidebar navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+						
+
+						<!--<li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </li>-->
+						
+						
+							<li 
+											class='active'
+							
+							>
+							<a class='text-nowrap' style='overflow:hidden;text-overflow:ellipsis' href="../../../../../dashboard.html">
+							
+								<button style='display:inline-block' onclick="location.href='../../../../../dashboard.html'" class="btn btn-default btn-xs"><i class="fa fa fa-fw fa-list-alt fa-fw"></i></button>Test Report
+							
+									<span class="fa arrow"></span>
+							</a>
+									<ul class="nav nav-second-level">
+										<li class='text-nowrap'>
+										<a style='overflow:hidden;text-overflow:ellipsis' href="../../../../../features/tf00.html" title="tf00"> <button style='display:inline-block' onclick="location.href='../../../../../features/tf00.html'" class="btn btn-default btn-xs"><i class="fa fa fa-fw fa-list-alt fa-fw"></i></button> tf00
+											
+												<span class="fa arrow"></span>
+										</a>
+												<ul class="nav nav-third-level">
+													<li>
+													<a class="text-nowrap" style="overflow:hidden;text-overflow:ellipsis" href="../../../../../features/tf00/suites/tg00.html" title="tg00"><i class="fa fa fa-fw fa-folder-o nav-pass fa-fw" ></i> tg00
+													</a>
+													</li>
+												</ul>
+										</li>
+										<li class='text-nowrap'>
+										<a style='overflow:hidden;text-overflow:ellipsis' href="../../../../../features/testfeature_0.html" title="testfeature_0"> <button style='display:inline-block' onclick="location.href='../../../../../features/testfeature_0.html'" class="btn btn-default btn-xs"><i class="fa fa fa-fw fa-list-alt fa-fw"></i></button> testfeature_0
+											
+												<span class="fa arrow"></span>
+										</a>
+												<ul class="nav nav-third-level">
+													<li>
+													<a class="text-nowrap" style="overflow:hidden;text-overflow:ellipsis" href="../../../../../features/testfeature_0/suites/testgroup_0.html" title="testgroup_0"><i class="fa fa fa-fw fa-folder-o nav-pass fa-fw" ></i> testgroup_0
+													</a>
+													</li>
+												</ul>
+										</li>
+									</ul>
+							</li>
+							<li 
+							
+							>
+							<a class='text-nowrap' style='overflow:hidden;text-overflow:ellipsis' href="../../../../../pages/HW_Connections.html">
+							
+							<i class="fa fa fa-support fa-fw"></i>HW Connections
+							
+							</a>
+							</li>
+							<li 
+							
+							>
+							<a class='text-nowrap' style='overflow:hidden;text-overflow:ellipsis' href="../../../../../pages/Validation_Strategy.html">
+							
+							<i class="fa fa fa-support fa-fw"></i>Validation Strategy
+							
+							</a>
+							</li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+
+<div id="page-wrapper">
+	<!-- Bootstrap Breadcrumb navigation -->
+	<ol class="breadcrumb" style='background:none'>
+		<li><a href="../../../../../dashBoard.html">Dashboard</a></li>
+		<li><a href="../../tg00.html"=>tg00</a></li>
+		<li class="active"><a href="">tc02</a></li>
+	</ol>
+	<!-- End of Bootstrap Breadcrumb navigation -->
+
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header"><span class="label label-success">tc02</span></h1>
+		</div>
+		<!-- /.col-lg-12 -->
+	</div>
+	<!-- /.row -->
+
+	
+
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Image preview</h4>
+      </div>
+      <div class="modal-body">
+        <img src="" id="imagepreview" style="width: 100%;" >
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Test Case Data -->
+<div class="row">
+	<div class="col-lg-12">
+<div class="panel panel-default" style='padding-top:0px;padding-bottom:0px'>
+
+		<button class="panel-heading accordion">Test Case Information</button>
+		<!-- <span>Test Case Information </span> -->
+		<!-- <button onclick="$el=$(this).parent().parent().next('.panel-body'); if($el.hasClass('hide')){$(this).text('-')} else{$(this).text('+')} $el.toggleClass('hide')" class="pull-right btn btn-default btn-xs">-</button> -->
+		<!--</h4>-->
+	<!--</div>-->
+	<!-- /.panel-heading -->
+	<div class="panel-body" style='padding-top:0px;padding-bottom:0px'>
+		
+
+
+<div style='word-wrap:break-word;' class="row list-group-item"><div class='col-xs-3'>Test Type</div><div style="white-space:pre" class='col-xs-9'>automatic</div></div>
+
+<div class="row list-group-item"><div class='col-xs-3'>Versioning</div><div class='col-xs-9'>Unable to get versioning!</div></div>
+
+   <div class="row list-group-item"><div class='col-xs-3'>Timestamp</div><div class='col-xs-9'>25-08-2021 17:36:02 +0200</div></div>
+
+<div class="row list-group-item"><div class='col-xs-3'>Dry Run Duration</div><div class='col-xs-9'> 0:00:10.000</div></div>
+
+
+
+<div style='word-wrap:break-word;' class="row list-group-item"><div class='col-xs-3'>Objective</div><div style="white-space:pre" class='col-xs-9'></div></div>
+
+<div class="row list-group-item"><div class='col-xs-3'>Test Result</div><div class='col-xs-9'>OK</div></div>
+
+
+<div class="row list-group-item"><div class='col-xs-3'>Requirement</div><div class='col-xs-9'></div></div>
+
+<div class="row list-group-item"><div class='col-xs-3'>SW Version</div><div class='col-xs-9'></div></div>
+
+
+
+<div class="row list-group-item"><div class='col-xs-3'>Test Author</div><div class='col-xs-9'></div></div>
+
+<div class="row list-group-item"><div class='col-xs-3'>Test Executer</div><div class='col-xs-9'>mabdelaz</div></div>
+
+
+
+
+
+
+
+
+<div class="row list-group-item"><div class='col-xs-3'>Regression Run</div><div class='col-xs-9'>No</div></div>
+
+<div class="row list-group-item"><div class='col-xs-3'>Test Step Count</div><div class='col-xs-9'>26</div></div>
+
+
+
+
+
+
+
+
+
+	</div>
+</div>	</div>
+</div>
+
+
+
+<!-- End of Test Case Data -->
+<div class="row">
+	<div class="col-lg-12">
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				<input class='pull-right' type="checkbox" id='testcommentsVisibility' checked data-toggle="toggle" data-on="Hide Comments" data-off="Show Comments" data-style="slow smallText" data-onstyle="info" data-offstyle="warning" onchange='updateTable(true);'>
+				<input class='pull-right' type="checkbox" id='testactionsVisibility' checked data-toggle="toggle" data-on="Hide Actions" data-off="Show Actions" data-style="slow smallText" data-onstyle="default" data-offstyle="warning" onchange='updateTable(true);'>
+				<input class='pull-right' type="checkbox" id='testSystemVisibility'checked  data-toggle="toggle" data-on="Hide System" data-off="Show System" data-style="slow smallText" data-onstyle="default" data-offstyle="warning" onchange='updateTable(true);'>
+				<input class='pull-right' type="checkbox" id='okReactionsVisibility' checked data-toggle="toggle" data-on="Hide OK Reactions" data-off="Show OK Reactions" data-style="slow smallText" data-onstyle="success" data-offstyle="warning" onchange='updateTable(true);'>
+				<input class='pull-right' type="checkbox" id='nokReactionsVisibility' checked data-toggle="toggle" data-on="Hide NOK Reactions" data-off="Show NOK Reactions" data-style="slow smallText" data-onstyle="danger" data-offstyle="warning" onchange='updateTable(true);'>
+				<input class='pull-right' type="checkbox" id='sectionVisibility' checked data-toggle="toggle" data-on="Hide Section" data-off="Show Section" data-style="slow smallText" data-onstyle="danger" data-offstyle="warning" onchange='updateTable(true);'>
+				
+				<h4></h4>
+			</div>
+			<!-- /.panel-heading -->
+			<div class="panel-body"  id='tableView'>
+
+				<div class="dataTable_wrapper table-responsive">
+					<table class="table table-striped table-bordered table-hover" id="dataTables-example" width="100%">
+						<thead>
+							<tr>
+								<th></th>
+								<th>#</th>
+								<th>Type</th>  <!--Icon-->								
+								<th>Time</th>
+								<th>Step</th>								
+								<th>Result</th>
+							</tr>
+						</thead>
+					</table>
+				</div>
+				<!-- /.table-responsive -->
+			</div>
+			<!-- /.panel-body -->
+			
+		</div>
+		<!-- /.panel -->
+	</div>
+	<!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+
+
+
+<script>
+	
+	$(".pop").on("click", function() {
+	   $('#imagepreview').attr('src', $(this).find('img').attr('src'));
+	   $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+	});
+
+	var list = [
+				
+				{index:'1', category:'Duration', timeStamp:'0:00:00,000.000.000', description:'Execution Time'
+				, result:'N/A'
+				, 
+				objectPath:'\/msgTextMessageExu', severity:'MessageAppInformation'
+				, entryParams:[['Text', 'Duration:  0:00:12.190']]
+				}
+				,
+				{index:'2', category:'Action', timeStamp:'0:00:00,012.076.599', description:'HilStart(Time:272662602800)'
+				, result:'N/A'
+				, 
+				objectPath:'exu1/modTS/obj_MCONTROL/fncHilStart', severity:'FunctionApp'
+				, entryParams:[['Time', '75739:36:272660442.2160800']]
+				}
+				,
+				{index:'3', category:'System', timeStamp:'0:00:03,002.524.599', description:'fncHilStartMarker'
+				, result:'N/A'
+				, 
+				objectPath:'exu1/modTS/obj_MCONTROL/fncHilStartMarker', severity:'FunctionSys'
+				, entryParams:[['StopOnFirstError', '0']]
+				}
+				,
+				{index:'4', category:'System', timeStamp:'0:00:03,002.537.600', description:'HilStarted'
+				, result:'N/A'
+				, 
+				objectPath:'exu1/modTS/obj_MCONTROL/msgHilStarted', severity:'MessageSysInformation'
+				, entryParams:[]
+				}
+				,
+				{index:'5', category:'Action', timeStamp:'0:00:04,002.524.599', description:'Get()'
+				, result:'N/A'
+				, 
+				objectPath:'exu1/modTS/objDInput/objDigitalInput[0]/fncGet', severity:'FunctionApp'
+				, entryParams:[]
+				}
+				,
+				{index:'6', category:'Reaction', timeStamp:'0:00:04,002.545.600', description:'Get'
+				, result:'OK'
+				, 
+				objectPath:'exu1/modTS/objDInput/objDigitalInput[0]/msgGet', severity:'MessageAppInformation'
+				, entryParams:[['Value', '0']]
+				}
+				,
+				{index:'7', category:'Action', timeStamp:'0:00:05,002.524.599', description:'Get()'
+				, result:'N/A'
+				, 
+				objectPath:'exu1/modTS/objDInput/objDigitalInput[0]/fncGet', severity:'FunctionApp'
+				, entryParams:[]
+				}
+				,
+				{index:'8', category:'Reaction', timeStamp:'0:00:05,002.544.600', description:'Get'
+				, result:'OK'
+				, 
+				objectPath:'exu1/modTS/objDInput/objDigitalInput[0]/msgGet', severity:'MessageAppInformation'
+				, entryParams:[['Value', '0']]
+				}
+				,
+				{index:'9', category:'Action', timeStamp:'0:00:06,002.524.599', description:'Get()'
+				, result:'N/A'
+				, 
+				objectPath:'exu1/modTS/objDInput/objDigitalInput[0]/fncGet', severity:'FunctionApp'
+				, entryParams:[]
+				}
+				,
+				{index:'10', category:'Reaction', timeStamp:'0:00:06,002.545.600', description:'Get'
+				, result:'OK'
+				, 
+				objectPath:'exu1/modTS/objDInput/objDigitalInput[0]/msgGet', severity:'MessageAppInformation'
+				, entryParams:[['Value', '0']]
+				}
+				,
+				{index:'11', category:'Action', timeStamp:'0:00:07,002.524.599', description:'Get()'
+				, result:'N/A'
+				, 
+				objectPath:'exu1/modTS/objDInput/objDigitalInput[0]/fncGet', severity:'FunctionApp'
+				, entryParams:[]
+				}
+				,
+				{index:'12', category:'Reaction', timeStamp:'0:00:07,002.544.600', description:'Get'
+				, result:'OK'
+				, 
+				objectPath:'exu1/modTS/objDInput/objDigitalInput[0]/msgGet', severity:'MessageAppInformation'
+				, entryParams:[['Value', '0']]
+				}
+				,
+				{index:'13', category:'Action', timeStamp:'0:00:08,002.524.599', description:'Get()'
+				, result:'N/A'
+				, 
+				objectPath:'exu1/modTS/objDInput/objDigitalInput[0]/fncGet', severity:'FunctionApp'
+				, entryParams:[]
+				}
+				,
+				{index:'14', category:'Reaction', timeStamp:'0:00:08,002.544.600', description:'Get'
+				, result:'OK'
+				, 
+				objectPath:'exu1/modTS/objDInput/objDigitalInput[0]/msgGet', severity:'MessageAppInformation'
+				, entryParams:[['Value', '0']]
+				}
+				,
+				{index:'15', category:'Action', timeStamp:'0:00:09,002.524.599', description:'Get()'
+				, result:'N/A'
+				, 
+				objectPath:'exu1/modTS/objDInput/objDigitalInput[0]/fncGet', severity:'FunctionApp'
+				, entryParams:[]
+				}
+				,
+				{index:'16', category:'Reaction', timeStamp:'0:00:09,002.545.600', description:'Get'
+				, result:'OK'
+				, 
+				objectPath:'exu1/modTS/objDInput/objDigitalInput[0]/msgGet', severity:'MessageAppInformation'
+				, entryParams:[['Value', '0']]
+				}
+				,
+				{index:'17', category:'Action', timeStamp:'0:00:10,002.524.599', description:'Get()'
+				, result:'N/A'
+				, 
+				objectPath:'exu1/modTS/objDInput/objDigitalInput[0]/fncGet', severity:'FunctionApp'
+				, entryParams:[]
+				}
+				,
+				{index:'18', category:'Reaction', timeStamp:'0:00:10,002.545.600', description:'Get'
+				, result:'OK'
+				, 
+				objectPath:'exu1/modTS/objDInput/objDigitalInput[0]/msgGet', severity:'MessageAppInformation'
+				, entryParams:[['Value', '0']]
+				}
+				,
+				{index:'19', category:'Action', timeStamp:'0:00:11,002.524.599', description:'Get()'
+				, result:'N/A'
+				, 
+				objectPath:'exu1/modTS/objDInput/objDigitalInput[0]/fncGet', severity:'FunctionApp'
+				, entryParams:[]
+				}
+				,
+				{index:'20', category:'Reaction', timeStamp:'0:00:11,002.545.600', description:'Get'
+				, result:'OK'
+				, 
+				objectPath:'exu1/modTS/objDInput/objDigitalInput[0]/msgGet', severity:'MessageAppInformation'
+				, entryParams:[['Value', '0']]
+				}
+				,
+				{index:'21', category:'Action', timeStamp:'0:00:12,002.524.599', description:'Get()'
+				, result:'N/A'
+				, 
+				objectPath:'exu1/modTS/objDInput/objDigitalInput[0]/fncGet', severity:'FunctionApp'
+				, entryParams:[]
+				}
+				,
+				{index:'22', category:'Reaction', timeStamp:'0:00:12,002.545.600', description:'Get'
+				, result:'OK'
+				, 
+				objectPath:'exu1/modTS/objDInput/objDigitalInput[0]/msgGet', severity:'MessageAppInformation'
+				, entryParams:[['Value', '0']]
+				}
+				,
+				{index:'23', category:'Action', timeStamp:'0:00:13,002.524.599', description:'Get()'
+				, result:'N/A'
+				, 
+				objectPath:'exu1/modTS/objDInput/objDigitalInput[0]/fncGet', severity:'FunctionApp'
+				, entryParams:[]
+				}
+				,
+				{index:'24', category:'Reaction', timeStamp:'0:00:13,002.545.600', description:'Get'
+				, result:'OK'
+				, 
+				objectPath:'exu1/modTS/objDInput/objDigitalInput[0]/msgGet', severity:'MessageAppInformation'
+				, entryParams:[['Value', '0']]
+				}
+				,
+				{index:'25', category:'System', timeStamp:'0:00:13,002.604.599', description:'fncHilEndMarker'
+				, result:'N/A'
+				, 
+				objectPath:'exu1/modTS/obj_MCONTROL/fncHilEndMarker', severity:'FunctionSys'
+				, entryParams:[]
+				}
+				,
+				{index:'26', category:'System', timeStamp:'0:00:13,002.612.600', description:'HilFinished'
+				, result:'N/A'
+				, 
+				objectPath:'exu1/modTS/obj_MCONTROL/msgHilFinished', severity:'MessageSysInformation'
+				, entryParams:[]
+				}
+				];
+	var table;
+	
+    $(document).ready(function() {
+    	table = $('#dataTables-example').DataTable({
+				ordering: false,
+				paging: false,
+		        data: list,
+		        columns: [
+		            {	"className":      'details-control',
+		                "width": "2.5%",
+		                "data": null,
+		                "defaultContent": ""
+		            },
+		            { "data": "index",
+		               "width": "2.5%" },
+		            { "data": "category",
+			           "width": "5%" },
+		            { "data": "timeStamp",
+				       "width": "20%" },
+		            { "data": "description",
+				       "width": "55%"},
+		            { "data": "result",
+			          "width": "10%" }
+		        ],
+		        "createdRow": function( row, data, dataIndex ) {
+		        	if ( data.category == "System" ) {
+		            	if(data.result == "OK")
+			              $(row).addClass( 'testSystem success' );
+		            	else if(data.result == "N/A")
+				          $(row).addClass( 'testSystem warning' );
+		            	else
+				          $(row).addClass( 'testSystem danger' );
+		            } else if ( data.category == "Action" ) {
+			              $(row).addClass( 'testAction' );
+		            } else if ( data.category == "Comment" ) {
+			              $(row).find('td.details-control').removeClass("details-control");
+			              $(row).addClass( 'testcomment info' );
+		            } else if ( data.category == "Requirement" ) {
+			              $(row).find('td.details-control').removeClass("details-control");
+		            } else if ( data.category == "Reaction" ) {
+		            	if(data.result == "OK")
+			              $(row).addClass( 'testOkReaction success' );
+		            	else
+				          $(row).addClass( 'testNokReaction danger' );
+		            }
+		          }
+        });
+        $('#dataTables-example tbody').on('click', 'td.details-control', function () {
+          var tr = $(this).closest('tr');
+          var row = table.row( tr );
+          if ( row.child.isShown() ) {
+              // This row is already open - close it
+              row.child.hide();
+              tr.removeClass('shown');
+          } else {
+              // Open this row
+              row.child( format(row.data()) ).show();
+              tr.addClass('shown');
+          }
+      } );
+    });
+    
+    /* Formatting function for row details - modify as you need */
+    function format ( d ) {
+    	var oPath = d.objectPath;
+    	var start = oPath.indexOf("/fnc");
+    	oPath = oPath.substr(start == -1 ? 0 : start+4);
+    	start = oPath.indexOf("/msg");
+    	oPath = oPath.substr(start == -1 ? 0 : start+4);
+    	var out = '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:150px;" width="100%">'+
+    		'<col width="20%"><col width="80%">'+
+            '<tr style="border-bottom:1px solid #ddd">'+
+        	'<td>Object Path:</td>'+
+        	'<td style="border-left:1px solid #ddd">'+ oPath +'</td>'+
+            '</tr>'+
+            '<tr style="border-bottom:1px solid #ddd;background-color:#f2f2f2;">'+
+        	'<td>Severity:</td>'+
+        	'<td style="border-left:1px solid #ddd">'+ d.severity +'</td>'+
+            '</tr>';
+    	if(d.entryParams.length > 0){
+	        out += '<tr>'+
+	        	'<td>Entry Parameters:</td><td style="border-left:1px solid #ddd">'+
+	         	'<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+	        	'<tr><th>Name</th><th>Value</th></tr>';
+	        for(var i = 0 ; i < d.entryParams.length ; i++){
+	        	out += '<tr style="border-top:1px solid #ddd">'+
+			            '<td >' + d.entryParams[i][0] + '</td>'+
+			            '<td>' + d.entryParams[i][1] + '</td>'+
+			            '</tr>';
+	        }
+	        out += '</table></td></tr>';
+    	}
+    	
+        out += '</table>';
+        return out
+    }
+    
+    $.fn.dataTable.ext.search.push(
+    	    function( settings, data, dataIndex ) {
+    		 	var api = new $.fn.dataTable.Api(settings);
+    			var tr = api.row(dataIndex).node();
+    	        if (!$('#testcommentsVisibility')[0].checked && $(tr).hasClass('testcomment'))
+    	        	return false;
+    	        if (!$('#testSystemVisibility')[0].checked && $(tr).hasClass('testSystem'))
+    	        	return false;
+    	        if (!$('#okReactionsVisibility')[0].checked && $(tr).hasClass('testOkReaction'))
+    	        	return false;
+    	        if (!$('#nokReactionsVisibility')[0].checked && $(tr).hasClass('testNokReaction'))
+    	        	return false;
+    	        if (!$('#testactionsVisibility')[0].checked && $(tr).hasClass('testAction'))
+    	        	return false;
+    	        if (!$('#sectionVisibility')[0].checked)
+    	        	$('#tableView').hide();
+    	        else
+    	        	$('#tableView').show();
+    			return true;
+    	    }     
+    	);
+    	
+    	  function updateTable(redraw){
+    	    $('#dataTables-example').DataTable().draw(redraw);
+    	 }
+    	 
+//    	  function expandAll(){
+//		    table.rows().eq(0).each( function ( idx ) {
+//		    	  var row = table.row( idx );
+//		    	  var tr = row.node();
+//		    	  if($(tr).hasClass( 'info' ))
+//		    		  return;
+//		    	  if ( !row.child.isShown() ) {
+//		    	    row.child.show(format(row.data()));
+//		    	    $(tr).find('td.details-control').addClass('shown');
+//		    	  }
+//		    	} );
+//    	 }
+//    	 
+//    	  function collapseAll(){
+//		    table.rows().eq(0).each( function ( idx ) {
+//		    	  var row = table.row( idx );
+//		    	  var tr = row.node();
+//		    	  if($(tr).hasClass( 'info' ))
+//		    		  return;
+//		    	  if ( row.child.isShown() ) {
+//		    	    row.child.hide();
+//		    	    var tr = row.node();
+//		    	    $(tr).find('td.details-control').removeClass('shown');
+//		    	  }
+//		    	} );
+//    	 }
+	 
+</script>
+
+</div>
+<!-- /#page-wrapper -->
+
+<style>
+	td.details-control {
+	    background: url('../../../../../sbAdminTemplate/sort_desc.png') no-repeat center center;
+	cursor: pointer;
+	}
+	tr.shown td.details-control {
+		background: url('../../../../../sbAdminTemplate/sort_asc.png') no-repeat center center;
+	}
+  .slow .toggle-group { transition: left 0.7s; -webkit-transition: left 0.7s; }
+  .fast .toggle-group { transition: left 0.1s; -webkit-transition: left 0.1s; }
+  .quick .toggle-group { transition: none; -webkit-transition: none; }
+  .salmon { color: #FFA07A; }
+  .smallText .toggle-group .btn {font-size:10px }
+  .expand-collapse{background-color: #555555;font-size: 12px;color:white;padding: 8px 10px;border-radius: 12px;border: 2px solid #555555;margin: 3px;}.
+  margin-top{
+	margin-top:40px;
+}
+</style>
+	
+    </div>
+    <!-- /#wrapper --> 
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+	<style>
+		.nav-fail{
+			color:red;
+		}
+		.nav-pass{
+			color:green;
+		}
+	</style>
+</body>
+
+</html>

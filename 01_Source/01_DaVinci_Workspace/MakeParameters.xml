@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MakeParameters xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <VersionInfo MajorVer="3" MinorVer="0" BuildVer="45" PrivateVer="0">
+    <ProcessName>VTT.exe</ProcessName>
+  </VersionInfo>
+  <Timestamp>2021-12-01T10:43:35.9893916+02:00</Timestamp>
+  <GlobalMakeStepList>
+    <MakeStep FullName="Vector.VTT.Generator.ValidationStep" Duration="1000">2021-12-01T10:43:34.4773684+02:00</MakeStep>
+  </GlobalMakeStepList>
+  <EcuInfoList />
+</MakeParameters>

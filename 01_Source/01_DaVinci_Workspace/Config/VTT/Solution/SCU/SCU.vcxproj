@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{800C19D5-46BF-4484-B1F4-88603DABF2C8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SCU</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup>
+    <VttConfigExt>.config.$(Configuration)_vc120</VttConfigExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>Windows7.1SDK</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>Windows7.1SDK</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)_vc120\</OutDir>
+    <IntDir>$(Configuration)_vc120\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)_vc120\</OutDir>
+    <IntDir>$(Configuration)_vc120\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;_USRDLL;VVIRTUALTARGET;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttFls/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/BswM/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/CanIf/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttCANoeEmu/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/CanSM/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/CanTp/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Com/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/ComM/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Vtt_Common/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Crc/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dcm/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Det/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/EcuM/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Fee/Implementation;..\..\..\..\Appl\GenDataVtt;..\..\..\..\Appl\GenDataVtt/Components;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/MemIf/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/NvM/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/PduR/Implementation;..\..\..\..\Appl\GenDataVtt\Components;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VStdLib/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VTTCan/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VTTCntrl/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttDio/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttMcu/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttPort/Implementation;..\..\..\..\Appl\Source;..\..\..\..\Appl\GenDataVtt;..\..\..\..\..\01_DaVinci_VTT\Components;..\..\..\..\Appl\MCAL_Stubs;..\..\..\..\..\01_DaVinci_VTT\Components\_Common\Implementation;..\..\..\..\Appl\include_VTT</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <TreatSpecificWarningsAsErrors>4013;4133</TreatSpecificWarningsAsErrors>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;VVIRTUALTARGET;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttFls/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/BswM/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/CanIf/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttCANoeEmu/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/CanSM/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/CanTp/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Com/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/ComM/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Vtt_Common/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Crc/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dcm/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Det/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/EcuM/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Fee/Implementation;..\..\..\..\Appl\GenDataVtt;..\..\..\..\Appl\GenDataVtt/Components;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/MemIf/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/NvM/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/PduR/Implementation;..\..\..\..\Appl\GenDataVtt\Components;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VStdLib/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VTTCan/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VTTCntrl/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttDio/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttMcu/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation;..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttPort/Implementation;..\..\..\..\Appl\Source;..\..\..\..\Appl\GenDataVtt;..\..\..\..\..\01_DaVinci_VTT\Components;..\..\..\..\Appl\MCAL_Stubs;..\..\..\..\..\01_DaVinci_VTT\Components\_Common\Implementation;..\..\..\..\Appl\include_VTT</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <TreatSpecificWarningsAsErrors>4013;4133</TreatSpecificWarningsAsErrors>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttCANoeEmu/Implementation</AdditionalLibraryDirectories>
+      <AdditionalDependencies>CanoeEmu_VC100_D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttCANoeEmu/Implementation\CANoeEmu.def</ModuleDefinitionFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <BaseAddress>0x0</BaseAddress>
+      <AdditionalOptions> /IGNORE:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\02_Development\01_Startup\main.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  <ItemGroup>
+    <SUTFilesToDelete Include="..\..\SUT\SCU.config.*" Exclude="..\..\SUT\SCU$(VttConfigExt)" />
+    <SUTFilesToDelete Include="..\..\SUT\SCU.a2l" />
+  </ItemGroup>
+  <Target Name="AfterBuild" Inputs="$(TargetDir)$(TargetName)$(TargetExt);$(TargetDir)$(TargetName).pdb;$(TargetDir)\$(TargetName).map" Outputs="..\..\SUT\SCU$(TargetExt);..\..\SUT\SCU.pdb;..\..\SUT\SCU.map;..\..\SUT\SCU$(VttConfigExt)">
+    <Message Text="Copying binaries to SUT folders..." />
+    <Delete Files="@(SUTFilesToDelete)" />
+    <Copy SourceFiles="$(TargetDir)$(TargetName).dll" DestinationFiles="..\..\SUT\SCU.dll" OverwriteReadOnlyFiles="true" />
+    <Copy SourceFiles="$(TargetDir)$(TargetName).pdb" DestinationFiles="..\..\SUT\SCU.pdb" OverwriteReadOnlyFiles="true" />
+    <Copy SourceFiles="$(TargetDir)$(TargetName).map" DestinationFiles="..\..\SUT\SCU.map" OverwriteReadOnlyFiles="true" />
+    <Touch Files="..\..\SUT\SCU$(VttConfigExt)" AlwaysCreate="true" ForceTouch="true" />
+  </Target>
+</Project>

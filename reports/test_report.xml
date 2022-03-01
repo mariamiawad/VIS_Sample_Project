@@ -1,0 +1,1396 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProjectType Name="">
+    <ReportType>Validation</ReportType>
+    <Features ID="tf00" Index="1">
+        <Description>
+            <Result>OK</Result>
+            <Objective></Objective>
+            <Number>0</Number>
+            <AssertionsNumber>0</AssertionsNumber>
+            <IsRegression>false</IsRegression>
+            <IsImpacted>false</IsImpacted>
+            <IsStd>false</IsStd>
+        </Description>
+        <TestGroups ID="tg00" Index="1">
+            <TestCases ID="tc01" Index="1" TestType="automatic">
+                <TestSteps TimeStamp="0:00:00,000.000.000" index="1">
+                    <Category>Duration</Category>
+                    <Description>Execution Time</Description>
+                    <Reaction>
+                        <Result>OK</Result>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>Text</Name>
+<Value>Duration:  0:00:12.190</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:00,000.000.000</TimeStamp>
+                            <Severity>MessageAppInformation</Severity>
+                            <ObjectPath>/msgTextMessageExu</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:00,008.855.199" index="2">
+                    <Category>Action</Category>
+                    <Description>HilStart(Time:269183602000)</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>Time</Name>
+<Value>74773:13:269182822.780000</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:00,008.855.199</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/obj_MCONTROL/fncHilStart</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:03,001.127.199" index="3">
+                    <Category>System</Category>
+                    <Description>fncHilStartMarker</Description>
+                    <Reaction>
+                        <Result>N/A</Result>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>StopOnFirstError</Name>
+<Value>0</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:03,001.127.199</TimeStamp>
+                            <Severity>FunctionSys</Severity>
+                            <ObjectPath>exu1/modTS/obj_MCONTROL/fncHilStartMarker</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:03,001.139.200" index="4">
+                    <Category>System</Category>
+                    <Description>HilStarted</Description>
+                    <Reaction>
+                        <Result>N/A</Result>
+                        <fwStep id="1">
+                            <TimeStamp>0:00:03,001.139.200</TimeStamp>
+                            <Severity>MessageSysInformation</Severity>
+                            <ObjectPath>exu1/modTS/obj_MCONTROL/msgHilStarted</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:03,100.127.199" index="5">
+                    <Category>System</Category>
+                    <Description>fncHilEndMarker</Description>
+                    <Reaction>
+                        <Result>N/A</Result>
+                        <fwStep id="1">
+                            <TimeStamp>0:00:03,100.127.199</TimeStamp>
+                            <Severity>FunctionSys</Severity>
+                            <ObjectPath>exu1/modTS/obj_MCONTROL/fncHilEndMarker</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:03,100.137.200" index="6">
+                    <Category>System</Category>
+                    <Description>HilFinished</Description>
+                    <Reaction>
+                        <Result>N/A</Result>
+                        <fwStep id="1">
+                            <TimeStamp>0:00:03,100.137.200</TimeStamp>
+                            <Severity>MessageSysInformation</Severity>
+                            <ObjectPath>exu1/modTS/obj_MCONTROL/msgHilFinished</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestDescription>
+                    <Result>OK</Result>
+                    <Objective></Objective>
+                    <File>C:/Users/mabdelaz/Desktop/tmp/C6/projects_cmp/VIS/VIS_Sample_Project/tests/tf00/tg00/tc01.java</File>
+                    <Version></Version>
+                    <MantisId></MantisId>
+                    <Justification></Justification>
+                    <Feature>tf00</Feature>
+                    <TestGroup>tg00</TestGroup>
+                    <Number>0</Number>
+                    <AssertionsNumber>0</AssertionsNumber>
+                    <TestAuthor></TestAuthor>
+                    <TestExecuter>mabdelaz</TestExecuter>
+                    <SwVersion></SwVersion>
+                    <IsRegression>false</IsRegression>
+                    <IsImpacted>false</IsImpacted>
+                    <IsStd>false</IsStd>
+                    <Versioning>Unable to get versioning!</Versioning>
+                    <Timestamp>25-08-2021 17:36:02 +0200</Timestamp>
+                    <DryRunDuration> 0:00:00.099</DryRunDuration>
+                </TestDescription>
+            </TestCases>
+            <TestCases ID="tc02" Index="2" TestType="automatic">
+                <TestSteps TimeStamp="0:00:00,000.000.000" index="1">
+                    <Category>Duration</Category>
+                    <Description>Execution Time</Description>
+                    <Reaction>
+                        <Result>OK</Result>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>Text</Name>
+<Value>Duration:  0:00:12.190</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:00,000.000.000</TimeStamp>
+                            <Severity>MessageAppInformation</Severity>
+                            <ObjectPath>/msgTextMessageExu</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:00,012.076.599" index="2">
+                    <Category>Action</Category>
+                    <Description>HilStart(Time:272662602800)</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>Time</Name>
+<Value>75739:36:272660442.2160800</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:00,012.076.599</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/obj_MCONTROL/fncHilStart</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:03,002.524.599" index="3">
+                    <Category>System</Category>
+                    <Description>fncHilStartMarker</Description>
+                    <Reaction>
+                        <Result>N/A</Result>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>StopOnFirstError</Name>
+<Value>0</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:03,002.524.599</TimeStamp>
+                            <Severity>FunctionSys</Severity>
+                            <ObjectPath>exu1/modTS/obj_MCONTROL/fncHilStartMarker</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:03,002.537.600" index="4">
+                    <Category>System</Category>
+                    <Description>HilStarted</Description>
+                    <Reaction>
+                        <Result>N/A</Result>
+                        <fwStep id="1">
+                            <TimeStamp>0:00:03,002.537.600</TimeStamp>
+                            <Severity>MessageSysInformation</Severity>
+                            <ObjectPath>exu1/modTS/obj_MCONTROL/msgHilStarted</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:04,002.524.599" index="5">
+                    <Category>Action</Category>
+                    <Description>Get()</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <TimeStamp>0:00:04,002.524.599</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/objDInput/objDigitalInput[0]/fncGet</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:04,002.545.600" index="6">
+                    <Category>Reaction</Category>
+                    <Description>Get</Description>
+                    <Reaction>
+                        <Result>OK</Result>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>Value</Name>
+<Value>0</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:04,002.545.600</TimeStamp>
+                            <Severity>MessageAppInformation</Severity>
+                            <ObjectPath>exu1/modTS/objDInput/objDigitalInput[0]/msgGet</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:05,002.524.599" index="7">
+                    <Category>Action</Category>
+                    <Description>Get()</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <TimeStamp>0:00:05,002.524.599</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/objDInput/objDigitalInput[0]/fncGet</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:05,002.544.600" index="8">
+                    <Category>Reaction</Category>
+                    <Description>Get</Description>
+                    <Reaction>
+                        <Result>OK</Result>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>Value</Name>
+<Value>0</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:05,002.544.600</TimeStamp>
+                            <Severity>MessageAppInformation</Severity>
+                            <ObjectPath>exu1/modTS/objDInput/objDigitalInput[0]/msgGet</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:06,002.524.599" index="9">
+                    <Category>Action</Category>
+                    <Description>Get()</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <TimeStamp>0:00:06,002.524.599</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/objDInput/objDigitalInput[0]/fncGet</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:06,002.545.600" index="10">
+                    <Category>Reaction</Category>
+                    <Description>Get</Description>
+                    <Reaction>
+                        <Result>OK</Result>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>Value</Name>
+<Value>0</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:06,002.545.600</TimeStamp>
+                            <Severity>MessageAppInformation</Severity>
+                            <ObjectPath>exu1/modTS/objDInput/objDigitalInput[0]/msgGet</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:07,002.524.599" index="11">
+                    <Category>Action</Category>
+                    <Description>Get()</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <TimeStamp>0:00:07,002.524.599</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/objDInput/objDigitalInput[0]/fncGet</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:07,002.544.600" index="12">
+                    <Category>Reaction</Category>
+                    <Description>Get</Description>
+                    <Reaction>
+                        <Result>OK</Result>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>Value</Name>
+<Value>0</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:07,002.544.600</TimeStamp>
+                            <Severity>MessageAppInformation</Severity>
+                            <ObjectPath>exu1/modTS/objDInput/objDigitalInput[0]/msgGet</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:08,002.524.599" index="13">
+                    <Category>Action</Category>
+                    <Description>Get()</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <TimeStamp>0:00:08,002.524.599</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/objDInput/objDigitalInput[0]/fncGet</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:08,002.544.600" index="14">
+                    <Category>Reaction</Category>
+                    <Description>Get</Description>
+                    <Reaction>
+                        <Result>OK</Result>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>Value</Name>
+<Value>0</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:08,002.544.600</TimeStamp>
+                            <Severity>MessageAppInformation</Severity>
+                            <ObjectPath>exu1/modTS/objDInput/objDigitalInput[0]/msgGet</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:09,002.524.599" index="15">
+                    <Category>Action</Category>
+                    <Description>Get()</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <TimeStamp>0:00:09,002.524.599</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/objDInput/objDigitalInput[0]/fncGet</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:09,002.545.600" index="16">
+                    <Category>Reaction</Category>
+                    <Description>Get</Description>
+                    <Reaction>
+                        <Result>OK</Result>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>Value</Name>
+<Value>0</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:09,002.545.600</TimeStamp>
+                            <Severity>MessageAppInformation</Severity>
+                            <ObjectPath>exu1/modTS/objDInput/objDigitalInput[0]/msgGet</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:10,002.524.599" index="17">
+                    <Category>Action</Category>
+                    <Description>Get()</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <TimeStamp>0:00:10,002.524.599</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/objDInput/objDigitalInput[0]/fncGet</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:10,002.545.600" index="18">
+                    <Category>Reaction</Category>
+                    <Description>Get</Description>
+                    <Reaction>
+                        <Result>OK</Result>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>Value</Name>
+<Value>0</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:10,002.545.600</TimeStamp>
+                            <Severity>MessageAppInformation</Severity>
+                            <ObjectPath>exu1/modTS/objDInput/objDigitalInput[0]/msgGet</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:11,002.524.599" index="19">
+                    <Category>Action</Category>
+                    <Description>Get()</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <TimeStamp>0:00:11,002.524.599</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/objDInput/objDigitalInput[0]/fncGet</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:11,002.545.600" index="20">
+                    <Category>Reaction</Category>
+                    <Description>Get</Description>
+                    <Reaction>
+                        <Result>OK</Result>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>Value</Name>
+<Value>0</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:11,002.545.600</TimeStamp>
+                            <Severity>MessageAppInformation</Severity>
+                            <ObjectPath>exu1/modTS/objDInput/objDigitalInput[0]/msgGet</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:12,002.524.599" index="21">
+                    <Category>Action</Category>
+                    <Description>Get()</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <TimeStamp>0:00:12,002.524.599</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/objDInput/objDigitalInput[0]/fncGet</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:12,002.545.600" index="22">
+                    <Category>Reaction</Category>
+                    <Description>Get</Description>
+                    <Reaction>
+                        <Result>OK</Result>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>Value</Name>
+<Value>0</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:12,002.545.600</TimeStamp>
+                            <Severity>MessageAppInformation</Severity>
+                            <ObjectPath>exu1/modTS/objDInput/objDigitalInput[0]/msgGet</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:13,002.524.599" index="23">
+                    <Category>Action</Category>
+                    <Description>Get()</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <TimeStamp>0:00:13,002.524.599</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/objDInput/objDigitalInput[0]/fncGet</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:13,002.545.600" index="24">
+                    <Category>Reaction</Category>
+                    <Description>Get</Description>
+                    <Reaction>
+                        <Result>OK</Result>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>Value</Name>
+<Value>0</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:13,002.545.600</TimeStamp>
+                            <Severity>MessageAppInformation</Severity>
+                            <ObjectPath>exu1/modTS/objDInput/objDigitalInput[0]/msgGet</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:13,002.604.599" index="25">
+                    <Category>System</Category>
+                    <Description>fncHilEndMarker</Description>
+                    <Reaction>
+                        <Result>N/A</Result>
+                        <fwStep id="1">
+                            <TimeStamp>0:00:13,002.604.599</TimeStamp>
+                            <Severity>FunctionSys</Severity>
+                            <ObjectPath>exu1/modTS/obj_MCONTROL/fncHilEndMarker</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:13,002.612.600" index="26">
+                    <Category>System</Category>
+                    <Description>HilFinished</Description>
+                    <Reaction>
+                        <Result>N/A</Result>
+                        <fwStep id="1">
+                            <TimeStamp>0:00:13,002.612.600</TimeStamp>
+                            <Severity>MessageSysInformation</Severity>
+                            <ObjectPath>exu1/modTS/obj_MCONTROL/msgHilFinished</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestDescription>
+                    <Result>OK</Result>
+                    <Objective></Objective>
+                    <File>C:/Users/mabdelaz/Desktop/tmp/C6/projects_cmp/VIS/VIS_Sample_Project/tests/tf00/tg00/tc02.java</File>
+                    <Version></Version>
+                    <MantisId></MantisId>
+                    <Justification></Justification>
+                    <Feature>tf00</Feature>
+                    <TestGroup>tg00</TestGroup>
+                    <Number>0</Number>
+                    <AssertionsNumber>0</AssertionsNumber>
+                    <TestAuthor></TestAuthor>
+                    <TestExecuter>mabdelaz</TestExecuter>
+                    <SwVersion></SwVersion>
+                    <IsRegression>false</IsRegression>
+                    <IsImpacted>false</IsImpacted>
+                    <IsStd>false</IsStd>
+                    <Versioning>Unable to get versioning!</Versioning>
+                    <Timestamp>25-08-2021 17:36:02 +0200</Timestamp>
+                    <DryRunDuration> 0:00:10.000</DryRunDuration>
+                </TestDescription>
+            </TestCases>
+            <Description>
+                <Result>OK</Result>
+                <Objective></Objective>
+                <Feature>tf00</Feature>
+                <Number>0</Number>
+                <AssertionsNumber>0</AssertionsNumber>
+                <IsRegression>false</IsRegression>
+                <IsImpacted>false</IsImpacted>
+                <IsStd>false</IsStd>
+            </Description>
+            <ResultStatistics>
+                <NumberStdTests>0</NumberStdTests>
+                <NumberEmptyDefects>0</NumberEmptyDefects>
+                <NumberTestCases>2</NumberTestCases>
+                <NumberOkTestCases>2</NumberOkTestCases>
+                <NumberNokTestCases>0</NumberNokTestCases>
+                <NumberNpTestCases>0</NumberNpTestCases>
+                <NumberManualTestCases>0</NumberManualTestCases>
+                <NumberManualOKTestCases>0</NumberManualOKTestCases>
+                <NumberManualNOKTestCases>0</NumberManualNOKTestCases>
+                <NumberManualNPTestCases>0</NumberManualNPTestCases>
+                <NumberAutomaticTestCases>2</NumberAutomaticTestCases>
+                <NumberAutomaticOKTestCases>2</NumberAutomaticOKTestCases>
+                <NumberAutomaticNOKTestCases>0</NumberAutomaticNOKTestCases>
+                <NumberAutomaticNPTestCases>0</NumberAutomaticNPTestCases>
+                <NumberRegressionTestCases>0</NumberRegressionTestCases>
+                <NumberRegressionOKTestCases>0</NumberRegressionOKTestCases>
+                <NumberRegressionNOKTestCases>0</NumberRegressionNOKTestCases>
+                <NumberRegressionNPTestCases>0</NumberRegressionNPTestCases>
+                <NumberImpactedTestCases>0</NumberImpactedTestCases>
+                <NumberImpactedOKTestCases>0</NumberImpactedOKTestCases>
+                <NumberImpactedNOKTestCases>0</NumberImpactedNOKTestCases>
+                <NumberImpactedNPTestCases>0</NumberImpactedNPTestCases>
+                <OkPercentage>100.0</OkPercentage>
+                <NokPercentage>0.0</NokPercentage>
+                <NpPercentage>0.0</NpPercentage>
+                <ManualOkPercentage>NaN</ManualOkPercentage>
+                <ManualNokPercentage>NaN</ManualNokPercentage>
+                <ManualNpPercentage>NaN</ManualNpPercentage>
+                <AutomaticOkPercentage>100.0</AutomaticOkPercentage>
+                <AutomaticNokPercentage>0.0</AutomaticNokPercentage>
+                <AutomaticNpPercentage>0.0</AutomaticNpPercentage>
+                <RegressionOkPercentage>0.0</RegressionOkPercentage>
+                <RegressionNokPercentage>0.0</RegressionNokPercentage>
+                <RegressionNpPercentage>0.0</RegressionNpPercentage>
+                <ImpactedOkPercentage>0.0</ImpactedOkPercentage>
+                <ImpactedNokPercentage>0.0</ImpactedNokPercentage>
+                <ImpactedNpPercentage>0.0</ImpactedNpPercentage>
+            </ResultStatistics>
+        </TestGroups>
+        <ResultsStatistics>
+            <NumberGroups>1</NumberGroups>
+            <NumberOkTestGroups>1</NumberOkTestGroups>
+            <NumberNokTestGroups>0</NumberNokTestGroups>
+            <NumberNPTestGroups>0</NumberNPTestGroups>
+            <OkPercentage>100.0</OkPercentage>
+            <NokPercentage>0.0</NokPercentage>
+            <nPPercentage>0.0</nPPercentage>
+        </ResultsStatistics>
+        <TestCasesResultsStatistics>
+            <NumberStdTests>0</NumberStdTests>
+            <NumberEmptyDefects>0</NumberEmptyDefects>
+            <NumberTestCases>2</NumberTestCases>
+            <NumberOkTestCases>2</NumberOkTestCases>
+            <NumberNokTestCases>0</NumberNokTestCases>
+            <NumberNpTestCases>0</NumberNpTestCases>
+            <NumberManualTestCases>0</NumberManualTestCases>
+            <NumberManualOKTestCases>0</NumberManualOKTestCases>
+            <NumberManualNOKTestCases>0</NumberManualNOKTestCases>
+            <NumberManualNPTestCases>0</NumberManualNPTestCases>
+            <NumberAutomaticTestCases>2</NumberAutomaticTestCases>
+            <NumberAutomaticOKTestCases>2</NumberAutomaticOKTestCases>
+            <NumberAutomaticNOKTestCases>0</NumberAutomaticNOKTestCases>
+            <NumberAutomaticNPTestCases>0</NumberAutomaticNPTestCases>
+            <NumberRegressionTestCases>0</NumberRegressionTestCases>
+            <NumberRegressionOKTestCases>0</NumberRegressionOKTestCases>
+            <NumberRegressionNOKTestCases>0</NumberRegressionNOKTestCases>
+            <NumberRegressionNPTestCases>0</NumberRegressionNPTestCases>
+            <NumberImpactedTestCases>0</NumberImpactedTestCases>
+            <NumberImpactedOKTestCases>0</NumberImpactedOKTestCases>
+            <NumberImpactedNOKTestCases>0</NumberImpactedNOKTestCases>
+            <NumberImpactedNPTestCases>0</NumberImpactedNPTestCases>
+            <OkPercentage>100.0</OkPercentage>
+            <NokPercentage>0.0</NokPercentage>
+            <NpPercentage>0.0</NpPercentage>
+            <ManualOkPercentage>NaN</ManualOkPercentage>
+            <ManualNokPercentage>NaN</ManualNokPercentage>
+            <ManualNpPercentage>NaN</ManualNpPercentage>
+            <AutomaticOkPercentage>100.0</AutomaticOkPercentage>
+            <AutomaticNokPercentage>0.0</AutomaticNokPercentage>
+            <AutomaticNpPercentage>0.0</AutomaticNpPercentage>
+            <RegressionOkPercentage>NaN</RegressionOkPercentage>
+            <RegressionNokPercentage>NaN</RegressionNokPercentage>
+            <RegressionNpPercentage>NaN</RegressionNpPercentage>
+            <ImpactedOkPercentage>NaN</ImpactedOkPercentage>
+            <ImpactedNokPercentage>NaN</ImpactedNokPercentage>
+            <ImpactedNpPercentage>NaN</ImpactedNpPercentage>
+        </TestCasesResultsStatistics>
+    </Features>
+    <Features ID="testfeature_0" Index="2">
+        <Description>
+            <Result>OK</Result>
+            <Objective></Objective>
+            <Number>0</Number>
+            <AssertionsNumber>0</AssertionsNumber>
+            <IsRegression>false</IsRegression>
+            <IsImpacted>false</IsImpacted>
+            <IsStd>false</IsStd>
+        </Description>
+        <TestGroups ID="testgroup_0" Index="1">
+            <TestCases ID="testcase_0" Index="1" TestType="automatic">
+                <TestSteps TimeStamp="0:00:00,000.000.000" index="1">
+                    <Category>Duration</Category>
+                    <Description>Execution Time</Description>
+                    <Reaction>
+                        <Result>OK</Result>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>Text</Name>
+<Value>Duration:  0:00:12.190</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:00,000.000.000</TimeStamp>
+                            <Severity>MessageAppInformation</Severity>
+                            <ObjectPath>/msgTextMessageExu</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:00,019.740.199" index="2">
+                    <Category>Action</Category>
+                    <Description>HilStart(Time:259958883100)</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>Time</Name>
+<Value>72210:48:259956003.2880100</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:00,019.740.199</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/obj_MCONTROL/fncHilStart</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:03,009.288.199" index="3">
+                    <Category>System</Category>
+                    <Description>fncHilStartMarker</Description>
+                    <Reaction>
+                        <Result>N/A</Result>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>StopOnFirstError</Name>
+<Value>0</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:03,009.288.199</TimeStamp>
+                            <Severity>FunctionSys</Severity>
+                            <ObjectPath>exu1/modTS/obj_MCONTROL/fncHilStartMarker</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:03,009.300.200" index="4">
+                    <Category>System</Category>
+                    <Description>HilStarted</Description>
+                    <Reaction>
+                        <Result>N/A</Result>
+                        <fwStep id="1">
+                            <TimeStamp>0:00:03,009.300.200</TimeStamp>
+                            <Severity>MessageSysInformation</Severity>
+                            <ObjectPath>exu1/modTS/obj_MCONTROL/msgHilStarted</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:03,009.357.199" index="5">
+                    <Category>Action</Category>
+                    <Description>Select Power Supply1</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>PowerSupply</Name>
+<Value>0 Â«ConstantÂ»</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:03,009.357.199</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/objPowerSupplyControl/fncSelectPowerSupply</ObjectPath>
+                            <Comment>Select Power Supply1</Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:03,024.289.199" index="6">
+                    <Category>Action</Category>
+                    <Description>Configure Supply1 voltage to 13.5 Volt</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>SupplyVoltage</Name>
+<Value>1350</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:03,024.289.199</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/objPowerSupplyControl/fncSetSupplyVoltage</ObjectPath>
+                            <Comment>Configure Supply1 voltage to 13.5 Volt</Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:03,024.376.200" index="7">
+                    <Category>System</Category>
+                    <Description>GeneralMessage</Description>
+                    <Reaction>
+                        <Result>N/A</Result>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>Data</Name>
+<Value>SupplyVoltage=1350</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:03,024.376.200</TimeStamp>
+                            <Severity>MessageSysInformation</Severity>
+                            <ObjectPath>exu1/modTS/obj_MCONTROL/msgGeneralMessage</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:03,039.288.199" index="8">
+                    <Category>Action</Category>
+                    <Description>Turn on power supply 1</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>PowerSupplyOutput</Name>
+<Value>0 Â«OnÂ»</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:03,039.288.199</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/objPowerSupplyControl/fncSetPowerSupplyOutput</ObjectPath>
+                            <Comment>Turn on power supply 1</Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:03,055.288.199" index="9">
+                    <Category>Action</Category>
+                    <Description>Select Power Supply Channel S1 to be controlled by following RS232 commands</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>PowerSupply</Name>
+<Value>0 Â«ConstantÂ»</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:03,055.288.199</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/objPowerSupplyControl/fncSelectPowerSupply</ObjectPath>
+                            <Comment>Select Power Supply Channel S1 to be controlled by following RS232 commands</Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:03,055.334.199" index="10">
+                    <Category>Action</Category>
+                    <Description>Turn On power supply output</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>PowerSupplyOutput</Name>
+<Value>0 Â«OnÂ»</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:03,055.334.199</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/objPowerSupplyControl/fncSetPowerSupplyOutput</ObjectPath>
+                            <Comment>Turn On power supply output</Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:04,054.288.199" index="11">
+                    <Category>Action</Category>
+                    <Description>Set output volt for power supply channel to 13.50</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>SupplyVoltage</Name>
+<Value>1350</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:04,054.288.199</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/objPowerSupplyControl/fncSetSupplyVoltage</ObjectPath>
+                            <Comment>Set output volt for power supply channel to 13.50</Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:04,054.374.200" index="12">
+                    <Category>System</Category>
+                    <Description>GeneralMessage</Description>
+                    <Reaction>
+                        <Result>N/A</Result>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>Data</Name>
+<Value>SupplyVoltage=1350</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:04,054.374.200</TimeStamp>
+                            <Severity>MessageSysInformation</Severity>
+                            <ObjectPath>exu1/modTS/obj_MCONTROL/msgGeneralMessage</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:04,055.289.199" index="13">
+                    <Category>Action</Category>
+                    <Description>Set maximum output current drawn from the supply channel to 5.00</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>SupplyCurrent</Name>
+<Value>5000</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:04,055.289.199</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/objPowerSupplyControl/fncSetSupplyCurrent</ObjectPath>
+                            <Comment>Set maximum output current drawn from the supply channel to 5.00</Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:04,055.343.199" index="14">
+                    <Category>System</Category>
+                    <Description>fncHilEndMarker</Description>
+                    <Reaction>
+                        <Result>N/A</Result>
+                        <fwStep id="1">
+                            <TimeStamp>0:00:04,055.343.199</TimeStamp>
+                            <Severity>FunctionSys</Severity>
+                            <ObjectPath>exu1/modTS/obj_MCONTROL/fncHilEndMarker</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:04,055.352.200" index="15">
+                    <Category>System</Category>
+                    <Description>HilFinished</Description>
+                    <Reaction>
+                        <Result>N/A</Result>
+                        <fwStep id="1">
+                            <TimeStamp>0:00:04,055.352.200</TimeStamp>
+                            <Severity>MessageSysInformation</Severity>
+                            <ObjectPath>exu1/modTS/obj_MCONTROL/msgHilFinished</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestDescription>
+                    <Result>OK</Result>
+                    <Objective></Objective>
+                    <File>C:/Users/mabdelaz/Desktop/tmp/C6/projects_cmp/VIS/VIS_Sample_Project/tests/testfeature_0/testgroup_0/testcase_0.java</File>
+                    <Version></Version>
+                    <MantisId></MantisId>
+                    <Justification></Justification>
+                    <Feature>testfeature_0</Feature>
+                    <TestGroup>testgroup_0</TestGroup>
+                    <Number>0</Number>
+                    <AssertionsNumber>0</AssertionsNumber>
+                    <TestAuthor></TestAuthor>
+                    <TestExecuter>mabdelaz</TestExecuter>
+                    <SwVersion></SwVersion>
+                    <IsRegression>false</IsRegression>
+                    <IsImpacted>false</IsImpacted>
+                    <IsStd>false</IsStd>
+                    <Versioning>Unable to get versioning!</Versioning>
+                    <Timestamp>25-08-2021 17:36:02 +0200</Timestamp>
+                    <DryRunDuration> 0:00:01.046</DryRunDuration>
+                </TestDescription>
+            </TestCases>
+            <TestCases ID="testcase_1" Index="2" TestType="automatic">
+                <TestSteps TimeStamp="0:00:00,000.000.000" index="1">
+                    <Category>Duration</Category>
+                    <Description>Execution Time</Description>
+                    <Reaction>
+                        <Result>OK</Result>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>Text</Name>
+<Value>Duration:  0:00:12.190</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:00,000.000.000</TimeStamp>
+                            <Severity>MessageAppInformation</Severity>
+                            <ObjectPath>/msgTextMessageExu</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:00,013.958.599" index="2">
+                    <Category>Action</Category>
+                    <Description>HilStart(Time:264701372000)</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>Time</Name>
+<Value>73528:09:264700832.540000</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:00,013.958.599</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/obj_MCONTROL/fncHilStart</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:03,005.870.599" index="3">
+                    <Category>System</Category>
+                    <Description>fncHilStartMarker</Description>
+                    <Reaction>
+                        <Result>N/A</Result>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>StopOnFirstError</Name>
+<Value>0</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:03,005.870.599</TimeStamp>
+                            <Severity>FunctionSys</Severity>
+                            <ObjectPath>exu1/modTS/obj_MCONTROL/fncHilStartMarker</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:03,005.882.600" index="4">
+                    <Category>System</Category>
+                    <Description>HilStarted</Description>
+                    <Reaction>
+                        <Result>N/A</Result>
+                        <fwStep id="1">
+                            <TimeStamp>0:00:03,005.882.600</TimeStamp>
+                            <Severity>MessageSysInformation</Severity>
+                            <ObjectPath>exu1/modTS/obj_MCONTROL/msgHilStarted</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:03,005.940.599" index="5">
+                    <Category>Action</Category>
+                    <Description>Select Power Supply1</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>PowerSupply</Name>
+<Value>0 Â«ConstantÂ»</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:03,005.940.599</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/objPowerSupplyControl/fncSelectPowerSupply</ObjectPath>
+                            <Comment>Select Power Supply1</Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:03,019.870.599" index="6">
+                    <Category>Action</Category>
+                    <Description>Configure Supply1 voltage to 13.5 Volt</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>SupplyVoltage</Name>
+<Value>1350</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:03,019.870.599</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/objPowerSupplyControl/fncSetSupplyVoltage</ObjectPath>
+                            <Comment>Configure Supply1 voltage to 13.5 Volt</Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:03,019.956.600" index="7">
+                    <Category>System</Category>
+                    <Description>GeneralMessage</Description>
+                    <Reaction>
+                        <Result>N/A</Result>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>Data</Name>
+<Value>SupplyVoltage=1350</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:03,019.956.600</TimeStamp>
+                            <Severity>MessageSysInformation</Severity>
+                            <ObjectPath>exu1/modTS/obj_MCONTROL/msgGeneralMessage</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:03,034.870.599" index="8">
+                    <Category>Action</Category>
+                    <Description>Turn on power supply 1</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>PowerSupplyOutput</Name>
+<Value>0 Â«OnÂ»</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:03,034.870.599</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/objPowerSupplyControl/fncSetPowerSupplyOutput</ObjectPath>
+                            <Comment>Turn on power supply 1</Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:03,050.870.599" index="9">
+                    <Category>Action</Category>
+                    <Description>Select Power Supply Channel S1 to be controlled by following RS232 commands</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>PowerSupply</Name>
+<Value>0 Â«ConstantÂ»</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:03,050.870.599</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/objPowerSupplyControl/fncSelectPowerSupply</ObjectPath>
+                            <Comment>Select Power Supply Channel S1 to be controlled by following RS232 commands</Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:03,050.918.599" index="10">
+                    <Category>Action</Category>
+                    <Description>Turn On power supply output</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>PowerSupplyOutput</Name>
+<Value>0 Â«OnÂ»</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:03,050.918.599</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/objPowerSupplyControl/fncSetPowerSupplyOutput</ObjectPath>
+                            <Comment>Turn On power supply output</Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:04,049.870.599" index="11">
+                    <Category>Action</Category>
+                    <Description>Set output volt for power supply channel to 13.50</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>SupplyVoltage</Name>
+<Value>1350</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:04,049.870.599</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/objPowerSupplyControl/fncSetSupplyVoltage</ObjectPath>
+                            <Comment>Set output volt for power supply channel to 13.50</Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:04,049.957.600" index="12">
+                    <Category>System</Category>
+                    <Description>GeneralMessage</Description>
+                    <Reaction>
+                        <Result>N/A</Result>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>Data</Name>
+<Value>SupplyVoltage=1350</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:04,049.957.600</TimeStamp>
+                            <Severity>MessageSysInformation</Severity>
+                            <ObjectPath>exu1/modTS/obj_MCONTROL/msgGeneralMessage</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:04,050.870.599" index="13">
+                    <Category>Action</Category>
+                    <Description>Set maximum output current drawn from the supply channel to 5.00</Description>
+                    <Action>
+                        <fwStep id="1">
+                            <EntryParams>
+<Name>SupplyCurrent</Name>
+<Value>5000</Value>
+                            </EntryParams>
+                            <TimeStamp>0:00:04,050.870.599</TimeStamp>
+                            <Severity>FunctionApp</Severity>
+                            <ObjectPath>exu1/modTS/objPowerSupplyControl/fncSetSupplyCurrent</ObjectPath>
+                            <Comment>Set maximum output current drawn from the supply channel to 5.00</Comment>
+                        </fwStep>
+                    </Action>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:04,050.925.599" index="14">
+                    <Category>System</Category>
+                    <Description>fncHilEndMarker</Description>
+                    <Reaction>
+                        <Result>N/A</Result>
+                        <fwStep id="1">
+                            <TimeStamp>0:00:04,050.925.599</TimeStamp>
+                            <Severity>FunctionSys</Severity>
+                            <ObjectPath>exu1/modTS/obj_MCONTROL/fncHilEndMarker</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestSteps TimeStamp="0:00:04,050.934.600" index="15">
+                    <Category>System</Category>
+                    <Description>HilFinished</Description>
+                    <Reaction>
+                        <Result>N/A</Result>
+                        <fwStep id="1">
+                            <TimeStamp>0:00:04,050.934.600</TimeStamp>
+                            <Severity>MessageSysInformation</Severity>
+                            <ObjectPath>exu1/modTS/obj_MCONTROL/msgHilFinished</ObjectPath>
+                            <Comment></Comment>
+                        </fwStep>
+                    </Reaction>
+                    <SeqNum>0</SeqNum>
+                </TestSteps>
+                <TestDescription>
+                    <Result>OK</Result>
+                    <Objective></Objective>
+                    <File>C:/Users/mabdelaz/Desktop/tmp/C6/projects_cmp/VIS/VIS_Sample_Project/tests/testfeature_0/testgroup_0/testcase_1.java</File>
+                    <Version></Version>
+                    <MantisId></MantisId>
+                    <Justification></Justification>
+                    <Feature>testfeature_0</Feature>
+                    <TestGroup>testgroup_0</TestGroup>
+                    <Number>0</Number>
+                    <AssertionsNumber>0</AssertionsNumber>
+                    <TestAuthor></TestAuthor>
+                    <TestExecuter>mabdelaz</TestExecuter>
+                    <SwVersion></SwVersion>
+                    <IsRegression>false</IsRegression>
+                    <IsImpacted>false</IsImpacted>
+                    <IsStd>false</IsStd>
+                    <Versioning>Unable to get versioning!</Versioning>
+                    <Timestamp>25-08-2021 17:36:02 +0200</Timestamp>
+                    <DryRunDuration> 0:00:01.045</DryRunDuration>
+                </TestDescription>
+            </TestCases>
+            <Description>
+                <Result>OK</Result>
+                <Objective></Objective>
+                <Feature>testfeature_0</Feature>
+                <Number>0</Number>
+                <AssertionsNumber>0</AssertionsNumber>
+                <IsRegression>false</IsRegression>
+                <IsImpacted>false</IsImpacted>
+                <IsStd>false</IsStd>
+            </Description>
+            <ResultStatistics>
+                <NumberStdTests>0</NumberStdTests>
+                <NumberEmptyDefects>0</NumberEmptyDefects>
+                <NumberTestCases>2</NumberTestCases>
+                <NumberOkTestCases>2</NumberOkTestCases>
+                <NumberNokTestCases>0</NumberNokTestCases>
+                <NumberNpTestCases>0</NumberNpTestCases>
+                <NumberManualTestCases>0</NumberManualTestCases>
+                <NumberManualOKTestCases>0</NumberManualOKTestCases>
+                <NumberManualNOKTestCases>0</NumberManualNOKTestCases>
+                <NumberManualNPTestCases>0</NumberManualNPTestCases>
+                <NumberAutomaticTestCases>2</NumberAutomaticTestCases>
+                <NumberAutomaticOKTestCases>2</NumberAutomaticOKTestCases>
+                <NumberAutomaticNOKTestCases>0</NumberAutomaticNOKTestCases>
+                <NumberAutomaticNPTestCases>0</NumberAutomaticNPTestCases>
+                <NumberRegressionTestCases>0</NumberRegressionTestCases>
+                <NumberRegressionOKTestCases>0</NumberRegressionOKTestCases>
+                <NumberRegressionNOKTestCases>0</NumberRegressionNOKTestCases>
+                <NumberRegressionNPTestCases>0</NumberRegressionNPTestCases>
+                <NumberImpactedTestCases>0</NumberImpactedTestCases>
+                <NumberImpactedOKTestCases>0</NumberImpactedOKTestCases>
+                <NumberImpactedNOKTestCases>0</NumberImpactedNOKTestCases>
+                <NumberImpactedNPTestCases>0</NumberImpactedNPTestCases>
+                <OkPercentage>100.0</OkPercentage>
+                <NokPercentage>0.0</NokPercentage>
+                <NpPercentage>0.0</NpPercentage>
+                <ManualOkPercentage>NaN</ManualOkPercentage>
+                <ManualNokPercentage>NaN</ManualNokPercentage>
+                <ManualNpPercentage>NaN</ManualNpPercentage>
+                <AutomaticOkPercentage>100.0</AutomaticOkPercentage>
+                <AutomaticNokPercentage>0.0</AutomaticNokPercentage>
+                <AutomaticNpPercentage>0.0</AutomaticNpPercentage>
+                <RegressionOkPercentage>0.0</RegressionOkPercentage>
+                <RegressionNokPercentage>0.0</RegressionNokPercentage>
+                <RegressionNpPercentage>0.0</RegressionNpPercentage>
+                <ImpactedOkPercentage>0.0</ImpactedOkPercentage>
+                <ImpactedNokPercentage>0.0</ImpactedNokPercentage>
+                <ImpactedNpPercentage>0.0</ImpactedNpPercentage>
+            </ResultStatistics>
+        </TestGroups>
+        <ResultsStatistics>
+            <NumberGroups>1</NumberGroups>
+            <NumberOkTestGroups>1</NumberOkTestGroups>
+            <NumberNokTestGroups>0</NumberNokTestGroups>
+            <NumberNPTestGroups>0</NumberNPTestGroups>
+            <OkPercentage>100.0</OkPercentage>
+            <NokPercentage>0.0</NokPercentage>
+            <nPPercentage>0.0</nPPercentage>
+        </ResultsStatistics>
+        <TestCasesResultsStatistics>
+            <NumberStdTests>0</NumberStdTests>
+            <NumberEmptyDefects>0</NumberEmptyDefects>
+            <NumberTestCases>2</NumberTestCases>
+            <NumberOkTestCases>2</NumberOkTestCases>
+            <NumberNokTestCases>0</NumberNokTestCases>
+            <NumberNpTestCases>0</NumberNpTestCases>
+            <NumberManualTestCases>0</NumberManualTestCases>
+            <NumberManualOKTestCases>0</NumberManualOKTestCases>
+            <NumberManualNOKTestCases>0</NumberManualNOKTestCases>
+            <NumberManualNPTestCases>0</NumberManualNPTestCases>
+            <NumberAutomaticTestCases>2</NumberAutomaticTestCases>
+            <NumberAutomaticOKTestCases>2</NumberAutomaticOKTestCases>
+            <NumberAutomaticNOKTestCases>0</NumberAutomaticNOKTestCases>
+            <NumberAutomaticNPTestCases>0</NumberAutomaticNPTestCases>
+            <NumberRegressionTestCases>0</NumberRegressionTestCases>
+            <NumberRegressionOKTestCases>0</NumberRegressionOKTestCases>
+            <NumberRegressionNOKTestCases>0</NumberRegressionNOKTestCases>
+            <NumberRegressionNPTestCases>0</NumberRegressionNPTestCases>
+            <NumberImpactedTestCases>0</NumberImpactedTestCases>
+            <NumberImpactedOKTestCases>0</NumberImpactedOKTestCases>
+            <NumberImpactedNOKTestCases>0</NumberImpactedNOKTestCases>
+            <NumberImpactedNPTestCases>0</NumberImpactedNPTestCases>
+            <OkPercentage>100.0</OkPercentage>
+            <NokPercentage>0.0</NokPercentage>
+            <NpPercentage>0.0</NpPercentage>
+            <ManualOkPercentage>NaN</ManualOkPercentage>
+            <ManualNokPercentage>NaN</ManualNokPercentage>
+            <ManualNpPercentage>NaN</ManualNpPercentage>
+            <AutomaticOkPercentage>100.0</AutomaticOkPercentage>
+            <AutomaticNokPercentage>0.0</AutomaticNokPercentage>
+            <AutomaticNpPercentage>0.0</AutomaticNpPercentage>
+            <RegressionOkPercentage>NaN</RegressionOkPercentage>
+            <RegressionNokPercentage>NaN</RegressionNokPercentage>
+            <RegressionNpPercentage>NaN</RegressionNpPercentage>
+            <ImpactedOkPercentage>NaN</ImpactedOkPercentage>
+            <ImpactedNokPercentage>NaN</ImpactedNokPercentage>
+            <ImpactedNpPercentage>NaN</ImpactedNpPercentage>
+        </TestCasesResultsStatistics>
+    </Features>
+    <Dashboard>
+        <HwVersion></HwVersion>
+        <FwVersion>99.40-03.01.07-00.00</FwVersion>
+        <SwVersion></SwVersion>
+        <TestVersion></TestVersion>
+        <Result>OK</Result>
+        <Release></Release>
+        <PlanStatus>Pending</PlanStatus>
+        <ApprovedBy></ApprovedBy>
+        <StatusDate></StatusDate>
+        <DefectIdCount>0</DefectIdCount>
+        <TestStepCount>62</TestStepCount>
+        <ProjectType>Validation</ProjectType>
+        <TotalDryRunDuration> 0:00:12.190</TotalDryRunDuration>
+    </Dashboard>
+    <Statistics>
+        <TestCasesStatistics>
+            <NumberStdTests>0</NumberStdTests>
+            <NumberEmptyDefects>0</NumberEmptyDefects>
+            <NumberTestCases>4</NumberTestCases>
+            <NumberOkTestCases>4</NumberOkTestCases>
+            <NumberNokTestCases>0</NumberNokTestCases>
+            <NumberNpTestCases>0</NumberNpTestCases>
+            <NumberManualTestCases>0</NumberManualTestCases>
+            <NumberManualOKTestCases>0</NumberManualOKTestCases>
+            <NumberManualNOKTestCases>0</NumberManualNOKTestCases>
+            <NumberManualNPTestCases>0</NumberManualNPTestCases>
+            <NumberAutomaticTestCases>4</NumberAutomaticTestCases>
+            <NumberAutomaticOKTestCases>4</NumberAutomaticOKTestCases>
+            <NumberAutomaticNOKTestCases>0</NumberAutomaticNOKTestCases>
+            <NumberAutomaticNPTestCases>0</NumberAutomaticNPTestCases>
+            <NumberRegressionTestCases>0</NumberRegressionTestCases>
+            <NumberRegressionOKTestCases>0</NumberRegressionOKTestCases>
+            <NumberRegressionNOKTestCases>0</NumberRegressionNOKTestCases>
+            <NumberRegressionNPTestCases>0</NumberRegressionNPTestCases>
+            <NumberImpactedTestCases>0</NumberImpactedTestCases>
+            <NumberImpactedOKTestCases>0</NumberImpactedOKTestCases>
+            <NumberImpactedNOKTestCases>0</NumberImpactedNOKTestCases>
+            <NumberImpactedNPTestCases>0</NumberImpactedNPTestCases>
+            <OkPercentage>100.0</OkPercentage>
+            <NokPercentage>0.0</NokPercentage>
+            <NpPercentage>0.0</NpPercentage>
+            <ManualOkPercentage>NaN</ManualOkPercentage>
+            <ManualNokPercentage>NaN</ManualNokPercentage>
+            <ManualNpPercentage>NaN</ManualNpPercentage>
+            <AutomaticOkPercentage>100.0</AutomaticOkPercentage>
+            <AutomaticNokPercentage>0.0</AutomaticNokPercentage>
+            <AutomaticNpPercentage>0.0</AutomaticNpPercentage>
+            <RegressionOkPercentage>NaN</RegressionOkPercentage>
+            <RegressionNokPercentage>NaN</RegressionNokPercentage>
+            <RegressionNpPercentage>NaN</RegressionNpPercentage>
+            <ImpactedOkPercentage>NaN</ImpactedOkPercentage>
+            <ImpactedNokPercentage>NaN</ImpactedNokPercentage>
+            <ImpactedNpPercentage>NaN</ImpactedNpPercentage>
+        </TestCasesStatistics>
+        <TestGroupStatistics>
+            <NumberGroups>2</NumberGroups>
+            <NumberOkTestGroups>2</NumberOkTestGroups>
+            <NumberNokTestGroups>0</NumberNokTestGroups>
+            <NumberNPTestGroups>0</NumberNPTestGroups>
+            <OkPercentage>100.0</OkPercentage>
+            <NokPercentage>0.0</NokPercentage>
+            <nPPercentage>0.0</nPPercentage>
+        </TestGroupStatistics>
+        <FeatureStatistics>
+            <NumberFeatures>2</NumberFeatures>
+            <NumberOkFeatures>2</NumberOkFeatures>
+            <NumberNokFeatures>0</NumberNokFeatures>
+            <NumberNPFeatures>0</NumberNPFeatures>
+            <OkPercentage>100.0</OkPercentage>
+            <NokPercentage>0.0</NokPercentage>
+            <NPPercentage>0.0</NPPercentage>
+        </FeatureStatistics>
+        <Coverage/>
+        <Requirements>
+            <NumberNPRequirements>0</NumberNPRequirements>
+            <NumberOKRequirements>0</NumberOKRequirements>
+            <NumberNOKRequirements>0</NumberNOKRequirements>
+        </Requirements>
+    </Statistics>
+</ProjectType>

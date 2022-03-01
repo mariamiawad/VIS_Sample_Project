@@ -1,0 +1,35 @@
+File: //cai1-sv00051/geeds/00-common/V-Core_Tools/CastleProjects/VIS_Sample_Project/03_Output/Trial_Arm.map (date: 2022-02-09 12:50:56.067779700 +0200, size: 13487bytes)
+ROM = (code + const + InitRAM)
+RAM = (InitRAM + RAM)
+
+Element	code	const	InitRAM	RAM	Bgroup	Component
+
+Modules:
+<section info>	120	0	0	0	(other)	(other)
+crt0.o	206	32	0	0	(other)	(other)
+libansi.a(ccexit.o)	42	0	0	0	(other)	(other)
+libstartup.a(ind_crt0.o)	772	0	0	0	(other)	(other)
+libstartup.a(ind_mcpy.o)	444	0	0	0	(other)	(other)
+libstartup.a(ind_mset.o)	136	0	0	0	(other)	(other)
+libsys.a(ind_call.o)	74	0	0	0	(other)	(other)
+libsys.a(ind_crt1.o)	216	0	0	4	(other)	(other)
+libsys.a(ind_dots.o)	4	0	0	0	(other)	(other)
+libsys.a(ind_errn.o)	34	0	0	4	(other)	(other)
+libsys.a(ind_exit.o)	90	0	0	4	(other)	(other)
+libsys.a(ind_lock.o)	6	0	1	0	(other)	(other)
+main.o	2	0	0	0	APPL	APPLICATION_FILES
+Startup.o	4	0	0	0	APPL	APPLICATION_FILES
+
+Bgroups:
+(other)	2144	32	1	12		
+APPL	6	0	0	0		
+
+Components:
+(other)	2144	32	1	12	(other)	
+APPLICATION_FILES	6	0	0	0	APPL	
+
+Totals:	2150	32	1	12
+Bytes lost due to variable alignment and RAM for generic stack and heap are not considered. For exact total consumption, please check the memory section totals in the map-file.
+
+
+

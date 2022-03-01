@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProjectAssistant Version="5.16.27">
+    <General>
+        <Name>oem_platform_workspace</Name>
+        <Version>1.0</Version>
+        <Author>oelshrka</Author>
+    </General>
+    <Environment>
+        <Platform>Canoeemu</Platform>
+        <Derivative UUID="12CFAD74-DCF6-4A2A-AF88-011A97718AEC">S32K144</Derivative>
+        <Compiler UUID="BBC47DF5-C78B-4E8E-8F86-0EF503FD3198">GreenHills</Compiler>
+        <SipIds>
+            <SipId>CBD1800279_D10</SipId>
+        </SipIds>
+        <TargetType>Real Target &amp; Virtual Target (vVIRTUALtarget)</TargetType>
+        <UseCases/>
+        <PostBuildLoadableSupport>false</PostBuildLoadableSupport>
+        <PostBuildSelectableSupport>false</PostBuildSelectableSupport>
+        <ModuleSpecificDerivatives/>
+        <ProjectType>
+            <Type>Standard</Type>
+        </ProjectType>
+    </Environment>
+    <Folders>
+        <ECUC>.\Config\ECUC</ECUC>
+        <GenData>.\Appl\GenData</GenData>
+        <GenDataVtt>.\Appl\GenDataVtt</GenDataVtt>
+        <Source>.\Appl\Source</Source>
+        <ServiceComponents>.\Config\ServiceComponents</ServiceComponents>
+        <Logs>.\Log</Logs>
+        <SIP>.\..\01_DaVinci_VTT</SIP>
+        <StartMenu></StartMenu>
+        <ApplicationComponentFolders>
+            <ApplicationComponentFolder>.\Config\ApplicationComponents</ApplicationComponentFolder>
+        </ApplicationComponentFolders>
+        <BswInternalBehaviour>.\Config\InternalBehavior</BswInternalBehaviour>
+        <McData>.\Config\McData</McData>
+        <AddBswmds/>
+        <DefinitionRestriction>.\DefRestrict</DefinitionRestriction>
+        <AUTOSAR>.\Config\AUTOSAR</AUTOSAR>
+    </Folders>
+    <Tools>
+        <DEV>C:\Program Files (x86)\Vector DaVinci Developer 4.4\Bin\DaVinciDEV.exe</DEV>
+        <VTT UseLatest="true">
+    </VTT>
+    </Tools>
+    <Input>
+        <ECUEX>Config\System\ConvertedLegacy_SCU.arxml</ECUEX>
+        <Options>
+            <IgnoreUuidsSystemDescriptionFiles>false</IgnoreUuidsSystemDescriptionFiles>
+            <IgnoreUuidsStandardConfigurationFiles>false</IgnoreUuidsStandardConfigurationFiles>
+            <GenerateUpdateReport>true</GenerateUpdateReport>
+            <GenerateXmlUpdateReport>false</GenerateXmlUpdateReport>
+        </Options>
+    </Input>
+    <References>
+        <DVWorkspace>.\Config\Developer\oem_platform_workspace.dcf</DVWorkspace>
+        <FlatMap>Config\System\FlatMap.arxml</FlatMap>
+        <FlatECUEX>Config\System\FlatExtract.arxml</FlatECUEX>
+        <VttProject>.\Config\VTT\oem_platform_workspace.vttproj</VttProject>
+        <OEMCommunicationExtract>Config\System\ConvertedLegacy_HDC_Communication.arxml</OEMCommunicationExtract>
+        <EcucFileReferences/>
+    </References>
+    <EcucSplitter>
+        <Configuration>.\Config\ECUC\oem_platform_workspace.ecuc.arxml</Configuration>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_VTTMcu_ecuc.arxml">
+            <Module Name="VTTMcu"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_VTTEcuC_ecuc.arxml">
+            <Module Name="VTTEcuC"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_CanSM_ecuc.arxml">
+            <Module Name="CanSM"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_ComM_ecuc.arxml">
+            <Module Name="ComM"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_Dcm_ecuc.arxml">
+            <Module Name="Dcm"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_CanTp_ecuc.arxml">
+            <Module Name="CanTp"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_Com_ecuc.arxml">
+            <Module Name="Com"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_EcuC_ecuc.arxml">
+            <Module Name="EcuC"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_Dem_ecuc.arxml">
+            <Module Name="Dem"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_VTTFls_ecuc.arxml">
+            <Module Name="VTTFls"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_VTTCntrl_ecuc.arxml">
+            <Module Name="VTTCntrl"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_Det_ecuc.arxml">
+            <Module Name="Det"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_Crc_ecuc.arxml">
+            <Module Name="Crc"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_MemIf_ecuc.arxml">
+            <Module Name="MemIf"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_vSet_ecuc.arxml">
+            <Module Name="vSet"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_Fls_ecuc.arxml">
+            <Module Name="Fls"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_Fee_ecuc.arxml">
+            <Module Name="Fee"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_NvM_ecuc.arxml">
+            <Module Name="NvM"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_EcuM_ecuc.arxml">
+            <Module Name="EcuM"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_Rte_ecuc.arxml">
+            <Module Name="Rte"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_Mcu_ecuc.arxml">
+            <Module Name="Mcu"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_Can_ecuc.arxml">
+            <Module Name="Can"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_VTTOs_ecuc.arxml">
+            <Module Name="VTTOs"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_VTTCan_ecuc.arxml">
+            <Module Name="VTTCan"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_BswM_ecuc.arxml">
+            <Module Name="BswM"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_PduR_ecuc.arxml">
+            <Module Name="PduR"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_CanIf_ecuc.arxml">
+            <Module Name="CanIf"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_Port_ecuc.arxml">
+            <Module Name="Port"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_Dio_ecuc.arxml">
+            <Module Name="Dio"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_VTTDio_ecuc.arxml">
+            <Module Name="VTTDio"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_VTTPort_ecuc.arxml">
+            <Module Name="VTTPort"/>
+        </Splitter>
+        <Splitter File=".\Config\ECUC\oem_platform_workspace_Os_ecuc.arxml">
+            <Module Name="Os"/>
+        </Splitter>
+        <OwnFolderForEachSplitter>false</OwnFolderForEachSplitter>
+        <OwnFileForEachInstance>false</OwnFileForEachInstance>
+    </EcucSplitter>
+    <Display>
+        <FileSet Id="" CS="236e9fe" ecuInstanceLegacy="SCU">
+            <File Order="0" Hash="3f7a5a48fb8855d8705ec83b40a5b3fb">E:\Projects\oem_platform\VTT_starting_point_v1.0\00_Inputs\DBC\CAN_DBC_PUBLIC_VECTOR.dbc</File>
+        </FileSet>
+        <Merge>
+            <Path Id="ECU-INSTANCE" ARPath="/ECU/SCU"/>
+            <Path Id="SYSTEM" ARPath="/VehicleProject/System"/>
+        </Merge>
+    </Display>
+    <ECUC>
+        <Active RootPackageName="/ActiveEcuC/ActiveEcuC">Config\ECUC\oem_platform_workspace.ecuc.arxml</Active>
+        <Derived RootPackageName="/InitialEcuC/InitialEcuC">Config\ECUC\oem_platform_workspace.ecuc.Initial.arxml</Derived>
+    </ECUC>
+    <PostBuildLoadable RTEDataFreezeChecksum="" CurrentConfigurationPhase="PRE_COMPILE"/>
+    <DEVSettings>
+        <SelectiveImport>All</SelectiveImport>
+        <ObjectLocking>true</ObjectLocking>
+        <ImportModePreset>true</ImportModePreset>
+    </DEVSettings>
+    <ToolSettings>
+        <Generators>
+            <Settings Name="com.vector.cfg.gui.core.generators.ExtGenStepOrder">
+                <Setting Value="INTERNAL_GENERATION|Valeo_Ea|ExtGen_Pwm|Valeo_Swcd|ExtGen_Port|Valeo_NvM|Valeo_MemIf|Valeo_WdgIf|ExtGen_Adc|ExtGen_Spi|ExtGen_Fls|ExtGen_Dio|ExtGen_Gpt|ExtGen_Mcl|Valeo_Crc|Valeo_Make|Valeo_ComR|ExtGen_Mcu|Valeo_SleepMT4|Valeo_WdgM|ExtGen_Icu" Name="Order"/>
+            </Settings>
+            <Settings Name="com.vector.cfg.gui.core.generators.ExtGenSteps">
+                <Settings Name="ExtGen_Adc">
+                    <Setting Value="false" Name="Active"/>
+                </Settings>
+                <Settings Name="ExtGen_Can">
+                    <Setting Value="false" Name="Active"/>
+                    <Setting Value="$(SipRootPath)\Components\MCAL_NXB\GeneratorMsr\Can_ExGen.bat" Name="CommandLine"/>
+                    <Setting Value="IBM437" Name="CommandLineEncoding"/>
+                    <Setting Value="" Name="Comment"/>
+                    <Setting Value="" Name="ExecutionType"/>
+                    <Setting Value="" Name="GenerationParameters"/>
+                    <Setting Value="4.0.3" Name="RequiredAsVersion"/>
+                    <Setting Value="false" Name="SpecificAsVersionRequired"/>
+                    <Setting Value="false" Name="SupportsStandAloneValidation"/>
+                    <Setting Value="" Name="TargetType"/>
+                    <Setting Value="" Name="TransformationOutput"/>
+                    <Setting Value="false" Name="TransformationRequired"/>
+                    <Setting Value="" Name="TransformationXsltFile"/>
+                    <Setting Value="" Name="ValidationParameters"/>
+                    <Setting Value="$(SipRootPath)\Components\MCAL_NXB\GeneratorMsr" Name="WorkingDir"/>
+                </Settings>
+                <Settings Name="ExtGen_Dio">
+                    <Setting Value="false" Name="Active"/>
+                </Settings>
+                <Settings Name="ExtGen_Fls">
+                    <Setting Value="false" Name="Active"/>
+                </Settings>
+                <Settings Name="ExtGen_Gpt">
+                    <Setting Value="false" Name="Active"/>
+                </Settings>
+                <Settings Name="ExtGen_Icu">
+                    <Setting Value="false" Name="Active"/>
+                </Settings>
+                <Settings Name="ExtGen_Mcl">
+                    <Setting Value="false" Name="Active"/>
+                </Settings>
+                <Settings Name="ExtGen_Mcu">
+                    <Setting Value="false" Name="Active"/>
+                    <Setting Value="$(SipRootPath)\Components\MCAL_NXB\GeneratorMsr\Mcu_ExGen.bat" Name="CommandLine"/>
+                    <Setting Value="IBM437" Name="CommandLineEncoding"/>
+                    <Setting Value="" Name="Comment"/>
+                    <Setting Value="" Name="ExecutionType"/>
+                    <Setting Value="" Name="GenerationParameters"/>
+                    <Setting Value="" Name="RequiredAsVersion"/>
+                    <Setting Value="false" Name="SpecificAsVersionRequired"/>
+                    <Setting Value="false" Name="SupportsStandAloneValidation"/>
+                    <Setting Value="" Name="TargetType"/>
+                    <Setting Value="" Name="TransformationOutput"/>
+                    <Setting Value="false" Name="TransformationRequired"/>
+                    <Setting Value="" Name="TransformationXsltFile"/>
+                    <Setting Value="" Name="ValidationParameters"/>
+                    <Setting Value="$(SipRootPath)\ThirdParty\S32K14X_MCAL4_2_RTM_1_0_0\Generators" Name="WorkingDir"/>
+                </Settings>
+                <Settings Name="ExtGen_Port">
+                    <Setting Value="false" Name="Active"/>
+                </Settings>
+                <Settings Name="ExtGen_Pwm">
+                    <Setting Value="false" Name="Active"/>
+                </Settings>
+                <Settings Name="ExtGen_Spi">
+                    <Setting Value="false" Name="Active"/>
+                </Settings>
+            </Settings>
+            <Settings Name="com.vector.cfg.gui.core.generators.GeneratedModules">
+                <Setting Value="false" Name="BswM"/>
+                <Setting Value="false" Name="CanIf"/>
+                <Setting Value="false" Name="Os"/>
+                <Setting Value="false" Name="VTTCan"/>
+                <Setting Value="false" Name="VTTOs"/>
+                <Setting Value="false" Name="WdgIf"/>
+                <Setting Value="false" Name="WdgM"/>
+            </Settings>
+            <Settings Name="com.vector.cfg.gui.core.generators.GenerationTarget">
+                <Setting Value="Virtual Target (vVIRTUALtarget)" Name="TargetType"/>
+            </Settings>
+        </Generators>
+        <Misc>
+            <Settings Name="com.vector.cfg.gen.core.bswmdmigration.internal.service.BswImplVersionPersistor">
+                <Settings Name="|AUTOSAR|EcucDefs|Ea">
+                    <Setting Value="5.5.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|AUTOSAR|EcucDefs|NvM">
+                    <Setting Value="5.5.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|AUTOSAR|EcucDefs|WdgM">
+                    <Setting Value="5.5.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Adc">
+                    <Setting Value="2.6.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|AvTp">
+                    <Setting Value="5.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|BswM">
+                    <Setting Value="14.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Cal">
+                    <Setting Value="2.1.2" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|CanIf">
+                    <Setting Value="6.25.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|CanNm">
+                    <Setting Value="10.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|CanSM">
+                    <Setting Value="3.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|CanTSyn">
+                    <Setting Value="5.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|CanTp">
+                    <Setting Value="4.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|CanTrcv_GenericCan|CanTrcv">
+                    <Setting Value="4.2.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|CanTrcv_Tja1040|CanTrcv">
+                    <Setting Value="4.2.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Can_CanoeemuCanoe|Can">
+                    <Setting Value="6.0.2" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Can_ImxFlexcan3|Can">
+                    <Setting Value="3.3.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Com">
+                    <Setting Value="19.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|ComM">
+                    <Setting Value="13.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|ComXf">
+                    <Setting Value="1.15.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Cpl">
+                    <Setting Value="1.2.4" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Crc">
+                    <Setting Value="6.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|CryIf">
+                    <Setting Value="5.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Cry_30_LibCv|Cry">
+                    <Setting Value="3.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Crypto_30_LibCv|Crypto">
+                    <Setting Value="8.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Csm">
+                    <Setting Value="5.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Dbg">
+                    <Setting Value="1.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Dcm">
+                    <Setting Value="14.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Dem">
+                    <Setting Value="19.7.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Det">
+                    <Setting Value="12.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|DiagXf">
+                    <Setting Value="1.4.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Dio">
+                    <Setting Value="2.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Dlt">
+                    <Setting Value="3.4.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|DoIP">
+                    <Setting Value="9.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|E2EPW">
+                    <Setting Value="1.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|E2EXf">
+                    <Setting Value="1.10.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Ea">
+                    <Setting Value="3.3.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|EcuC">
+                    <Setting Value="1.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|EcuM">
+                    <Setting Value="10.0.2" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Eep">
+                    <Setting Value="2.5.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|EthFw">
+                    <Setting Value="1.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|EthIf">
+                    <Setting Value="13.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|EthSM">
+                    <Setting Value="4.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|EthTSyn">
+                    <Setting Value="12.4.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|EthTrcv_Canoeemu|EthTrcv">
+                    <Setting Value="3.3.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Eth_Canoeemu|Eth">
+                    <Setting Value="6.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Fee">
+                    <Setting Value="8.6.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|FiM">
+                    <Setting Value="8.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Fls">
+                    <Setting Value="3.5.4" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|FrArTp">
+                    <Setting Value="3.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|FrIf">
+                    <Setting Value="5.3.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|FrNm">
+                    <Setting Value="8.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|FrSM">
+                    <Setting Value="3.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|FrTSyn">
+                    <Setting Value="5.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|FrTp">
+                    <Setting Value="3.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|FrTrcv_30_Generic|FrTrcv">
+                    <Setting Value="2.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|FrTrcv_30_Tja1080|FrTrcv">
+                    <Setting Value="4.1.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Fr_CanoeemuEray|Fr">
+                    <Setting Value="5.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Gpt">
+                    <Setting Value="2.6.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Icu">
+                    <Setting Value="2.6.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|IoHwAb">
+                    <Setting Value="3.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|IpduM">
+                    <Setting Value="9.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|J1939Dcm">
+                    <Setting Value="4.2.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|J1939Nm">
+                    <Setting Value="3.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|J1939Rm">
+                    <Setting Value="2.2.4" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|J1939Tp">
+                    <Setting Value="1.3.2" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|LdCom">
+                    <Setting Value="3.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|LinIf">
+                    <Setting Value="9.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|LinNm">
+                    <Setting Value="2.3.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|LinSM">
+                    <Setting Value="7.0.2" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|LinTp">
+                    <Setting Value="9.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|LinTrcv_30_Generic|LinTrcv">
+                    <Setting Value="5.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|LinTrcv_30_Tle7259|LinTrcv">
+                    <Setting Value="6.2.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Lin_Generic|Lin">
+                    <Setting Value="5.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Lin_S32|Lin">
+                    <Setting Value="6.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Mcu">
+                    <Setting Value="2.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|MemIf">
+                    <Setting Value="3.4.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Nm">
+                    <Setting Value="13.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|NvM">
+                    <Setting Value="7.1.2" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Os">
+                    <Setting Value="2.11.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|PduR">
+                    <Setting Value="15.4.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Port">
+                    <Setting Value="2.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Pwm">
+                    <Setting Value="2.6.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Rte">
+                    <Setting Value="4.23.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Rtm">
+                    <Setting Value="3.1.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Sd">
+                    <Setting Value="9.2.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|SecOC">
+                    <Setting Value="10.3.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|SoAd">
+                    <Setting Value="16.3.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|SomeIpXf">
+                    <Setting Value="1.15.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Spi">
+                    <Setting Value="2.6.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|StbM">
+                    <Setting Value="8.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|TcpIp">
+                    <Setting Value="14.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Tls">
+                    <Setting Value="8.2.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|UdpNm">
+                    <Setting Value="5.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTAdc">
+                    <Setting Value="2.6.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTCan">
+                    <Setting Value="6.0.2" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTDio">
+                    <Setting Value="2.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTEcuC">
+                    <Setting Value="1.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTEep">
+                    <Setting Value="2.5.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTEth">
+                    <Setting Value="10.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTEthTrcv">
+                    <Setting Value="5.0.1" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTFls">
+                    <Setting Value="3.5.4" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTFr">
+                    <Setting Value="5.1.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTGpt">
+                    <Setting Value="2.6.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTIcu">
+                    <Setting Value="2.6.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTMcu">
+                    <Setting Value="2.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTOs">
+                    <Setting Value="2.36.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTPort">
+                    <Setting Value="2.5.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTPwm">
+                    <Setting Value="2.6.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTSpi">
+                    <Setting Value="2.6.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|VTT|VTTWdg">
+                    <Setting Value="3.4.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Wdg">
+                    <Setting Value="3.4.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|WdgIf">
+                    <Setting Value="5.4.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|WdgM">
+                    <Setting Value="5.5.3" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|Xcp">
+                    <Setting Value="6.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vBRS">
+                    <Setting Value="1.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vBaseEnv">
+                    <Setting Value="1.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vDem42">
+                    <Setting Value="1.2.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|MICROSAR|vSecPrim">
+                    <Setting Value="4.2.0" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|TS_T40D2M10I0R0|Can">
+                    <Setting Value="4.2.2" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|TS_T40D2M10I0R0|Dio">
+                    <Setting Value="4.2.2" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|TS_T40D2M10I0R0|Fls">
+                    <Setting Value="4.2.2" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|TS_T40D2M10I0R0|Mcu">
+                    <Setting Value="4.2.2" Name="BswImplSwVersion"/>
+                </Settings>
+                <Settings Name="|TS_T40D2M10I0R0|Port">
+                    <Setting Value="4.2.2" Name="BswImplSwVersion"/>
+                </Settings>
+            </Settings>
+            <Settings Name="com.vector.cfg.gen.core.gencore.internal.aov.AutomaticOnDemandValidationConfigurationService">
+                <Setting Value="rO0ABXNyAGpjb20udmVjdG9yLmNmZy5nZW4uY29yZS5nZW5jb3JlLmludGVybmFsLmFvdi5BdXRv&#xA;bWF0aWNPbkRlbWFuZFZhbGlkYXRpb25Db25maWd1cmF0aW9uU2VydmljZSRQZXJzaXN0ZWREYXRh&#xA;pcjrmQ6cuakCAAJaAAlhY3RpdmF0ZWRMABJkZWFjdGl2YXRlZE1vZHVsZXN0ABZMamF2YS91dGls&#xA;L0NvbGxlY3Rpb247eHABc3IANmNvbS5nb29nbGUuY29tbW9uLmNvbGxlY3QuSW1tdXRhYmxlTGlz&#xA;dCRTZXJpYWxpemVkRm9ybQAAAAAAAAAAAgABWwAIZWxlbWVudHN0ABNbTGphdmEvbGFuZy9PYmpl&#xA;Y3Q7eHB1cgATW0xqYXZhLmxhbmcuT2JqZWN0O5DOWJ8QcylsAgAAeHAAAAAEc3IANWNvbS52ZWN0&#xA;b3IuY2ZnLm1vZGVsLmFjY2Vzcy5EZWZSZWYkU2VyaWFsaXphdGlvblByb3h5NnUB4bS2W7ACAAJM&#xA;AB5kZWZSZWZTdHJpbmdXaXRob3V0UGFja2FnZVBhcnR0ABJMamF2YS9sYW5nL1N0cmluZztMABlw&#xA;YWNrYWdlUGFydE9mRGVmUmVmU3RyaW5ncQB+AAl4cHQAA0RjbXQACS9NSUNST1NBUnNxAH4ACHQA&#xA;BU1lbUlmcQB+AAxzcQB+AAh0AAZWVFRDYW50AA0vTUlDUk9TQVIvVlRUc3EAfgAIdAAERWN1Q3EA&#xA;fgAM" Name="Data"/>
+            </Settings>
+            <Settings Name="com.vector.cfg.gui.pse.pages.generators">
+                <Settings Name="BuildVipProject"/>
+                <Settings Name="CustomWorkflowExecution"/>
+            </Settings>
+            <Settings Name="com.vector.cfg.persistency.internal.folder">
+                <Settings Name="TargetFolderManager"/>
+            </Settings>
+            <Settings Name="com.vector.cfg.workflow.project.model">
+                <Settings Name="DiagnosticsDataModifier">
+                    <Setting Value="5.16.27" Name="Version"/>
+                </Settings>
+                <Settings Name="LegacyConverter">
+                    <Setting Value="1.8.17" Name="Version"/>
+                </Settings>
+            </Settings>
+            <Settings Name="generationReportSettings"/>
+        </Misc>
+    </ToolSettings>
+    <TopDownServiceConfiguration>
+        <NvM>true</NvM>
+    </TopDownServiceConfiguration>
+    <Miscellaneous>
+        <AmdGenerateDebugData>false</AmdGenerateDebugData>
+        <AutomaticSyncSystemDescription>false</AutomaticSyncSystemDescription>
+    </Miscellaneous>
+    <SwctGeneration/>
+</ProjectAssistant>

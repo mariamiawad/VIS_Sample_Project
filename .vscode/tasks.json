@@ -1,0 +1,169 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+"version": "2.0.0",
+"windows": {
+    "command": "cmd.exe",
+    
+},
+"tasks": [
+    {
+        "label": "Build Project RH850 Compiler",
+        "options": {
+            "cwd": ""
+        },
+        "type": "process",
+        "command": "${config:ExecutableDir}\\resources\\Build\\RH850SetValue.bat",
+        "args": ["${config:01_RH850_Project_Name}", "${config:01_RH850_SOURCES_APPL_APPLICATION_FILES}", "${config:01_RH850_COMPONENTS_BSW_VECTOR}", "${config:01_RH850_CFLAGS}", "${config:01_RH850_LDFLAGS}", "${config:01_RH850_USER_INCLUDES}", "${workspaceFolder}","${config:ExecutableDir}"],
+        "problemMatcher": ["$go"]
+         
+    }
+    ,
+    {
+        "label": "Build Project ARM_S32K Compiler",
+        "options": {
+            "cwd": ""
+        },
+        "type": "process",
+        "command": "${config:ExecutableDir}\\resources\\Build\\ArmSetValue.bat",
+        "args": ["${config:02_ARM_S32K_Project_Name}", "${config:02_ARM_S32K_SOURCES_APPL_APPLICATION_FILES}", "${config:02_ARM_S32K_COMPONENTS_BSW_VECTOR}", "${config:02_ARM_S32K_CFLAGS}", "${config:02_ARM_S32K_LDFLAGS}", "${config:02_ARM_S32K_USER_INCLUDES}", "${workspaceFolder}","${config:ExecutableDir}"],
+        "problemMatcher": ["$go"]
+        
+    }
+    ,
+    {
+        "label": "Build Project VTT",
+        "options": {
+            "cwd": ""
+        },
+        "type": "process",
+        "command": "${config:ExecutableDir}\\resources\\Build\\VTTSetValue.bat",
+        "args": ["${workspaceFolder}","${config:ExecutableDir}"],
+        "problemMatcher": ["$go"]
+        
+    }
+    ,
+    {
+        "label": "Clean Project ARM_S32K Compiler",
+        "options": {
+            "cwd": ""
+        },
+        "type": "process",
+        "command": "${config:ExecutableDir}\\resources\\Build\\setValueClean.bat",
+        "args": ["${config:02_ARM_S32K_Project_Name}", "${workspaceFolder}","${config:ExecutableDir}"],
+        "problemMatcher": ["$go"]
+        
+    },
+    {
+        "label": "Save Make File Settings",
+        "options": {
+            "cwd": ""
+        },
+        "type": "process",
+        "command": "${config:ExecutableDir}\\resources\\XmlToJsonTool\\XmlToJsonConverter.exe",
+        "args": ["-workspacepath","${workspaceFolder}\\MakeFileSettings.xml","-jsonpath","${workspaceFolder}\\.vscode\\settings.json"],
+        "problemMatcher": ["$go"]
+        
+    }
+    ,
+    {
+        "label": "Clean Project RH850 Compiler",
+        "options": {
+            "cwd": ""
+        },
+        "type": "process",
+        "command": "${config:ExecutableDir}\\resources\\Build\\setValueClean.bat",
+        "args": ["${config:01_RH850_Project_Name}", "${workspaceFolder}","${config:ExecutableDir}"],
+        "problemMatcher": ["$go"]
+        
+    },
+    {
+      "label": "Clean Project Tasking Compiler",
+      "options": {
+        "cwd": ""
+      },
+      "type": "process",
+      "command": "${config:ExecutableDir}\\resources\\Build\\TaskingSetValueClean.bat",
+      "args": ["${config:03_TASKING_PROJECT_BUILD_PATH}"],
+      "problemMatcher": [ "$go" ]
+
+    },
+    {
+      "label": "Clean & Build Project IAR Compiler",
+      "options": {
+        "cwd": ""
+      },
+      "type": "process",
+      "command": "${config:ExecutableDir}\\resources\\Build\\IARSetValueClean.bat",
+      "args": ["${config:05_IAR_PROJECT_NAME}", "${config:05_IAR_ECLIPSE_WORKSPACE}", "${config:05_IAR_PROJECT_BUILD_PATH}"],
+      "problemMatcher": [ "$go" ]
+
+    },
+
+    {
+        "label": "Clean Project HighTech Compiler",
+        "options": {
+            "cwd": ""
+        },
+        "type": "process",
+        "command": "${config:ExecutableDir}\\resources\\Build\\HighTechMake\\HighTechSetValue.bat",
+        "args": ["clean", "${config:04_HighTech_BIN_NAME}", "${config:04_HighTech_SW_SOURCE_DIRS_LIST}", "${config:04_HighTech_SW_EXCLUDE_DIRS_LIST}", "${config:04_HighTech_EXCLUDE_FILES_LIST}", "${config:04_HighTech_ASM_OPTIONS_LIST}", "${config:04_HighTech_CC_OPTIONS_LIST}", "${config:04_HighTech_LD_OPTIONS_LIST}", "${workspaceFolder}","${config:ExecutableDir}"],
+        "problemMatcher": ["$go"]
+        
+    },
+
+    {
+      "label": "Build Project Tasking Compiler",
+      "options": {
+        "cwd": ""
+      },
+      "type": "process",
+      "command": "${config:ExecutableDir}\\resources\\Build\\TaskingsetValue.bat",
+      "args": ["${config:03_TASKING_PROJECT_NAME}", "${config:03_TASKING_ECLIPSE_WORKSPACE}", "${config:03_TASKING_PROJECT_BUILD_PATH}"],
+      "problemMatcher": [ "$go" ]
+
+    },
+
+    {
+      "label": "Build Project IAR Compiler",
+      "options": {
+        "cwd": ""
+      },
+      "type": "process",
+      "command": "${config:ExecutableDir}\\resources\\Build\\IARsetValue.bat",
+      "args": ["${config:05_IAR_PROJECT_NAME}", "${config:05_IAR_ECLIPSE_WORKSPACE}", "${config:05_IAR_PROJECT_BUILD_PATH}"],
+      "problemMatcher": [ "$go" ]
+
+    },
+
+    {
+        "label": "Build Project HighTech Compiler",
+        "options": {
+            "cwd": ""
+        },
+        "type": "process",
+        "command": "${config:ExecutableDir}\\resources\\Build\\HighTechMake\\HighTechSetValue.bat",
+        "args": ["build", "${config:04_HighTech_BIN_NAME}", "${config:04_HighTech_SW_SOURCE_DIRS_LIST}", "${config:04_HighTech_SW_EXCLUDE_DIRS_LIST}", "${config:04_HighTech_EXCLUDE_FILES_LIST}", "${config:04_HighTech_ASM_OPTIONS_LIST}", "${config:04_HighTech_CC_OPTIONS_LIST}", "${config:04_HighTech_LD_OPTIONS_LIST}", "${workspaceFolder}","${config:ExecutableDir}"],
+        "problemMatcher": ["$go"]
+        
+    },
+    {
+        "label": "Run Validation on castle",
+        "options": {
+            "cwd": "C:\\"
+        },
+        "type": "process",
+        "command": "java",
+        "args": ["-jar", "${config:ExecutableDir}\\resources\\cre.remote\\cre.remote.jar", "-lconfig", "${workspaceFolder}\\config.local.ini"],
+        "problemMatcher": ["$go"]
+        
+    }
+    
+
+],
+"options": {
+  "env": {
+    
+  }
+},  
+}

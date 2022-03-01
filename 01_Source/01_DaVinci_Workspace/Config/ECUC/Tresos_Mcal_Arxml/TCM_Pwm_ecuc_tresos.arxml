@@ -1,0 +1,1699 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>Pwm</SHORT-NAME>
+      <ELEMENTS>
+        <ECUC-MODULE-CONFIGURATION-VALUES>
+          <SHORT-NAME>Pwm</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="DV:CfgPostBuild">
+                <SD GID="DV:postBuildVariantSupport">false</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <DEFINITION-REF DEST="ECUC-MODULE-DEF">/TS_T40D2M10I0R0/Pwm</DEFINITION-REF>
+          <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-POST-BUILD</IMPLEMENTATION-CONFIG-VARIANT>
+          <MODULE-DESCRIPTION-REF DEST="BSW-IMPLEMENTATION">/Pwm_T40D2M10I0R0/Implementations/BswImplementation_0</MODULE-DESCRIPTION-REF>
+          <CONTAINERS>
+            <ECUC-CONTAINER-VALUE UUID="36065920-1d45-4f1a-a66c-d8f4766af6b5">
+              <SHORT-NAME>CommonPublishedInformation</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/CommonPublishedInformation</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/CommonPublishedInformation/ArReleaseMajorVersion</DEFINITION-REF>
+                  <VALUE>4</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/CommonPublishedInformation/ArReleaseMinorVersion</DEFINITION-REF>
+                  <VALUE>2</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/CommonPublishedInformation/ArReleaseRevisionVersion</DEFINITION-REF>
+                  <VALUE>2</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/CommonPublishedInformation/ModuleId</DEFINITION-REF>
+                  <VALUE>121</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/CommonPublishedInformation/SwMajorVersion</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/CommonPublishedInformation/SwMinorVersion</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/CommonPublishedInformation/SwPatchVersion</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/CommonPublishedInformation/VendorId</DEFINITION-REF>
+                  <VALUE>43</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="f89b6a70-b38d-4b9e-8a7c-36e73559f88e">
+              <SHORT-NAME>PwmChannelConfigSet</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="9ec4ac68-7d1a-41f1-a87e-2563f05e3359">
+                  <SHORT-NAME>Pwm_Freq</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmChannelClass</DEFINITION-REF>
+                      <VALUE>PWM_VARIABLE_PERIOD</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmChannelId</DEFINITION-REF>
+                      <VALUE>2</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmDutycycleDefault</DEFINITION-REF>
+                      <VALUE>8192</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmIdleState</DEFINITION-REF>
+                      <VALUE>PWM_LOW</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmPeriodDefault</DEFINITION-REF>
+                      <VALUE>166</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmPeriodInTicks</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmPolarity</DEFINITION-REF>
+                      <VALUE>PWM_HIGH</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmFtmChannel</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Pwm/Pwm/PwmChannelConfigSet/PwmFtmModule_1/PwmFtmChannels_0</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmMcuClockReferencePoint</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Mcu/Mcu/McuModuleConfiguration/McuClockSettingConfig_0/McuClockReferencePoint_RUN_BUS_CLK</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="8a87d699-a5ad-4d85-abab-96e285f37d88">
+                  <SHORT-NAME>Pwm_TRSP_Dout</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmChannelClass</DEFINITION-REF>
+                      <VALUE>PWM_VARIABLE_PERIOD</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmChannelId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmDutycycleDefault</DEFINITION-REF>
+                      <VALUE>8192</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmIdleState</DEFINITION-REF>
+                      <VALUE>PWM_LOW</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmNotification</DEFINITION-REF>
+                      <VALUE>Pwm_TRSPNotification</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmPeriodDefault</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmPeriodInTicks</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmPolarity</DEFINITION-REF>
+                      <VALUE>PWM_HIGH</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmFtmChannel</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Pwm/Pwm/PwmChannelConfigSet/PwmFtmModule_0/PwmFtmChannels_0</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmMcuClockReferencePoint</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Mcu/Mcu/McuModuleConfiguration/McuClockSettingConfig_0/McuClockReferencePoint_RUN_BUS_CLK</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="4d5610fc-dd41-4ae9-a291-5371c699690d">
+                  <SHORT-NAME>Pwm_Volume</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmChannelClass</DEFINITION-REF>
+                      <VALUE>PWM_FIXED_PERIOD</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmChannelId</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmDutycycleDefault</DEFINITION-REF>
+                      <VALUE>8192</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmIdleState</DEFINITION-REF>
+                      <VALUE>PWM_LOW</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmPeriodDefault</DEFINITION-REF>
+                      <VALUE>10</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmPeriodInTicks</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmPolarity</DEFINITION-REF>
+                      <VALUE>PWM_HIGH</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmFtmChannel</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Pwm/Pwm/PwmChannelConfigSet/PwmFtmModule_2/PwmFtmChannels_0</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmChannel/PwmMcuClockReferencePoint</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/Mcu/Mcu/McuModuleConfiguration/McuClockSettingConfig_0/McuClockReferencePoint_RUN_BUS_CLK</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="05390ab6-d48f-42e2-bc65-ffbbfde62abe">
+                  <SHORT-NAME>PwmFtmModule_0</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/FtmModule</DEFINITION-REF>
+                      <VALUE>FTM_0</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmBDMEnable</DEFINITION-REF>
+                      <VALUE>CNT_ON_OUTPUTS_ON</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmChanEdgeAlignment</DEFINITION-REF>
+                      <VALUE>PWM_EDGE_ALIGNED</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmClockSelection</DEFINITION-REF>
+                      <VALUE>PWM_SYSTEM_CLOCK</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmFaultFunctionality</DEFINITION-REF>
+                      <VALUE>FLTCTRL_DISABLED</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmPrescaler</DEFINITION-REF>
+                      <VALUE>PRESC_4</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmPrescaler_Alternate</DEFINITION-REF>
+                      <VALUE>PRESC_1</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmReloadFrequency</DEFINITION-REF>
+                      <VALUE>LDFQ_EACH1</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmUpdatedEndPeriod</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmUpdatedMiddlePeriod</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="4d71bd67-9555-4874-90e1-9f53e2926a8e">
+                      <SHORT-NAME>PwmExternalTriggerSettings</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableExternalTriggerChannel0</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableExternalTriggerChannel1</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableExternalTriggerChannel2</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableExternalTriggerChannel3</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableExternalTriggerChannel4</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableExternalTriggerChannel5</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableExternalTriggerChannel6</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableExternalTriggerChannel7</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableInitializationTrigger</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="985c7e6c-09df-46c1-aa5d-b16b4dea2c9e">
+                      <SHORT-NAME>PwmFtmChannelFaultSettings</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmDisableOutputOnFault0</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmDisableOutputOnFault1</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmDisableOutputOnFault2</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmDisableOutputOnFault3</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFilterValue</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmFaultOutputState</DEFINITION-REF>
+                          <VALUE>SAFE_VALUES</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="a208689b-3603-49a7-ac2e-f16500fed619">
+                          <SHORT-NAME>PwmFtmChannelFault0Settings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault0Settings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault0Settings/PwmEnableFault0Filter</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault0Settings/PwmFault0Notification</DEFINITION-REF>
+                              <VALUE>NULL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault0Settings/PwmFault0Polarity</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE UUID="4e0d8531-e1f5-4e79-b0d4-1e9ec19c4570">
+                          <SHORT-NAME>PwmFtmChannelFault1Settings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault1Settings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault1Settings/PwmEnableFault1Filter</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault1Settings/PwmFault1Notification</DEFINITION-REF>
+                              <VALUE>NULL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault1Settings/PwmFault1Polarity</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE UUID="61bcd410-50a1-4398-b165-9e727ea4561c">
+                          <SHORT-NAME>PwmFtmChannelFault2Settings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault2Settings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault2Settings/PwmEnableFault2Filter</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault2Settings/PwmFault2Notification</DEFINITION-REF>
+                              <VALUE>NULL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault2Settings/PwmFault2Polarity</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE UUID="8d3a3918-84a6-4ec8-a729-7c8763a2012a">
+                          <SHORT-NAME>PwmFtmChannelFault3Settings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault3Settings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault3Settings/PwmEnableFault3Filter</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault3Settings/PwmFault3Notification</DEFINITION-REF>
+                              <VALUE>NULL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault3Settings/PwmFault3Polarity</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="4953e72a-7f22-48fe-965d-2c41b6cc29ea">
+                      <SHORT-NAME>PwmFtmChannels_0</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannels</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannels/ChannelCombDeadTimeEn</DEFINITION-REF>
+                          <VALUE>true</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannels/ChannelEdgeSetup</DEFINITION-REF>
+                          <VALUE>INDEPENDENT</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannels/PwmFtmChannelId</DEFINITION-REF>
+                          <VALUE>FTM_0_CH_3</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannels/PwmPhaseShift</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="afc849cd-4332-45d7-8fd9-b951bccd2191">
+                  <SHORT-NAME>PwmFtmModule_1</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/FtmModule</DEFINITION-REF>
+                      <VALUE>FTM_1</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmBDMEnable</DEFINITION-REF>
+                      <VALUE>CNT_ON_OUTPUTS_ON</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmChanEdgeAlignment</DEFINITION-REF>
+                      <VALUE>PWM_EDGE_ALIGNED</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmClockSelection</DEFINITION-REF>
+                      <VALUE>PWM_SYSTEM_CLOCK</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmFaultFunctionality</DEFINITION-REF>
+                      <VALUE>FLTCTRL_DISABLED</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmPrescaler</DEFINITION-REF>
+                      <VALUE>PRESC_128</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmPrescaler_Alternate</DEFINITION-REF>
+                      <VALUE>PRESC_1</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmReloadFrequency</DEFINITION-REF>
+                      <VALUE>LDFQ_EACH1</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmUpdatedEndPeriod</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmUpdatedMiddlePeriod</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="54a7deec-234c-4240-a5d6-b0a5dd2276e0">
+                      <SHORT-NAME>PwmExternalTriggerSettings</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableExternalTriggerChannel0</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableExternalTriggerChannel1</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableExternalTriggerChannel2</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableExternalTriggerChannel3</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableExternalTriggerChannel4</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableExternalTriggerChannel5</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableExternalTriggerChannel6</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableExternalTriggerChannel7</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableInitializationTrigger</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="fa7d3481-58ea-46bd-a19e-0b1b27e57b26">
+                      <SHORT-NAME>PwmFtmChannelFaultSettings</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmDisableOutputOnFault0</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmDisableOutputOnFault1</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmDisableOutputOnFault2</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmDisableOutputOnFault3</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFilterValue</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmFaultOutputState</DEFINITION-REF>
+                          <VALUE>SAFE_VALUES</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="de0cc0af-736d-4853-b8d0-b9f01706421a">
+                          <SHORT-NAME>PwmFtmChannelFault0Settings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault0Settings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault0Settings/PwmEnableFault0Filter</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault0Settings/PwmFault0Notification</DEFINITION-REF>
+                              <VALUE>NULL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault0Settings/PwmFault0Polarity</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE UUID="c2ba7395-674c-468c-8c98-56d820ef7c6d">
+                          <SHORT-NAME>PwmFtmChannelFault1Settings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault1Settings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault1Settings/PwmEnableFault1Filter</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault1Settings/PwmFault1Notification</DEFINITION-REF>
+                              <VALUE>NULL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault1Settings/PwmFault1Polarity</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE UUID="1882f779-c6ff-4138-b9a1-d957d81470f9">
+                          <SHORT-NAME>PwmFtmChannelFault2Settings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault2Settings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault2Settings/PwmEnableFault2Filter</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault2Settings/PwmFault2Notification</DEFINITION-REF>
+                              <VALUE>NULL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault2Settings/PwmFault2Polarity</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE UUID="35c93efe-9623-4900-ad64-c8815772da49">
+                          <SHORT-NAME>PwmFtmChannelFault3Settings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault3Settings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault3Settings/PwmEnableFault3Filter</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault3Settings/PwmFault3Notification</DEFINITION-REF>
+                              <VALUE>NULL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault3Settings/PwmFault3Polarity</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="59bb7410-faec-406f-be9f-fa8614a74bf7">
+                      <SHORT-NAME>PwmFtmChannels_0</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannels</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannels/ChannelCombDeadTimeEn</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannels/ChannelEdgeSetup</DEFINITION-REF>
+                          <VALUE>INDEPENDENT</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannels/PwmFtmChannelId</DEFINITION-REF>
+                          <VALUE>FTM_1_CH_4</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannels/PwmPhaseShift</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="93b0f82d-9b16-40af-ab37-82074f0c5854">
+                  <SHORT-NAME>PwmFtmModule_2</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/FtmModule</DEFINITION-REF>
+                      <VALUE>FTM_2</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmBDMEnable</DEFINITION-REF>
+                      <VALUE>CNT_ON_OUTPUTS_ON</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmChanEdgeAlignment</DEFINITION-REF>
+                      <VALUE>PWM_EDGE_ALIGNED</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmClockSelection</DEFINITION-REF>
+                      <VALUE>PWM_SYSTEM_CLOCK</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmFaultFunctionality</DEFINITION-REF>
+                      <VALUE>FLTCTRL_DISABLED</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmPrescaler</DEFINITION-REF>
+                      <VALUE>PRESC_64</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmPrescaler_Alternate</DEFINITION-REF>
+                      <VALUE>PRESC_1</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmReloadFrequency</DEFINITION-REF>
+                      <VALUE>LDFQ_EACH1</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmUpdatedEndPeriod</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmUpdatedMiddlePeriod</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="e627680e-70f9-4d8f-b4e0-7db6603b27c3">
+                      <SHORT-NAME>PwmExternalTriggerSettings</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableExternalTriggerChannel0</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableExternalTriggerChannel1</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableExternalTriggerChannel2</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableExternalTriggerChannel3</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableExternalTriggerChannel4</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableExternalTriggerChannel5</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableExternalTriggerChannel6</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableExternalTriggerChannel7</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmExternalTriggerSettings/PwmEnableInitializationTrigger</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="0f2db313-269f-4b3d-b798-5ab857e3aa27">
+                      <SHORT-NAME>PwmFtmChannelFaultSettings</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmDisableOutputOnFault0</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmDisableOutputOnFault1</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmDisableOutputOnFault2</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmDisableOutputOnFault3</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFilterValue</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmFaultOutputState</DEFINITION-REF>
+                          <VALUE>SAFE_VALUES</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="68228545-bdd4-4404-9f43-f4bc2668c717">
+                          <SHORT-NAME>PwmFtmChannelFault0Settings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault0Settings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault0Settings/PwmEnableFault0Filter</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault0Settings/PwmFault0Notification</DEFINITION-REF>
+                              <VALUE>NULL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault0Settings/PwmFault0Polarity</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE UUID="beccb285-9b95-43f8-a0e1-4d754d2dd273">
+                          <SHORT-NAME>PwmFtmChannelFault1Settings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault1Settings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault1Settings/PwmEnableFault1Filter</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault1Settings/PwmFault1Notification</DEFINITION-REF>
+                              <VALUE>NULL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault1Settings/PwmFault1Polarity</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE UUID="3e25389c-5a14-4e16-9015-99304d51dd1b">
+                          <SHORT-NAME>PwmFtmChannelFault2Settings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault2Settings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault2Settings/PwmEnableFault2Filter</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault2Settings/PwmFault2Notification</DEFINITION-REF>
+                              <VALUE>NULL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault2Settings/PwmFault2Polarity</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE UUID="a08c523d-1ed5-46b5-bcfe-629e4d114c54">
+                          <SHORT-NAME>PwmFtmChannelFault3Settings</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault3Settings</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault3Settings/PwmEnableFault3Filter</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault3Settings/PwmFault3Notification</DEFINITION-REF>
+                              <VALUE>NULL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannelFaultSettings/PwmFtmChannelFault3Settings/PwmFault3Polarity</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="ef39442e-2251-49ac-97fc-5e2d011ae23f">
+                      <SHORT-NAME>PwmFtmChannels_0</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannels</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannels/ChannelCombDeadTimeEn</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannels/ChannelEdgeSetup</DEFINITION-REF>
+                          <VALUE>INDEPENDENT</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannels/PwmFtmChannelId</DEFINITION-REF>
+                          <VALUE>FTM_2_CH_2</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmChannelConfigSet/PwmFtmModule/PwmFtmChannels/PwmPhaseShift</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="833fb731-db95-446b-a7db-cf4497682398">
+              <SHORT-NAME>PwmConfigurationOfOptApiServices</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmConfigurationOfOptApiServices</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmConfigurationOfOptApiServices/PwmDeInitApi</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmConfigurationOfOptApiServices/PwmDiableTrigger</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmConfigurationOfOptApiServices/PwmEnableTrigger</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmConfigurationOfOptApiServices/PwmForceOutputToZeroApi</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmConfigurationOfOptApiServices/PwmGetChannelStateApi</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmConfigurationOfOptApiServices/PwmGetOutputState</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmConfigurationOfOptApiServices/PwmSetDutyCycle</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmConfigurationOfOptApiServices/PwmSetDutyCycle_NoUpdate</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmConfigurationOfOptApiServices/PwmSetOutputToIdle</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmConfigurationOfOptApiServices/PwmSetPeriodAndDuty</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmConfigurationOfOptApiServices/PwmSetPeriodAndDuty_NoUpdate</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmConfigurationOfOptApiServices/PwmSetPhaseShift</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmConfigurationOfOptApiServices/PwmSetPhaseShiftNoUpdate</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmConfigurationOfOptApiServices/PwmSwResetCounter</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmConfigurationOfOptApiServices/PwmVersionInfoApi</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="a673453a-3ee2-4430-8094-33d7da65d30c">
+              <SHORT-NAME>PwmGeneral</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/EnableMaskingOperations</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmCommonTimebaseSupported</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmDevErrorDetect</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmDutycycleUpdatedEndperiod</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmEnableDualClockMode</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmEnablePhaseShift</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmEnableUserModeSupport</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmFaultSupport</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmFtmEnableExtTrigger</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmIndex</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmMultiChannelSynch</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmNotificationSupported</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmPeriodUpdatedEndperiod</DEFINITION-REF>
+                  <VALUE>true</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="44744f45-1c12-4e71-a31a-fd06b91bfcb3">
+                  <SHORT-NAME>PwmHwConfiguration_0</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_2_CH_0_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="3df0f423-7159-4793-a0a2-df219d117f05">
+                  <SHORT-NAME>PwmHwConfiguration_1</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_0_CH_1_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="c5781b37-001b-4c74-95f7-03a644340ac0">
+                  <SHORT-NAME>PwmHwConfiguration_10</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_1_CH_0_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="f0530538-e29f-44da-b5d1-5455f4d74bf5">
+                  <SHORT-NAME>PwmHwConfiguration_11</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_1_CH_1_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="361b6263-11e9-4e21-a379-5b40906a0067">
+                  <SHORT-NAME>PwmHwConfiguration_12</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_1_CH_2_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="ed115fd4-0a69-4095-983c-c524afba72d3">
+                  <SHORT-NAME>PwmHwConfiguration_13</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_1_CH_3_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="34de801c-3b2e-4e98-a44c-97a72f14312c">
+                  <SHORT-NAME>PwmHwConfiguration_14</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_1_CH_4_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="a7e4fbaf-4081-4aca-bcad-d064fa13119f">
+                  <SHORT-NAME>PwmHwConfiguration_15</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_1_CH_5_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="727880e3-067d-43c1-bab8-fff6945a6e7e">
+                  <SHORT-NAME>PwmHwConfiguration_16</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_1_CH_6_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="ce51ca36-543b-437e-9612-50c294164484">
+                  <SHORT-NAME>PwmHwConfiguration_17</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_1_CH_7_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="fc298ebf-ca75-4b98-944c-34e267862af6">
+                  <SHORT-NAME>PwmHwConfiguration_18</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_1_TOF_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="4381af2a-c746-4d71-b1a8-5b225a196b50">
+                  <SHORT-NAME>PwmHwConfiguration_19</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_1_FAULT_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="2cdced10-43ee-4c09-828b-e57b90c66a6b">
+                  <SHORT-NAME>PwmHwConfiguration_2</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_0_CH_2_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="24048ca9-1386-4b94-8591-55a0b31c507d">
+                  <SHORT-NAME>PwmHwConfiguration_20</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_2_CH_0_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="463d3ca3-0e74-4a72-b339-69a2ac611dc3">
+                  <SHORT-NAME>PwmHwConfiguration_21</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_2_CH_1_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="1718340f-e85c-4df5-9373-16ed2692f375">
+                  <SHORT-NAME>PwmHwConfiguration_22</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_2_CH_2_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="60e10272-b3d7-44ae-98a4-05e3db2af3b8">
+                  <SHORT-NAME>PwmHwConfiguration_23</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_2_CH_3_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="c86c1a08-6847-4d54-ac33-36f97c361075">
+                  <SHORT-NAME>PwmHwConfiguration_24</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_2_CH_4_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="95f1d2da-665b-4414-a40f-88c3417c91b3">
+                  <SHORT-NAME>PwmHwConfiguration_25</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_2_CH_5_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="912ad7d8-e77a-4508-83d9-2f9184577900">
+                  <SHORT-NAME>PwmHwConfiguration_26</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_2_CH_6_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="ed9a155a-f89d-4662-8904-de99ef6391b0">
+                  <SHORT-NAME>PwmHwConfiguration_27</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_2_CH_7_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="cb693607-8b84-48e2-a701-3ae0b63d449c">
+                  <SHORT-NAME>PwmHwConfiguration_28</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_2_TOF_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="1f1c5efa-07c8-4d45-972a-70c1d681444f">
+                  <SHORT-NAME>PwmHwConfiguration_29</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_2_FAULT_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="cbd8999b-6c63-4fd1-a1b0-ee50a367a832">
+                  <SHORT-NAME>PwmHwConfiguration_3</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_0_CH_3_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="dae232bd-765c-4c6c-b112-884158834edd">
+                  <SHORT-NAME>PwmHwConfiguration_30</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_3_CH_0_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="8eaad809-0959-47c6-8414-99f0303bc5d9">
+                  <SHORT-NAME>PwmHwConfiguration_31</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_3_CH_1_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="697171c2-0b40-4d2b-9495-615e80137e3a">
+                  <SHORT-NAME>PwmHwConfiguration_32</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_3_CH_2_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="d9878679-4980-4158-9d83-e7cb6308179d">
+                  <SHORT-NAME>PwmHwConfiguration_33</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_3_CH_3_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="08e070da-f0cc-44af-9c4e-1b86f7ca6d7c">
+                  <SHORT-NAME>PwmHwConfiguration_34</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_3_CH_4_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="23dea4b4-528c-4135-b3a0-42bab2d4f291">
+                  <SHORT-NAME>PwmHwConfiguration_35</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_3_CH_5_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="8a11ce42-37ec-4219-9331-bfc5bc2b1dc5">
+                  <SHORT-NAME>PwmHwConfiguration_36</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_3_CH_6_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="5636b814-f657-4bee-9018-62cd0c24d538">
+                  <SHORT-NAME>PwmHwConfiguration_37</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_3_CH_7_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="d48d51a4-35fb-4e66-b9cd-798a60036c9a">
+                  <SHORT-NAME>PwmHwConfiguration_38</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_3_TOF_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="d8d515f4-75a9-4dcc-9d91-6798849076e6">
+                  <SHORT-NAME>PwmHwConfiguration_39</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_3_FAULT_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="eb3c150e-03e3-4cc8-80c8-8e4caabc956c">
+                  <SHORT-NAME>PwmHwConfiguration_4</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_0_CH_4_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="44e74522-ed6c-491b-92e7-6c080aed8343">
+                  <SHORT-NAME>PwmHwConfiguration_5</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_0_CH_5_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="e4015fc8-a7a6-4b91-9e32-c2677bc1000c">
+                  <SHORT-NAME>PwmHwConfiguration_6</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_0_CH_6_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="85eb245d-64ba-4166-b824-161f0e590d59">
+                  <SHORT-NAME>PwmHwConfiguration_7</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_0_CH_7_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="1f4c5a13-8638-4af1-bd6a-2ad1bed28e7d">
+                  <SHORT-NAME>PwmHwConfiguration_8</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_0_TOF_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="0e2a78d1-98ba-4ccb-88a1-79c91c752990">
+                  <SHORT-NAME>PwmHwConfiguration_9</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmChannelIsUsed</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptEnable</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D2M10I0R0/Pwm/PwmGeneral/PwmHwConfiguration/PwmInterruptHwId</DEFINITION-REF>
+                      <VALUE>PWM_FTM_0_FAULT_ISR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+          </CONTAINERS>
+        </ECUC-MODULE-CONFIGURATION-VALUES>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

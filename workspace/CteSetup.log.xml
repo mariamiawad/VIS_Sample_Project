@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CteSetup Format="1">
+  <Variant ExuType="TS" Variant="">
+    <Libraries></Libraries>
+    <Properties></Properties>
+    <Tests></Tests>
+  </Variant>
+</CteSetup>

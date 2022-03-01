@@ -1,0 +1,243 @@
+Host OS:	Windows
+ELXR: Copyright (C) 1983-2019 Green Hills Software.  All Rights Reserved.
+Release: Compiler v2019.5.4
+Build Directory: [Directory] COMP-VAL-WIN36:C:/autoval2/v2019.5-2019-09-30/win64-comp
+Revision: [VCInfo] http://toolsvc/branches/release-branch-2019-5-comp/src@658753 (built by auto-compiler)
+Revision Date: Tue Oct 01 05:46:30 2019
+
+Release Date: Tue Oct 01 02:01:04 2019
+
+
+
+
+Load Map Wed Feb 09 12:50:55 2022
+Image Summary
+
+  Section              Base      Size(hex)    Size(dec)  SecOffs
+  .OS_INTVEC_CORE0_CONST 1fff8000  00000000            0   0000000
+  .ramcode             1fff8000  00000000            0   0000000
+  .sdabase             1fff8000  00000000            0   0000000
+  .sdata               1fff8000  00000000            0   0000000
+  .data                1fff8000  00000001            1   00009c8
+  .tls.cond.data       1fff8001  00000000            0   0000000
+  .mcal_data           1fff8004  00000000            0   0000000
+  .sbss                1fff8004  00000000            0   0000000
+  .bss                 1fff8010  0000000c           12   0000000
+  .tls.cond.bss        1fff801c  00000000            0   0000000
+  .mcal_bss            1fff801c  00000000            0   0000000
+  .os_bss              1fff801c  00000000            0   0000000
+  .acfls_code_ram      1fff801c  00000000            0   0000000
+  .aceep_code_ram      1fff801c  00000000            0   0000000
+  .acfls_code_ram_end  1fff801c  00000000            0   0000000
+  .aceep_code_ram_end  1fff801c  00000000            0   0000000
+  .secinfo             1fff8020  00000078          120   0000140
+  .stack_main          1fff80a0  00000000            0   0000000
+  .mcal_bss_no_cacheable 1fff80a0  00000000            0   0000000
+  .mcal_data_no_cacheable 1fff80a0  00000000            0   0000000
+  .OS_STACK_APPLTASK_VAR_NOINIT 1fff80a0  00000000            0   0000000
+  .OS_STACK_BSW_TASK_VAR_NOINIT 1fff80a0  00000000            0   0000000
+  .OS_STACK_OSCORE0_ERROR_VAR_NOINIT 1fff80a0  00000000            0   0000000
+  .OS_STACK_OSCORE0_INIT_VAR_NOINIT 1fff80a0  00000000            0   0000000
+  .OS_STACK_OSCORE0_ISR_CORE_VAR_NOINIT 1fff80a0  00000000            0   0000000
+  .OS_STACK_OSCORE0_KERNEL_VAR_NOINIT 1fff80a0  00000000            0   0000000
+  .OS_STACK_OSCORE0_TASK_PRIO0_VAR_NOINIT 1fff80a0  00000000            0   0000000
+  .OS_STACK_OSCORE0_TASK_PRIO2_VAR_NOINIT 1fff80a0  00000000            0   0000000
+  .OS_STACK_OSCORE0_TASK_PRIO3_VAR_NOINIT 1fff80a0  00000000            0   0000000
+  .OS_STACK_OSCORE0_TASK_PRIO5_VAR_NOINIT 1fff80a0  00000000            0   0000000
+  .OS_STACK_OSCORE0_TASK_PRIO6_VAR_NOINIT 1fff80a0  00000000            0   0000000
+  .OS_STACK_OSCORE0_TASK_PRIO1_VAR_NOINIT 1fff80a0  00000000            0   0000000
+  .OS_STACK_OSCORE0_TASK_PRIO7_VAR_NOINIT 1fff80a0  00000000            0   0000000
+  .OS_STACK_TASK_10MS_VAR_NOINIT 1fff80a0  00000000            0   0000000
+  .OS_STACK_TASK_1MS_VAR_NOINIT 1fff80a0  00000000            0   0000000
+  .OS_STACK_TASK_5MS_VAR_NOINIT 1fff80a0  00000000            0   0000000
+  .OS_STACK_TASK_20MS_VAR_NOINIT 1fff80a0  00000000            0   0000000
+  .OS_CORE0_VAR_NOINIT 1fff80a0  00000000            0   0000000
+  .OS_BARRIER_CORE0_VAR_NOCACHE_NOINIT 1fff80a0  00000000            0   0000000
+  .OS_VAR_NOCACHE_NOINIT 1fff80a0  00000000            0   0000000
+  .OS_CORESTATUS_CORE0_VAR_NOCACHE_NOINIT 1fff80a0  00000000            0   0000000
+  .rcw                 00000000  00000000            0   0000000
+  .flash_config        00000400  00000000            0   0000000
+  .ROM.OS_INTVEC_CORE0_CONST 00000480  00000000            0   0000000
+  .startup             00000480  00000004            4   00001b8
+  .systeminit          00000484  00000000            0   0000000
+  .text.startup        00000484  00000000            0   0000000
+  .OS_CODE             00000484  00000000            0   0000000
+  .OS_INTVEC_CORE0_CODE 00000484  00000000            0   0000000
+  .text                00000484  000007e6         2022   00001bc
+  .mcal_text           00000c6a  00000000            0   0000000
+  .syscall             00000c6a  00000004            4   00009a2
+  .rodata              00000c70  00000020           32   00009a8
+  .ROM.ramcode         00000c90  00000000            0   0000000
+  .ROM.sdata           00000c90  00000000            0   0000000
+  .ROM.data            00000c90  00000001            1   00009c8
+  .ROM.tls.cond.data   00000c91  00000000            0   0000000
+  .ROM.mcal_data       00000c94  00000000            0   0000000
+  .ROM.mcal_data_no_cacheable 00000c94  00000000            0   0000000
+  .mcal_const_cfg      00000c94  00000000            0   0000000
+  .mcal_const          00000c94  00000000            0   0000000
+  .OS_CONST            00000c94  00000000            0   0000000
+  .OS_CORE0_CONST      00000c94  00000000            0   0000000
+  .acfls_code_rom      00000c94  00000000            0   0000000
+  .aceep_code_rom      00000c94  00000000            0   0000000
+  .debug_abbrev        00000000  00000089          137   00009c9
+  .debug_info          00000000  000001c0          448   0000a52
+  .debug_line          00000000  0000015d          349   0000c12
+  .debug_str           00000000  0000010b          267   0000d6f
+  .debug_macinfo       00000000  00000005            5   0000e7a
+  .debug_frame         00000000  000000a8          168   0000e7f
+  .linfix              00000000  00000000            0   0000000
+  .gstackfix           00000000  00000000            0   0000000
+
+Load Map Wed Feb 09 12:50:55 2022
+Module Summary
+
+  Origin+Size    Section          Module
+00000484+0000ce  .text            crt0.o
+00000c70+000020  .rodata          crt0.o
+00000000+000024  .debug_abbrev    Startup.o
+00000000+00015a  .debug_info      Startup.o
+00000000+0000ab  .debug_line      Startup.o
+00000480+000004  .startup         Startup.o
+00000552+000002  .text            main.o
+0000015a+000066  .debug_info      main.o
+00000024+000065  .debug_abbrev    main.o
+00000000+00010b  .debug_str       main.o
+000000ab+0000b2  .debug_line      main.o
+00000000+000005  .debug_macinfo   main.o
+00000000+0000a8  .debug_frame     main.o
+00000554+00002a  .text            libansi.a(ccexit.o)
+0000057e+000304  .text            libstartup.a(ind_crt0.o)
+00000882+000088  .text            libstartup.a(ind_mset.o)
+0000090a+0001bc  .text            libstartup.a(ind_mcpy.o)
+00000ac6+00005a  .text            libsys.a(ind_exit.o)
+1fff8010+000004  .bss             libsys.a(ind_exit.o)
+00000c6a+000004  .syscall         libsys.a(ind_dots.o)
+00000b20+00004a  .text            libsys.a(ind_call.o)
+1fff8014+000004  .bss             libsys.a(ind_crt1.o)
+00000b6a+0000d8  .text            libsys.a(ind_crt1.o)
+00000c42+000006  .text            libsys.a(ind_lock.o)
+1fff8000+000001  .data            libsys.a(ind_lock.o)
+1fff8018+000004  .bss             libsys.a(ind_errn.o)
+00000c48+000022  .text            libsys.a(ind_errn.o)
+1fff8020+000078  .secinfo         <section info>
+
+Load Map Wed Feb 09 12:50:55 2022
+Global Symbols (sorted alphabetically)
+
+ .startup         00000480+000000 .startup..C.3A.5CHatem_Workspace.5Cproj1965_vcoretooling.5CU.2DIDE.5CVsCoreRunner.5CVsCoreRunner.5Cbin.5CDebug.5CMicrosoftVsCode.5Cresources.5CBuild.5Cobj.5CStartup.
+                  00000000+000000 BSS_NO_CACHEABLE_SRAM_SIZE
+                  1fff80a0+000000 BSS_NO_CACHEABLE_SRAM_START
+                  00000003+000000 BSS_SRAM_SIZE
+                  1fff8010+000000 BSS_SRAM_START
+                  00000c94+000000 Eep_ACWriteRomEnd
+                  00000c94+000000 Eep_ACWriteRomStart
+                  00000000+000000 Eep_ACWriteSize
+                  00000c94+000000 Fls_ACEraseRomEnd
+                  00000c94+000000 Fls_ACEraseRomStart
+                  00000000+000000 Fls_ACEraseSize
+                  00000c94+000000 Fls_ACWriteRomEnd
+                  00000c94+000000 Fls_ACWriteRomStart
+                  00000000+000000 Fls_ACWriteSize
+                  20007000+000000 INT_SRAM_END
+                  000003c0+000000 INT_SRAM_SIZE
+                  1fff8000+000000 INT_SRAM_START
+                  00000000+000000 OsCfg_Hal_Core_OsCore0_VectorTable
+                  1fff8000+000000 RC_DATA_DEST
+                  1fff80a0+000000 RC_DATA_NO_CACHEABLE_DEST
+                  00000000+000000 RC_DATA_NO_CACHEABLE_SIZE
+                  00000c94+000000 RC_DATA_NO_CACHEABLE_SRC
+                  00000001+000000 RC_DATA_SIZE
+                  00000c90+000000 RC_DATA_SRC
+                  1fff8000+000000 RC_INTC_VECTOR_DEST
+                  00000000+000000 RC_INTC_VECTOR_SIZE
+                  00000480+000000 RC_INTC_VECTOR_SRC
+                  1fff8000+000000 RC_RAMCODE_DEST
+                  00000000+000000 RC_RAMCODE_SIZE
+                  00000c90+000000 RC_RAMCODE_SRC
+                  1fff8000+000000 RC_SDATA_DEST
+                  00000000+000000 RC_SDATA_SIZE
+                  00000c90+000000 RC_SDATA_SRC
+ .startup         00000480+000000 Reset_Handler
+                  00000000+000000 SBSS_SRAM_SIZE
+                  1fff8004+000000 SBSS_SRAM_START
+                  1fff801c+000000 _ERASE_FUNC_ADDRESS_
+ .text            00000ac6+00003e _Exit
+                  1fff80a0+000000 _Stack_end
+                  1fff80a0+000000 _Stack_start
+                  1fff801c+000000 _WRITE_FUNC_ADDRESS_
+                  1fff801c+000000 _WRITE_FUNC_ADDRESS_EEP_
+                  1fff809f+000000 __RAM_CACHEABLE_END
+                  1fff8000+000000 __RAM_CACHEABLE_START
+                  20006fff+000000 __RAM_NO_CACHEABLE_END
+                  1fff80a0+000000 __RAM_NO_CACHEABLE_START
+                  1fff80a0+000000 __SP_END
+                  1fff80a0+000000 __STACK_START
+                  00000000+000000 __atexit_cleanup_func
+                  00000000+000000 __cpp_exception_cleanup
+                  00000000+000000 __cpp_exception_init
+ .syscall         00000c6a+000004 __dotsyscall
+ .text            00000c54+00000a __gh_errno_ptr
+ .text            00000c5e+00000c __gh_get_errno
+                  00000000+000000 __gh_iob_init
+ .text            00000c46+000002 __gh_lock_init
+ .text            00000c48+00000c __gh_set_errno
+ .text            00000c42+000002 __ghsLock
+ .text            00000c44+000002 __ghsUnlock
+ .text            00000b04+00001c __ghs_at_exit
+                  00000000+000000 __ghs_board_cache_sync
+                  00000000+000000 __ghs_board_devices_init
+                  00000000+000000 __ghs_board_memory_init
+                  00000000+000000 __ghs_checksum
+                  00000000+000000 __ghs_coverage_init
+                  00000000+000000 __ghs_cpp_exception_cleanup
+                  00000000+000000 __ghs_cpp_exception_init
+                  00000000+000000 __ghs_decompress
+                  00000000+000000 __ghs_do_fp_init
+ .text            00000550+000002 __ghs_enterblock_func
+ .text            00000554+000000 __ghs_eofn_main
+ .text            0000057e+000304 __ghs_ind_crt0
+ .text            00000b6a+0000d8 __ghs_ind_crt1
+ .syscall         00000c6a+000004 __ghs_initial_dotsyscall
+                  00000002+000000 __ghs_log_fee_level
+                  00000000+000000 __ghs_malloc_init
+                  00000000+000000 __ghs_manprf_init
+                  00000000+000000 __ghs_rambootcodeend
+                  00000000+000000 __ghs_rambootcodestart
+                  00000000+000000 __ghs_rombootcodeend
+                  00000000+000000 __ghs_rombootcodestart
+                  00000000+000000 __ghs_set_stack_chk_guard
+ .data            1fff8000+000001 __ghs_single_threaded
+ .text            00000b20+000022 __ghs_syscall
+ .text            00000b44+000026 __ghs_syscall64
+                  00000000+000000 __ghs_validate_ghtws
+                  00000000+000000 __ghsbegin_fixaddr
+                  00000000+000000 __ghsbegin_fixtype
+                  00000000+000000 __ghsbegin_picbase
+                  00000000+000000 __ghsbegin_pidbase
+                  00000000+000000 __ghsbegin_robase
+ .secinfo         1fff8020+000000 __ghsbegin_secinfo
+ .secinfo         1fff8044+000000 __ghsbinfo_aclear
+ .secinfo         1fff8098+000000 __ghsbinfo_acopy
+ .secinfo         1fff8020+000024 __ghsbinfo_clear
+ .secinfo         1fff8098+000000 __ghsbinfo_comacopy
+ .secinfo         1fff8098+000000 __ghsbinfo_comcopy
+ .secinfo         1fff8098+000000 __ghsbinfo_comtcopy
+ .secinfo         1fff8044+000054 __ghsbinfo_copy
+ .secinfo         1fff8098+000000 __ghsbinfo_tcopy
+ .secinfo         1fff8044+000000 __ghseinfo_clear
+ .secinfo         1fff8098+000000 __ghseinfo_comcopy
+ .secinfo         1fff8098+000000 __ghseinfo_copy
+                  00000000+000000 __ghsend_fixaddr
+                  00002000+000000 __ghsend_stack
+                  00000000+000000 __ghssize_fixaddr
+                  00000000+000000 _cleanup
+ .text            00000ac6+00003e _exit
+ .text            00000484+000008 _start
+ .startup         00000480+000000 _start1
+ .text            0000048c+0000c4 _start_T
+ .bss             1fff8014+000004 environ
+ .bss             1fff8018+000004 errno
+ .text            00000554+00002a exit
+ .text            00000552+000002 main
+ .text            0000090a+0001bc memcpy
+ .text            00000882+000088 memset

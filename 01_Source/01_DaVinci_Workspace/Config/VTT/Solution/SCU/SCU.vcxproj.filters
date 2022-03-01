@@ -1,0 +1,2549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="BSW"/>
+    <Filter Include="BSW\BswM"/>
+    <Filter Include="BSW\CanIf"/>
+    <Filter Include="BSW\CANoeEmu"/>
+    <Filter Include="BSW\CanSM"/>
+    <Filter Include="BSW\CanTp"/>
+    <Filter Include="BSW\Com"/>
+    <Filter Include="BSW\ComM"/>
+    <Filter Include="BSW\Common"/>
+    <Filter Include="BSW\Crc"/>
+    <Filter Include="BSW\Dcm"/>
+    <Filter Include="BSW\Dem"/>
+    <Filter Include="BSW\Det"/>
+    <Filter Include="BSW\EcuM"/>
+    <Filter Include="BSW\Fee"/>
+    <Filter Include="BSW\MemIf"/>
+    <Filter Include="BSW\NvM"/>
+    <Filter Include="BSW\PduR"/>
+    <Filter Include="BSW\Rte"/>
+    <Filter Include="BSW\RteComponents"/>
+    <Filter Include="BSW\VStdLib"/>
+    <Filter Include="BSW\VTT"/>
+    <Filter Include="BSW\VTTCan"/>
+    <Filter Include="BSW\VTTCntrl"/>
+    <Filter Include="BSW\VTTDio"/>
+    <Filter Include="BSW\VTTFls"/>
+    <Filter Include="BSW\VTTMcu"/>
+    <Filter Include="BSW\VTTOs"/>
+    <Filter Include="BSW\VTTPort"/>
+    <Filter Include="SWC"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttFls/Implementation\Fls.c">
+      <Filter>BSW\VTTFls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Fls_Lcfg.c">
+      <Filter>BSW\VTTFls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VTTCntrl/Implementation\VttCntrl_Fls.c">
+      <Filter>BSW\VTTFls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\VttCntrl_Fls_Cfg.c">
+      <Filter>BSW\VTTFls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/BswM/Implementation\BswM.c">
+      <Filter>BSW\BswM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\BswM_Lcfg.c">
+      <Filter>BSW\BswM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\BswM_PBcfg.c">
+      <Filter>BSW\BswM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\Source\BswM_Callout_Stubs.c">
+      <Filter>BSW\BswM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/CanIf/Implementation\CanIf.c">
+      <Filter>BSW\CanIf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\CanIf_Lcfg.c">
+      <Filter>BSW\CanIf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\CanIf_PBcfg.c">
+      <Filter>BSW\CanIf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\CANoeEmu_cfg.c">
+      <Filter>BSW\CANoeEmu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttCANoeEmu/Implementation\CANoeEmu_DllMain.cpp">
+      <Filter>BSW\CANoeEmu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/CanSM/Implementation\CanSM.c">
+      <Filter>BSW\CanSM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\CanSM_Lcfg.c">
+      <Filter>BSW\CanSM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/CanTp/Implementation\CanTp.c">
+      <Filter>BSW\CanTp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\CanTp_Lcfg.c">
+      <Filter>BSW\CanTp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\CanTp_PBcfg.c">
+      <Filter>BSW\CanTp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Com/Implementation\Com.c">
+      <Filter>BSW\Com</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Com_Lcfg.c">
+      <Filter>BSW\Com</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Com_PBcfg.c">
+      <Filter>BSW\Com</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/ComM/Implementation\ComM.c">
+      <Filter>BSW\ComM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\ComM_Lcfg.c">
+      <Filter>BSW\ComM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\ComM_PBcfg.c">
+      <Filter>BSW\ComM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Crc/Implementation\Crc.c">
+      <Filter>BSW\Crc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dcm/Implementation\Dcm.c">
+      <Filter>BSW\Dcm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dcm/Implementation\Dcm_Ext.c">
+      <Filter>BSW\Dcm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Dcm_Lcfg.c">
+      <Filter>BSW\Dcm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Dcm_PBcfg.c">
+      <Filter>BSW\Dcm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem.c">
+      <Filter>BSW\Dem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Dem_Lcfg.c">
+      <Filter>BSW\Dem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Dem_PBcfg.c">
+      <Filter>BSW\Dem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Det/Implementation\Det.c">
+      <Filter>BSW\Det</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Det_Cfg.c">
+      <Filter>BSW\Det</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/EcuM/Implementation\EcuM.c">
+      <Filter>BSW\EcuM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\EcuM_Cfg.c">
+      <Filter>BSW\EcuM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\EcuM_Init_PBcfg.c">
+      <Filter>BSW\EcuM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\EcuM_PBcfg.c">
+      <Filter>BSW\EcuM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\Source\EcuM_Callout_Stubs.c">
+      <Filter>BSW\EcuM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\EcuM_Init_Cfg.c">
+      <Filter>BSW\EcuM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Fee/Implementation\Fee.c">
+      <Filter>BSW\Fee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Fee/Implementation\Fee_ChunkInfo.c">
+      <Filter>BSW\Fee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Fee/Implementation\Fee_LookUpTable.c">
+      <Filter>BSW\Fee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Fee/Implementation\Fee_Partition.c">
+      <Filter>BSW\Fee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Fee/Implementation\Fee_Processing.c">
+      <Filter>BSW\Fee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Fee/Implementation\Fee_Sector.c">
+      <Filter>BSW\Fee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Fee_Lcfg.c">
+      <Filter>BSW\Fee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/MemIf/Implementation\MemIf.c">
+      <Filter>BSW\MemIf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\MemIf_Cfg.c">
+      <Filter>BSW\MemIf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/NvM/Implementation\NvM.c">
+      <Filter>BSW\NvM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/NvM/Implementation\NvM_Act.c">
+      <Filter>BSW\NvM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/NvM/Implementation\NvM_Crc.c">
+      <Filter>BSW\NvM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/NvM/Implementation\NvM_JobProc.c">
+      <Filter>BSW\NvM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/NvM/Implementation\NvM_Qry.c">
+      <Filter>BSW\NvM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/NvM/Implementation\NvM_Queue.c">
+      <Filter>BSW\NvM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\NvM_Cfg.c">
+      <Filter>BSW\NvM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/PduR/Implementation\PduR.c">
+      <Filter>BSW\PduR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/PduR/Implementation\PduR_Bm.c">
+      <Filter>BSW\PduR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/PduR/Implementation\PduR_Fm.c">
+      <Filter>BSW\PduR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/PduR/Implementation\PduR_IFQ.c">
+      <Filter>BSW\PduR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/PduR/Implementation\PduR_Lock.c">
+      <Filter>BSW\PduR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/PduR/Implementation\PduR_McQ.c">
+      <Filter>BSW\PduR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/PduR/Implementation\PduR_RmIf.c">
+      <Filter>BSW\PduR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/PduR/Implementation\PduR_RmTp.c">
+      <Filter>BSW\PduR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/PduR/Implementation\PduR_RmTp_TxInst.c">
+      <Filter>BSW\PduR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/PduR/Implementation\PduR_Sm.c">
+      <Filter>BSW\PduR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\PduR_Lcfg.c">
+      <Filter>BSW\PduR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\PduR_PBcfg.c">
+      <Filter>BSW\PduR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Rte.c">
+      <Filter>BSW\Rte</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VStdLib/Implementation\vstdlib.c">
+      <Filter>BSW\VStdLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VTTCan/Implementation\Can.c">
+      <Filter>BSW\VTTCan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VTTCan/Implementation\Can_Irq.c">
+      <Filter>BSW\VTTCan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttCntrl/Implementation\VttCntrl_Can.c">
+      <Filter>BSW\VTTCan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Can_Lcfg.c">
+      <Filter>BSW\VTTCan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Can_PBcfg.c">
+      <Filter>BSW\VTTCan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\VttCntrl_Can_Cfg.c">
+      <Filter>BSW\VTTCan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VTTCntrl/Implementation\VttCntrl_Det.c">
+      <Filter>BSW\VTTCntrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VTTCntrl/Implementation\VttCntrl_Base.c">
+      <Filter>BSW\VTTCntrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\VttCntrl_Cfg.c">
+      <Filter>BSW\VTTCntrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttDio/Implementation\Dio.c">
+      <Filter>BSW\VTTDio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Dio_PBcfg.c">
+      <Filter>BSW\VTTDio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VTTCntrl/Implementation\VttCntrl_Dio.c">
+      <Filter>BSW\VTTDio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\VttCntrl_Dio_Cfg.c">
+      <Filter>BSW\VTTDio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttMcu/Implementation\Mcu.c">
+      <Filter>BSW\VTTMcu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Mcu_PBcfg.c">
+      <Filter>BSW\VTTMcu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VTTCntrl/Implementation\VttCntrl_Mcu.c">
+      <Filter>BSW\VTTMcu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_AccessCheck.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Alarm.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Application.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Barrier.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Bit.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_BitArray.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Core.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Counter.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Deque.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Error.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Event.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Fifo.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Fifo08.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Fifo16.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Fifo32.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_FifoRef.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_Core.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_Entry.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_Processor.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hook.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Interrupt.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Ioc.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Isr.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Job.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Lock.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_MemoryProtection.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Peripheral.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_PriorityQueue.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Resource.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Scheduler.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_ScheduleTable.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_ServiceFunction.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Spinlock.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Stack.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Task.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Thread.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Timer.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_TimingProtection.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Trace.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Trap.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_XSignal.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_AccessCheck_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_Alarm_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_Application_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_Barrier_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_Core_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_Counter_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_Error_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_Hal_Context_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_Hal_Core_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_Hal_Entry_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_Hal_Interrupt_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_Hal_Kernel_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_Hal_MemoryProtection_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_Hal_Timer_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_Hal_Vtt_LCfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_Hook_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_Ioc_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_Isr_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_MemoryProtection_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_Peripheral_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_Resource_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_Scheduler_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_ScheduleTable_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_ServiceFunction_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_Spinlock_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_Stack_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_Task_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_TimingProtection_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_Trace_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Os_XSignal_Lcfg.c">
+      <Filter>BSW\VTTOs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttPort/Implementation\Port.c">
+      <Filter>BSW\VTTPort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Port_PBcfg.c">
+      <Filter>BSW\VTTPort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Sources\Stubs\BswM_Stubs.c">
+      <Filter>SWC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Sources\Stubs\Stubs.c">
+      <Filter>SWC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\Source_Stubs_VTT\BswM_CompleteInit.c">
+      <Filter>SWC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\Source_Stubs_VTT\Users_NvM.c">
+      <Filter>SWC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\Source_Stubs_VTT\main.c">
+      <Filter>SWC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\Source_Stubs_VTT\Dcm_Stubs.c">
+      <Filter>SWC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Appl\GenDataVtt\Vtt_Hook.c">
+      <Filter>BSW\VTT</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttFls/Implementation\Fls.h">
+      <Filter>BSW\VTTFls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Fls_Cfg.h">
+      <Filter>BSW\VTTFls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VTTCntrl/Implementation\VttCntrl_Fls.h">
+      <Filter>BSW\VTTFls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\VttCntrl_Fls_Cfg.h">
+      <Filter>BSW\VTTFls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/BswM/Implementation\BswM.h">
+      <Filter>BSW\BswM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/BswM/Implementation\BswM_CanSM.h">
+      <Filter>BSW\BswM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/BswM/Implementation\BswM_ComM.h">
+      <Filter>BSW\BswM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/BswM/Implementation\BswM_Dcm.h">
+      <Filter>BSW\BswM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/BswM/Implementation\BswM_EcuM.h">
+      <Filter>BSW\BswM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/BswM/Implementation\BswM_EthIf.h">
+      <Filter>BSW\BswM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/BswM/Implementation\BswM_EthSM.h">
+      <Filter>BSW\BswM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/BswM/Implementation\BswM_FrSM.h">
+      <Filter>BSW\BswM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/BswM/Implementation\BswM_J1939Dcm.h">
+      <Filter>BSW\BswM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/BswM/Implementation\BswM_J1939Nm.h">
+      <Filter>BSW\BswM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/BswM/Implementation\BswM_LinSM.h">
+      <Filter>BSW\BswM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/BswM/Implementation\BswM_LinTp.h">
+      <Filter>BSW\BswM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/BswM/Implementation\BswM_Nm.h">
+      <Filter>BSW\BswM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/BswM/Implementation\BswM_NvM.h">
+      <Filter>BSW\BswM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/BswM/Implementation\BswM_PduR.h">
+      <Filter>BSW\BswM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/BswM/Implementation\BswM_Sd.h">
+      <Filter>BSW\BswM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/BswM/Implementation\BswM_WdgM.h">
+      <Filter>BSW\BswM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\BswM_Cfg.h">
+      <Filter>BSW\BswM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\BswM_Private_Cfg.h">
+      <Filter>BSW\BswM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\BswM_vMemMap.h">
+      <Filter>BSW\BswM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/CanIf/Implementation\CanIf.h">
+      <Filter>BSW\CanIf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/CanIf/Implementation\CanIf_Cbk.h">
+      <Filter>BSW\CanIf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/CanIf/Implementation\CanIf_GeneralTypes.h">
+      <Filter>BSW\CanIf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/CanIf/Implementation\CanIf_Types.h">
+      <Filter>BSW\CanIf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\CanIf_CanTrcv.h">
+      <Filter>BSW\CanIf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\CanIf_Cfg.h">
+      <Filter>BSW\CanIf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttCANoeEmu/Implementation\CANoeAPI.h">
+      <Filter>BSW\CANoeEmu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttCANoeEmu/Implementation\CANoeEmuProcessor.h">
+      <Filter>BSW\CANoeEmu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttCANoeEmu/Implementation\CANoeEmuLibExport.h">
+      <Filter>BSW\CANoeEmu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttCANoeEmu/Implementation\CANoeEmuLin.h">
+      <Filter>BSW\CANoeEmu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/CanSM/Implementation\CanSM_BswM.h">
+      <Filter>BSW\CanSM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/CanSM/Implementation\CanSM_Cbk.h">
+      <Filter>BSW\CanSM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/CanSM/Implementation\CanSM_ComM.h">
+      <Filter>BSW\CanSM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/CanSM/Implementation\CanSM_Dcm.h">
+      <Filter>BSW\CanSM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/CanSM/Implementation\CanSM_EcuM.h">
+      <Filter>BSW\CanSM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/CanSM/Implementation\CanSM_TxTimeoutException.h">
+      <Filter>BSW\CanSM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/CanSM/Implementation\CanSM.h">
+      <Filter>BSW\CanSM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\CanSM_Cfg.h">
+      <Filter>BSW\CanSM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/CanTp/Implementation\CanTp.h">
+      <Filter>BSW\CanTp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/CanTp/Implementation\CanTp_Cbk.h">
+      <Filter>BSW\CanTp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/CanTp/Implementation\CanTp_Priv.h">
+      <Filter>BSW\CanTp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/CanTp/Implementation\CanTp_Types.h">
+      <Filter>BSW\CanTp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\CanTp_Cfg.h">
+      <Filter>BSW\CanTp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\CanTp_Lcfg.h">
+      <Filter>BSW\CanTp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\CanTp_PBcfg.h">
+      <Filter>BSW\CanTp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Com/Implementation\Com.h">
+      <Filter>BSW\Com</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Com_Cbk.h">
+      <Filter>BSW\Com</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Com_Cfg.h">
+      <Filter>BSW\Com</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Com_Lcfg.h">
+      <Filter>BSW\Com</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Com_PBcfg.h">
+      <Filter>BSW\Com</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Com_Types.h">
+      <Filter>BSW\Com</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Appl_Cbk.h">
+      <Filter>BSW\Com</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/ComM/Implementation\ComM.h">
+      <Filter>BSW\ComM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/ComM/Implementation\ComM_Types.h">
+      <Filter>BSW\ComM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/ComM/Implementation\ComM_BusSM.h">
+      <Filter>BSW\ComM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/ComM/Implementation\ComM_Nm.h">
+      <Filter>BSW\ComM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/ComM/Implementation\ComM_EcuMBswM.h">
+      <Filter>BSW\ComM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/ComM/Implementation\ComM_Dcm.h">
+      <Filter>BSW\ComM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\ComM_Lcfg.h">
+      <Filter>BSW\ComM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\ComM_Cfg.h">
+      <Filter>BSW\ComM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\ComM_GenTypes.h">
+      <Filter>BSW\ComM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\ComM_PBcfg.h">
+      <Filter>BSW\ComM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Vtt_Common/Implementation\Can_GeneralTypes.h">
+      <Filter>BSW\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Vtt_Common/Implementation\Compiler.h">
+      <Filter>BSW\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Vtt_Common/Implementation\ComStack_Types.h">
+      <Filter>BSW\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Vtt_Common/Implementation\EthSwt_GeneralTypes.h">
+      <Filter>BSW\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Vtt_Common/Implementation\EthTrcv_GeneralTypes.h">
+      <Filter>BSW\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Vtt_Common/Implementation\Eth_GeneralTypes.h">
+      <Filter>BSW\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Vtt_Common/Implementation\Fr_GeneralTypes.h">
+      <Filter>BSW\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Vtt_Common/Implementation\Lin_GeneralTypes.h">
+      <Filter>BSW\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Vtt_Common/Implementation\Platform_Types.h">
+      <Filter>BSW\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Vtt_Common/Implementation\Std_Types.h">
+      <Filter>BSW\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Crc/Implementation\Crc.h">
+      <Filter>BSW\Crc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Crc/Implementation\Crc_Tables.h">
+      <Filter>BSW\Crc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Crc_Cfg.h">
+      <Filter>BSW\Crc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dcm/Implementation\Dcm.h">
+      <Filter>BSW\Dcm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dcm/Implementation\Dcm_Base.h">
+      <Filter>BSW\Dcm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dcm/Implementation\Dcm_BaseCbk.h">
+      <Filter>BSW\Dcm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dcm/Implementation\Dcm_BaseInt.h">
+      <Filter>BSW\Dcm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dcm/Implementation\Dcm_BaseTypes.h">
+      <Filter>BSW\Dcm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dcm/Implementation\Dcm_Cbk.h">
+      <Filter>BSW\Dcm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dcm/Implementation\Dcm_Core.h">
+      <Filter>BSW\Dcm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dcm/Implementation\Dcm_CoreCbk.h">
+      <Filter>BSW\Dcm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dcm/Implementation\Dcm_CoreInt.h">
+      <Filter>BSW\Dcm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dcm/Implementation\Dcm_CoreTypes.h">
+      <Filter>BSW\Dcm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dcm/Implementation\Dcm_Ext.h">
+      <Filter>BSW\Dcm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dcm/Implementation\Dcm_ExtCbk.h">
+      <Filter>BSW\Dcm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dcm/Implementation\Dcm_ExtInt.h">
+      <Filter>BSW\Dcm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dcm/Implementation\Dcm_ExtTypes.h">
+      <Filter>BSW\Dcm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dcm/Implementation\Dcm_Int.h">
+      <Filter>BSW\Dcm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dcm/Implementation\Dcm_Types.h">
+      <Filter>BSW\Dcm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Dcm_Cfg.h">
+      <Filter>BSW\Dcm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Dcm_Lcfg.h">
+      <Filter>BSW\Dcm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Dcm_PBcfg.h">
+      <Filter>BSW\Dcm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_APIChecks_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_APIChecks_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_APIChecks_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_API_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_API_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_API_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Cbk.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Cdd_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Cfg_Declarations.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Cfg_Definitions.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Cfg_Macros.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Cfg_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ClearDTC_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ClearDTC_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ClearDTC_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ClearTask_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ClearTask_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ClearTask_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ClientAccess_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ClientAccess_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ClientAccess_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ClientData_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ClientData_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ClientData_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Com_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Com_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Com_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ConfigValidation_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ConfigValidation_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ConfigValidation_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DataReportIF_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DataReportIF_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DataReportIF_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DataStorageIF_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DataStorageIF_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DataStorageIF_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Data_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Data_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Data_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Dcm.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DcmAPI_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DcmAPI_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DcmAPI_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Dcm_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Dcm_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Dcm_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DebounceBase_Fwd.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DebounceBase_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DebounceBase_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DebounceBase_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DebounceCounterBased_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DebounceCounterBased_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DebounceCounterBased_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DebounceMonitorInternal_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DebounceMonitorInternal_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DebounceMonitorInternal_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DebounceTimeBased_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DebounceTimeBased_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DebounceTimeBased_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Debounce_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Debounce_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Debounce_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DebouncingState_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DebouncingState_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DebouncingState_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Denominator_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Denominator_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Denominator_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DTCInternalStatus_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DTCInternalStatus_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DTCInternalStatus_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DTCReadoutBuffer_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DTCReadoutBuffer_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DTCReadoutBuffer_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DTCReporting_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DTCReporting_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DTCReporting_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DTCSelector_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DTCSelector_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DTCSelector_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DTC_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DTC_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DTC_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DtrIF_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DtrIF_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_DtrIF_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Dtr_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Dtr_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Dtr_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_EnableCondition_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_EnableCondition_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_EnableCondition_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_EnvDataSwcApi_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_EnvDataSwcApi_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_EnvDataSwcApi_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ERec_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ERec_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ERec_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Error_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Error_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Error_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Esm_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Esm_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Esm_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_EventInternalStatus_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_EventInternalStatus_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_EventInternalStatus_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_EventQueue_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_EventQueue_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_EventQueue_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Event_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Event_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Event_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ExtCom_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ExtCom_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ExtCom_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ExtDataElementIF_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ExtDataElementIF_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ExtDataElementIF_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ExtendedEntry_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ExtendedEntry_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_ExtendedEntry_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_FilterData_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_FilterData_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_FilterData_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_FimFid_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_FimFid_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_FimFid_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_FreezeFrameIterator_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_FreezeFrameIterator_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_FreezeFrameIterator_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Indicator_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Indicator_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Indicator_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_InitState_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_InitState_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_InitState_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Int.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_IntDataElementIF_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_IntDataElementIF_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_IntDataElementIF_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Iumpr_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Iumpr_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Iumpr_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_J1939DcmAPI_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_J1939DcmAPI_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_J1939DcmAPI_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MemAccess_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MemAccess_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MemAccess_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MemCopy.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MemMap.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MemObdFreezeFrame_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MemObdFreezeFrame_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MemObdFreezeFrame_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MemoryEntry_Fwd.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MemoryEntry_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MemoryEntry_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MemoryEntry_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MemoryRestoration_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MemoryRestoration_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MemoryRestoration_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Memory_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Memory_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Memory_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MemPermanent_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MemPermanent_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MemPermanent_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MemState_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MemState_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MemState_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MemStorageManager_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MemStorageManager_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MemStorageManager_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Mem_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Mem_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Mem_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MidLookup_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MidLookup_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_MidLookup_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Monitor_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Monitor_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Monitor_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Notifications_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Notifications_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Notifications_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Nvm_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Nvm_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Nvm_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_OperationCycle_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_OperationCycle_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_OperationCycle_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Prestore_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Prestore_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Prestore_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Queue_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Queue_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Queue_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Ratio_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Ratio_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Ratio_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_SatelliteData_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_SatelliteData_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_SatelliteData_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_SatelliteInfo_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_SatelliteInfo_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_SatelliteInfo_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Satellite_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Satellite_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Satellite_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Scheduler_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Scheduler_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Scheduler_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_SnapshotEntry_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_SnapshotEntry_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_SnapshotEntry_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Statistics_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Statistics_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Statistics_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_StorageCondition_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_StorageCondition_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_StorageCondition_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_UDSStatus_Implementation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_UDSStatus_Interface.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_UDSStatus_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Dem/Implementation\Dem_Validation.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Dem_AdditionalIncludeCfg.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Dem_Cfg.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Dem_Lcfg.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Dem_PBcfg.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Dem_Swc.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Dem_Swc_Types.h">
+      <Filter>BSW\Dem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Det/Implementation\Det.h">
+      <Filter>BSW\Det</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Det_Cfg.h">
+      <Filter>BSW\Det</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/EcuM/Implementation\EcuM.h">
+      <Filter>BSW\EcuM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/EcuM/Implementation\EcuM_Cbk.h">
+      <Filter>BSW\EcuM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/EcuM/Implementation\EcuM_Error.h">
+      <Filter>BSW\EcuM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\EcuM_Cfg.h">
+      <Filter>BSW\EcuM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\EcuM_Generated_Types.h">
+      <Filter>BSW\EcuM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\EcuM_Init_PBcfg.h">
+      <Filter>BSW\EcuM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\EcuM_PrivateCfg.h">
+      <Filter>BSW\EcuM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\EcuM_Init_Cfg.h">
+      <Filter>BSW\EcuM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Fee/Implementation\Fee.h">
+      <Filter>BSW\Fee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Fee/Implementation\Fee_Cbk.h">
+      <Filter>BSW\Fee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Fee/Implementation\Fee_ChunkInfo.h">
+      <Filter>BSW\Fee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Fee/Implementation\Fee_ChunkInfoDefs.h">
+      <Filter>BSW\Fee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Fee/Implementation\Fee_InitEx.h">
+      <Filter>BSW\Fee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Fee/Implementation\Fee_Int.h">
+      <Filter>BSW\Fee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Fee/Implementation\Fee_IntBase.h">
+      <Filter>BSW\Fee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Fee/Implementation\Fee_JobParams.h">
+      <Filter>BSW\Fee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Fee/Implementation\Fee_LookUpTable.h">
+      <Filter>BSW\Fee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Fee/Implementation\Fee_LookUpTableDefs.h">
+      <Filter>BSW\Fee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Fee/Implementation\Fee_Partition.h">
+      <Filter>BSW\Fee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Fee/Implementation\Fee_PartitionDefs.h">
+      <Filter>BSW\Fee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Fee/Implementation\Fee_Sector.h">
+      <Filter>BSW\Fee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Fee/Implementation\Fee_SectorDefs.h">
+      <Filter>BSW\Fee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/Fee/Implementation\Fee_Types.h">
+      <Filter>BSW\Fee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Fee_Cfg.h">
+      <Filter>BSW\Fee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Fee_PrivateCfg.h">
+      <Filter>BSW\Fee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/MemIf/Implementation\MemIf.h">
+      <Filter>BSW\MemIf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/MemIf/Implementation\MemIf_Types.h">
+      <Filter>BSW\MemIf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\MemIf_Cfg.h">
+      <Filter>BSW\MemIf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/NvM/Implementation\NvM.h">
+      <Filter>BSW\NvM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/NvM/Implementation\NvM_Cbk.h">
+      <Filter>BSW\NvM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/NvM/Implementation\NvM_Types.h">
+      <Filter>BSW\NvM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/NvM/Implementation\NvM_Act.h">
+      <Filter>BSW\NvM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/NvM/Implementation\NvM_Crc.h">
+      <Filter>BSW\NvM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/NvM/Implementation\NvM_JobProc.h">
+      <Filter>BSW\NvM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/NvM/Implementation\NvM_Qry.h">
+      <Filter>BSW\NvM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/NvM/Implementation\NvM_Queue.h">
+      <Filter>BSW\NvM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\NvM_Cfg.h">
+      <Filter>BSW\NvM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\NvM_PrivateCfg.h">
+      <Filter>BSW\NvM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/PduR/Implementation\PduR.h">
+      <Filter>BSW\PduR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/PduR/Implementation\PduR_Bm.h">
+      <Filter>BSW\PduR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/PduR/Implementation\PduR_Fm.h">
+      <Filter>BSW\PduR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/PduR/Implementation\PduR_IFQ.h">
+      <Filter>BSW\PduR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/PduR/Implementation\PduR_Lock.h">
+      <Filter>BSW\PduR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/PduR/Implementation\PduR_McQ.h">
+      <Filter>BSW\PduR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/PduR/Implementation\PduR_RmIf.h">
+      <Filter>BSW\PduR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/PduR/Implementation\PduR_RmTp.h">
+      <Filter>BSW\PduR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/PduR/Implementation\PduR_RmTp_TxInst.h">
+      <Filter>BSW\PduR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/PduR/Implementation\PduR_Sm.h">
+      <Filter>BSW\PduR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\PduR_CanIf.h">
+      <Filter>BSW\PduR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\PduR_CanTp.h">
+      <Filter>BSW\PduR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\PduR_Cfg.h">
+      <Filter>BSW\PduR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\PduR_Com.h">
+      <Filter>BSW\PduR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\PduR_Dcm.h">
+      <Filter>BSW\PduR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\PduR_Lcfg.h">
+      <Filter>BSW\PduR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\PduR_MemMap.h">
+      <Filter>BSW\PduR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\PduR_PBcfg.h">
+      <Filter>BSW\PduR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\PduR_Types.h">
+      <Filter>BSW\PduR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Rte.h">
+      <Filter>BSW\Rte</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Rte_Cbk.h">
+      <Filter>BSW\Rte</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Rte_Cfg.h">
+      <Filter>BSW\Rte</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Rte_Compiler_Cfg.h">
+      <Filter>BSW\Rte</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Rte_DataHandleType.h">
+      <Filter>BSW\Rte</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Rte_Hook.h">
+      <Filter>BSW\Rte</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Rte_VttHook.h">
+      <Filter>BSW\Rte</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Rte_Main.h">
+      <Filter>BSW\Rte</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Rte_MemMap.h">
+      <Filter>BSW\Rte</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Rte_Type.h">
+      <Filter>BSW\Rte</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Rte_UserTypes.h">
+      <Filter>BSW\Rte</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\BswM_MemMap.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\ComM_MemMap.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\Dcm_MemMap.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\DemMaster_0_MemMap.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\DemSatellite_0_MemMap.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\Det_MemMap.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\EcuM_MemMap.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\NvM_MemMap.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\Os_OsCore0_swc_MemMap.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\Rte_BswM.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\Rte_BswM_Type.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\Rte_ComM.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\Rte_ComM_Type.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\Rte_Dcm.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\Rte_Dcm_Type.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\Rte_DemMaster_0.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\Rte_DemMaster_0_Type.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\Rte_DemSatellite_0.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\Rte_DemSatellite_0_Type.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\Rte_Det.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\Rte_Det_Type.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\Rte_EcuM.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\Rte_EcuM_Type.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\Rte_NvM.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\Rte_NvM_Type.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\Rte_Os_OsCore0_swc.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Components\Rte_Os_OsCore0_swc_Type.h">
+      <Filter>BSW\RteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VStdLib/Implementation\vstdlib.h">
+      <Filter>BSW\VStdLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VTTCan/Implementation\Can.h">
+      <Filter>BSW\VTTCan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VTTCan/Implementation\Can_Local.h">
+      <Filter>BSW\VTTCan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttCntrl/Implementation\VttCntrl_Can.h">
+      <Filter>BSW\VTTCan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Can_Cfg.h">
+      <Filter>BSW\VTTCan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Can_DrvGeneralTypes.h">
+      <Filter>BSW\VTTCan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\VttCntrl_Can_Cfg.h">
+      <Filter>BSW\VTTCan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VTTCntrl/Implementation\VttCntrl_Det.h">
+      <Filter>BSW\VTTCntrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VTTCntrl/Implementation\VttCntrl_Base.h">
+      <Filter>BSW\VTTCntrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VTTCntrl/Implementation\VttCntrl_ModuleIncludes.h">
+      <Filter>BSW\VTTCntrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\VttCntrl.h">
+      <Filter>BSW\VTTCntrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\VttCntrl_Cfg.h">
+      <Filter>BSW\VTTCntrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttDio/Implementation\Dio.h">
+      <Filter>BSW\VTTDio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Dio_Cfg.h">
+      <Filter>BSW\VTTDio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VTTCntrl/Implementation\VttCntrl_Dio.h">
+      <Filter>BSW\VTTDio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\VttCntrl_Dio_Cfg.h">
+      <Filter>BSW\VTTDio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttMcu/Implementation\Mcu.h">
+      <Filter>BSW\VTTMcu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Mcu_Cfg.h">
+      <Filter>BSW\VTTMcu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VTTCntrl/Implementation\VttCntrl_Mcu.h">
+      <Filter>BSW\VTTMcu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\OsInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_AccessCheck.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_AccessCheckInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_AccessCheck_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Alarm.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_AlarmInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Alarm_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Application.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_ApplicationInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Application_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Barrier.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_BarrierInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Barrier_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Bit.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_BitArray.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_BitArrayInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_BitInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Common.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_CommonInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Common_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Core.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_CoreInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Core_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Counter.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_CounterInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Counter_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Deque.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_DequeInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Error.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_ErrorInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Error_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Event.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_EventInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Fifo.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Fifo08.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Fifo08Int.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Fifo16.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Fifo16Int.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Fifo32.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Fifo32Int.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_FifoInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_FifoRef.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_FifoRefInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_Compiler.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_CompilerInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_Compiler_Microsoft.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_Compiler_Microsoft_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_Context.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_ContextInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_Context_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_Core.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_CoreInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_Core_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_Debug.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_Derivative.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_DerivativeInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_Derivative_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_Entry.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_EntryInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_Entry_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_Interrupt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_InterruptInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_Interrupt_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_MemoryProtection.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_MemoryProtectionInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_MemoryProtection_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_Os.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_OsInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_Os_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_Processor.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_StaticCodeAnalysis.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_Timer.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_TimerInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_Timer_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_Trap.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_TrapInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hal_Trap_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hook.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_HookInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Hook_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Interrupt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_InterruptInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Interrupt_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Ioc.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_IocInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Ioc_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Isr.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_IsrInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Isr_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Job.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_JobInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Job_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Kernel.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_KernelInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Kernel_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Lock.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_LockInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Lock_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_MemMap_OsCode.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_MemMap_OsSections.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_MemMap_Stacks.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_MemoryProtection.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_MemoryProtectionInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_MemoryProtection_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Orti.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Peripheral.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_PeripheralInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Peripheral_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_PriorityQueue.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_PriorityQueueInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_PriorityQueue_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Resource.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_ResourceInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Resource_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Scheduler.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_SchedulerInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Scheduler_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_ScheduleTable.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_ScheduleTableInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_ScheduleTable_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_ServiceFunction.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_ServiceFunctionInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_ServiceFunction_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Spinlock.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_SpinlockInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Spinlock_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Stack.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_StackInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Stack_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Task.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_TaskInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Task_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Thread.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_ThreadInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Thread_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Timer.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_TimerInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Timer_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_TimingProtection.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_TimingProtectionInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_TimingProtection_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Trace.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_TraceInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Trace_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Trap.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_TrapInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Trap_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_XSignal.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_XSignalChannel.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_XSignalChannelInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_XSignalInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttOs/Implementation\Os_XSignal_Types.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Ioc.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_AccessCheck_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_AccessCheck_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Alarm_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Alarm_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Application_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Application_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Barrier_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Barrier_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Compiler_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Core_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Core_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Counter_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Counter_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Error_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Error_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Hal_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Hal_Context_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Hal_Core_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Hal_Core_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Hal_Entry_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Hal_Entry_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Hal_Interrupt_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Hal_Interrupt_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Hal_Kernel_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Hal_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Hal_MemoryProtection_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Hal_MemoryProtection_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Hal_Timer_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Hal_Vtt_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Hal_Vtt_LCfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Hook_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Hook_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Interrupt_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Ioc_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Ioc_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Isr_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_MemMap.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_MemMap_OsCodeInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_MemMap_OsSectionsInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_MemMap_StacksInt.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_MemoryProtection_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_MemoryProtection_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Peripheral_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Resource_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Scheduler_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Scheduler_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_ScheduleTable_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_ScheduleTable_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_ServiceFunction_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_ServiceFunction_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Spinlock_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Stack_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Stack_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Task_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_TimingProtection_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_TimingProtection_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Trace_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Trace_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_Types_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_XSignal_Cfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Os_XSignal_Lcfg.h">
+      <Filter>BSW\VTTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\01_DaVinci_VTT\Components\./../Components/VttPort/Implementation\Port.h">
+      <Filter>BSW\VTTPort</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Port_Cfg.h">
+      <Filter>BSW\VTTPort</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Appl\GenDataVtt\Vtt_Hook.h">
+      <Filter>BSW\VTT</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\Appl\GenDataVtt\CANoeEmu.rc">
+      <Filter>BSW\CANoeEmu</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

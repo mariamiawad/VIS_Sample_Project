@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="ff55d029-386d-43a2-b3c2-dfef4c7a5e36">
+      <SHORT-NAME>MICROSAR</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="a39bdaa8-9d9c-4bdf-9da1-6596cbd53682">
+          <SHORT-NAME>BswM_swc</SHORT-NAME>
+          <ELEMENTS>
+            <DATA-TYPE-MAPPING-SET UUID="865ecd77-9d4f-4185-ab2d-09b5ab229a77">
+              <SHORT-NAME>BswMMappingSet</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">Contains Mapping for ModeDeclarations Groups which are provided by BswM.</L-2>
+              </DESC>
+              <MODE-REQUEST-TYPE-MAPS>
+                <MODE-REQUEST-TYPE-MAP>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/MICROSAR/Dcm_swc/DataTypes/Dcm_DiagnosticSessionControlType</IMPLEMENTATION-DATA-TYPE-REF>
+                  <MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP">/MICROSAR/Dcm_swc/DcmDiagnosticSessionControl</MODE-GROUP-REF>
+                </MODE-REQUEST-TYPE-MAP>
+              </MODE-REQUEST-TYPE-MAPS>
+            </DATA-TYPE-MAPPING-SET>
+          </ELEMENTS>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="28049543-4deb-424b-9fbb-8302b4b9bcf4">
+              <SHORT-NAME>ComponentTypes</SHORT-NAME>
+              <ELEMENTS>
+                <SERVICE-SW-COMPONENT-TYPE UUID="1c25f4d6-8212-4e04-9f0b-210e16d7394a">
+                  <SHORT-NAME>BswM</SHORT-NAME>
+                  <CATEGORY>SERVICE_COMPONENT</CATEGORY>
+                  <PORTS>
+                    <R-PORT-PROTOTYPE UUID="2f3a8711-f4c6-41b4-aa5f-b538c444b484">
+                      <SHORT-NAME>Notification_Dcm_DiagSessionControl_RP</SHORT-NAME>
+                      <ADMIN-DATA>
+                        <SDGS>
+                          <SDG GID="DV:DerivedFromReferrables">
+                            <SDG GID="DV:DerivedFromReferrablesVariant">
+                              <SD GID="DV:InvariantValuesView"/>
+                              <SDX-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/BswM/BswMConfig/BswMArbitration/Dcm_DiagSessionControl_RP</SDX-REF>
+                              <SD GID="DV:DerivedFromReferrablesUUID">846dc042-b9d5-4ac2-b60c-7b3035714239</SD>
+                            </SDG>
+                          </SDG>
+                        </SDGS>
+                      </ADMIN-DATA>
+                      <REQUIRED-COM-SPECS>
+                        <MODE-SWITCH-RECEIVER-COM-SPEC>
+                          <ENHANCED-MODE-API>true</ENHANCED-MODE-API>
+                        </MODE-SWITCH-RECEIVER-COM-SPEC>
+                      </REQUIRED-COM-SPECS>
+                      <REQUIRED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DcmDiagnosticSessionControl</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                  </PORTS>
+                  <INTERNAL-BEHAVIORS>
+                    <SWC-INTERNAL-BEHAVIOR UUID="35ca5c15-1524-4646-8105-ef01885f7d3d">
+                      <SHORT-NAME>BswMInternalBehavior</SHORT-NAME>
+                      <DATA-TYPE-MAPPING-REFS>
+                        <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/MICROSAR/BswM_swc/BswMMappingSet</DATA-TYPE-MAPPING-REF>
+                      </DATA-TYPE-MAPPING-REFS>
+                      <EVENTS>
+                        <TIMING-EVENT UUID="07bcb2a9-bae2-4291-935c-565788914af0">
+                          <SHORT-NAME>Timer_BswM_MainFunction</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior/BswM_MainFunction</START-ON-EVENT-REF>
+                          <PERIOD>0.01</PERIOD>
+                        </TIMING-EVENT>
+                        <SWC-MODE-SWITCH-EVENT UUID="6a8ddd99-bdb8-473d-8eb7-052612a73a88">
+                          <SHORT-NAME>MST_BswM_Notification_Dcm_DiagSessionControl_RP_Notification_Dcm_DiagSessionControl_RP_ON_ENTRY_DEFAULT_SESSION</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior/BswM_Notification_Dcm_DiagSessionControl_RP</START-ON-EVENT-REF>
+                          <ACTIVATION>ON-ENTRY</ACTIVATION>
+                          <MODE-IREFS>
+                            <MODE-IREF>
+                              <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/BswM_swc/ComponentTypes/BswM/Notification_Dcm_DiagSessionControl_RP</CONTEXT-PORT-REF>
+                              <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/MICROSAR/Dcm_swc/Interfaces/DcmDiagnosticSessionControl/DcmDiagnosticSessionControl</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                              <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/MICROSAR/Dcm_swc/DcmDiagnosticSessionControl/DEFAULT_SESSION</TARGET-MODE-DECLARATION-REF>
+                            </MODE-IREF>
+                          </MODE-IREFS>
+                        </SWC-MODE-SWITCH-EVENT>
+                        <SWC-MODE-SWITCH-EVENT UUID="435e0da7-700a-47d9-9a1f-e2678f531ef3">
+                          <SHORT-NAME>MST_BswM_Notification_Dcm_DiagSessionControl_RP_Notification_Dcm_DiagSessionControl_RP_ON_ENTRY_PROGRAMMING_SESSION</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior/BswM_Notification_Dcm_DiagSessionControl_RP</START-ON-EVENT-REF>
+                          <ACTIVATION>ON-ENTRY</ACTIVATION>
+                          <MODE-IREFS>
+                            <MODE-IREF>
+                              <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/BswM_swc/ComponentTypes/BswM/Notification_Dcm_DiagSessionControl_RP</CONTEXT-PORT-REF>
+                              <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/MICROSAR/Dcm_swc/Interfaces/DcmDiagnosticSessionControl/DcmDiagnosticSessionControl</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                              <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/MICROSAR/Dcm_swc/DcmDiagnosticSessionControl/PROGRAMMING_SESSION</TARGET-MODE-DECLARATION-REF>
+                            </MODE-IREF>
+                          </MODE-IREFS>
+                        </SWC-MODE-SWITCH-EVENT>
+                        <SWC-MODE-SWITCH-EVENT UUID="1e32e716-ea8d-4142-9881-a15b98d7fb5d">
+                          <SHORT-NAME>MST_BswM_Notification_Dcm_DiagSessionControl_RP_Notification_Dcm_DiagSessionControl_RP_ON_ENTRY_EXTENDED_SESSION</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior/BswM_Notification_Dcm_DiagSessionControl_RP</START-ON-EVENT-REF>
+                          <ACTIVATION>ON-ENTRY</ACTIVATION>
+                          <MODE-IREFS>
+                            <MODE-IREF>
+                              <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/BswM_swc/ComponentTypes/BswM/Notification_Dcm_DiagSessionControl_RP</CONTEXT-PORT-REF>
+                              <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/MICROSAR/Dcm_swc/Interfaces/DcmDiagnosticSessionControl/DcmDiagnosticSessionControl</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                              <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/MICROSAR/Dcm_swc/DcmDiagnosticSessionControl/EXTENDED_SESSION</TARGET-MODE-DECLARATION-REF>
+                            </MODE-IREF>
+                          </MODE-IREFS>
+                        </SWC-MODE-SWITCH-EVENT>
+                      </EVENTS>
+                      <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                      <PORT-API-OPTIONS>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/BswM_swc/ComponentTypes/BswM/Notification_Dcm_DiagSessionControl_RP</PORT-REF>
+                        </PORT-API-OPTION>
+                      </PORT-API-OPTIONS>
+                      <RUNNABLES>
+                        <RUNNABLE-ENTITY UUID="2968c66d-f196-4024-8fcc-1b86f9712e7f">
+                          <SHORT-NAME>BswM_MainFunction</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>BswM_MainFunction</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="09b5e82e-e020-4318-85a2-fae9443c02b4">
+                          <SHORT-NAME>BswM_Notification_Dcm_DiagSessionControl_RP</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <MODE-ACCESS-POINTS>
+                            <MODE-ACCESS-POINT>
+                              <MODE-GROUP-IREF>
+                                <R-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                                  <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MICROSAR/BswM_swc/ComponentTypes/BswM/Notification_Dcm_DiagSessionControl_RP</CONTEXT-R-PORT-REF>
+                                  <TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/MICROSAR/Dcm_swc/Interfaces/DcmDiagnosticSessionControl/DcmDiagnosticSessionControl</TARGET-MODE-GROUP-REF>
+                                </R-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                              </MODE-GROUP-IREF>
+                            </MODE-ACCESS-POINT>
+                          </MODE-ACCESS-POINTS>
+                          <SYMBOL>BswM_Notification_Dcm_DiagSessionControl_RP</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                      </RUNNABLES>
+                      <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                    </SWC-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </SERVICE-SW-COMPONENT-TYPE>
+                <SWC-IMPLEMENTATION UUID="96fa5fc2-496d-43ce-b414-51335ce60919">
+                  <SHORT-NAME>BswMImplementation</SHORT-NAME>
+                  <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+                  <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/MICROSAR/BswM_swc/ComponentTypes/BswM/BswMInternalBehavior</BEHAVIOR-REF>
+                </SWC-IMPLEMENTATION>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

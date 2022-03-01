@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../../sbAdminTemplate/all.css" rel="stylesheet">
+
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	
+	</head>
+
+	<body>
+
+    <div id="wrapper">
+
+	<!-- jQuery -->
+    <script src="../../../sbAdminTemplate/all.js"></script>
+	
+	<script>
+	var allFeatures = [];
+	var allGroups = [];
+	var allFwSteps = [];
+	 
+	  function addFeature(feature){
+		allFeatures.push(feature);
+	 }
+	 
+	  function addGroup(group){
+		allGroups.push(group);
+	 }
+	 
+	  function addFwStep(fwstep){
+		allFwSteps.push(fwstep);
+	 }
+	</script>
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				<img class="navbar-brand img-responsive" src="../../../sbAdminTemplate/img/valeo_logo.png" >
+				<a class="navbar-brand" href="../../../dashboard.html">
+				  VTD Report
+				</a>				
+				
+            </div>
+            <!-- /.navbar-header -->
+			<div>
+				<li>
+					<button class="collapse-sidenav w3-opennav w3-xlarge" onclick="w3_open()">&#9776;</button>
+				</li>
+			</div>
+
+            <div class="navsidebar navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+						
+
+						<!--<li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </li>-->
+						
+						
+							<li 
+											class='active'
+							
+							>
+							<a class='text-nowrap' style='overflow:hidden;text-overflow:ellipsis' href="../../../dashboard.html">
+							
+								<button style='display:inline-block' onclick="location.href='../../../dashboard.html'" class="btn btn-default btn-xs"><i class="fa fa fa-fw fa-list-alt fa-fw"></i></button>Test Report
+							
+									<span class="fa arrow"></span>
+							</a>
+									<ul class="nav nav-second-level">
+										<li class='text-nowrap'>
+										<a style='overflow:hidden;text-overflow:ellipsis' href="../../../features/tf00.html" title="tf00"> <button style='display:inline-block' onclick="location.href='../../../features/tf00.html'" class="btn btn-default btn-xs"><i class="fa fa fa-fw fa-list-alt fa-fw"></i></button> tf00
+											
+												<span class="fa arrow"></span>
+										</a>
+												<ul class="nav nav-third-level">
+													<li>
+													<a class="text-nowrap" style="overflow:hidden;text-overflow:ellipsis" href="../../../features/tf00/suites/tg00.html" title="tg00"><i class="fa fa fa-fw fa-folder-o nav-pass fa-fw" ></i> tg00
+													</a>
+													</li>
+												</ul>
+										</li>
+										<li class='text-nowrap'>
+										<a style='overflow:hidden;text-overflow:ellipsis' href="../../../features/testfeature_0.html" title="testfeature_0"> <button style='display:inline-block' onclick="location.href='../../../features/testfeature_0.html'" class="btn btn-default btn-xs"><i class="fa fa fa-fw fa-list-alt fa-fw"></i></button> testfeature_0
+											
+												<span class="fa arrow"></span>
+										</a>
+												<ul class="nav nav-third-level">
+													<li>
+													<a class="text-nowrap" style="overflow:hidden;text-overflow:ellipsis" href="../../../features/testfeature_0/suites/testgroup_0.html" title="testgroup_0"><i class="fa fa fa-fw fa-folder-o nav-pass fa-fw" ></i> testgroup_0
+													</a>
+													</li>
+												</ul>
+										</li>
+									</ul>
+							</li>
+							<li 
+							
+							>
+							<a class='text-nowrap' style='overflow:hidden;text-overflow:ellipsis' href="../../../pages/HW_Connections.html">
+							
+							<i class="fa fa fa-support fa-fw"></i>HW Connections
+							
+							</a>
+							</li>
+							<li 
+							
+							>
+							<a class='text-nowrap' style='overflow:hidden;text-overflow:ellipsis' href="../../../pages/Validation_Strategy.html">
+							
+							<i class="fa fa fa-support fa-fw"></i>Validation Strategy
+							
+							</a>
+							</li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+<div id="page-wrapper">
+
+	<!-- Bootstrap Breadcrumb navigation -->
+	<ol class="breadcrumb" style='background:none'>
+		<li><a href="../../../dashboard.html">Dashboard</a></li>
+		<li><a href="..\..\tf00.html">tf00</a></li>
+		<li><a href="">tg00</a></li>
+	</ol>
+	<!-- End of Bootstrap Breadcrumb navigation -->
+	
+	<!-- Page Header -->
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header"><span class="label label-success">tg00</span></h1>
+		</div>
+		<!-- /.col-lg-12 -->
+	</div>
+	<!-- /.row -->
+	<!-- End of Page Header -->
+	
+	<!-- Test Suite Data -->
+	<div class="row">
+		<div class="col-lg-12">
+<div class="panel panel-default" style='padding-top:0px;padding-bottom:0px'>
+	<!-- <div class="panel-heading"> -->
+		<!-- <h4>Test Group Information</h4> --> 
+		<button class="panel-heading accordion">Test Group Information</button>
+	
+	<!-- </div> --> 
+	<div class="panel-body" style='padding-top:0px;padding-bottom:0px'>
+		<div class="row list-group-item"><div class='col-xs-6'>Feature Name</div><div class='col-xs-6'>tf00</div></div>
+
+<div style='word-wrap:break-word;' class="row list-group-item"><div class='col-xs-6'>Objective</div><div style="word-wrap:break-word" class='col-xs-6'></div></div>
+
+<!--<div class="row list-group-item"><div class='col-xs-6'>Result</div><div class='col-xs-6'>OK</div></div>-->
+
+	</div>
+</div>		</div>
+		
+	</div>
+	<!-- End of Test Suite Data -->
+
+	<div class="row">
+			<div class="col-lg-12">
+			
+				<!-- Pie Charts for Report Results -->
+				<div class='row'>
+					<div  class="col-md-4">
+<div id="morris-pie-chart-assertion-results" class='text-center' style='width:200px;height:200px;margin:0 auto'></div>					</div>	
+					<div class="col-md-4">
+<div id="morris-pie-chart-manual-test-results" class='text-center' style='width:200px;height:200px;margin:0 auto'></div>					</div>
+					<div class="col-md-4">
+<div id="morris-pie-chart-automatic-test-results" class='text-center' style='width:200px;height:200px;margin:0 auto'></div>					</div>	
+					<div class="col-md-4">
+<div id="morris-pie-chart-regression-test-results" class='text-center' style='width:200px;height:200px;margin:0 auto'></div>					</div>	
+					<div class="col-md-4">
+<div id="morris-pie-chart-impacted-test-results" class='text-center' style='width:200px;height:200px;margin:0 auto'></div>					</div>	
+				</div>
+				
+				<!-- End of Pie Charts for Report Results -->
+				
+			</div>
+			<!-- /.col-lg-12 -->
+	</div>
+	
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					Test Cases <span class='badge'></span>
+					<div class="btn-group" role="group" aria-label="...">
+					  <button type="button" id='tableViewBtn' class="btn btn-default active" onclick="$('#tableView').toggleClass('hide',false);$('#panelView').toggleClass('hide',true);$(this).toggleClass('active',true);$('#panelViewBtn').toggleClass('active',false)">  <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></button>
+					</div>
+				</div>
+				<!-- /.panel-heading -->
+				<div id="tableView" class="panel-body">
+					<div class="dataTable_wrapper table-responsive">
+						<table class="table table-striped table-bordered table-hover"  id="testStepsTable">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>Test Name</th>
+									<!-- <th>Objective</th> -->
+									<th>Test Version</th>
+									<th>Test Result</th>
+									<th>Defect ID</th>
+									<th></th>
+								</tr>
+								
+							</thead>
+
+							
+							<tbody>
+								<tr id="testcasedetails" class="success">
+										<td>1</td>
+
+									<td> <a href=tg00\testcases\tc01.html>tc01</a></td>																						
+	
+										<!-- <td></td> -->
+										<td></td>
+										<td>OK</td>
+										<td></td>
+										<!--<td></td>-->
+										<td><input type="checkbox" id='nokReactionsVisibility' checked data-toggle="toggle" data-on="Show Objective" data-off="Hide Objective" data-style="slow smallText" data-onstyle="danger" data-offstyle="warning" onchange='$("#testCaseObj1.testCaseObjClass").toggleClass("show_td",!this.checked)'></td>
+										<!-- <td><button id="testCaseObjBtn" style="background-color:#66ff66;width:100%;">Show Objective</button></td> -->
+										
+									
+								</tr>
+								
+
+								
+								<tr id="testcasedetails" class="success">
+										<td>2</td>
+
+									<td> <a href=tg00\testcases\tc02.html>tc02</a></td>																						
+	
+										<!-- <td></td> -->
+										<td></td>
+										<td>OK</td>
+										<td></td>
+										<!--<td></td>-->
+										<td><input type="checkbox" id='nokReactionsVisibility' checked data-toggle="toggle" data-on="Show Objective" data-off="Hide Objective" data-style="slow smallText" data-onstyle="danger" data-offstyle="warning" onchange='$("#testCaseObj2.testCaseObjClass").toggleClass("show_td",!this.checked)'></td>
+										<!-- <td><button id="testCaseObjBtn" style="background-color:#66ff66;width:100%;">Show Objective</button></td> -->
+										
+									
+								</tr>
+								
+
+								
+							</tbody>
+							
+						</table>
+					</div>
+					<!-- /.table-responsive -->
+				</div>
+				<!-- /.panel-body -->
+				
+
+			<!-- /.panel -->
+		</div>
+		<!-- /.col-lg-12 -->
+	</div>
+	</div>
+	<!-- /.row -->
+
+</div>
+<!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper --> 
+	
+	
+	<script>
+    $(document).ready(function() {
+        $('#dataTables-example').DataTable({
+				"ordering": false,
+				"lengthMenu": [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
+				"pageLength": 100,
+  				"deferRender": true
+        });
+    });
+	</script>
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+	<style>
+		.nav-fail{
+			color:red;
+		}
+		.nav-pass{
+			color:green;
+		}
+	</style>
+</body>
+
+</html>
+<!-- Morris Charts JavaScript -->
+<!--<script src="../../../sbAdminTemplate/bower_components/raphael/raphael-min.js"></script>-->
+<!--<script src="../../../sbAdminTemplate/bower_components/morrisjs/morris.min.js"></script>-->
+<script type='text/javascript'>
+
+$(function() {
+	$(document).ready(function(){
+		Morris.Donut({
+			element: 'morris-pie-chart-assertion-results',
+			data: [{
+				label: "# Passed Test Cases",
+				value: 2
+			}, {
+				label: "# Failed Test Cases",
+				value: 0
+			}, {
+				label: "# Not Performed Test Cases",
+				value: 0
+			}],
+			colors:['#00ff00','#ff0000','#e6e6ff'],
+			resize: true,
+			formatter: function (y, data) { return y + '/' + (2+0+0) } 
+		}).on('click', function(i, row){
+			console.log(i,row);
+			if(i==0){
+				window.location.href="tg00_OK.html";
+			}
+			else if(i == 1) {
+				window.location.href="tg00_NOK.html";
+			}
+		});
+		
+		Morris.Donut({
+			element: 'morris-pie-chart-manual-test-results',
+			data: [{
+				label: "# Passed Manual Tests",
+				value: 0
+			}, {
+				label: "# Failed Manual Tests",
+				value: 0
+			}, {
+				label: "# Not Performed Manual Tests",
+				value: 0
+			}],
+			colors:['#00ff00','#ff0000','#e6e6ff'],
+			resize: true,
+			formatter: function (y, data) { return y + '/' + (0) } 
+		});
+		
+		Morris.Donut({
+			element: 'morris-pie-chart-automatic-test-results',
+			data: [{
+				label: "# Passed Automatic Tests",
+				value: 2
+			}, {
+				label: "# Failed Automatic Tests",
+				value: 0
+			}, {
+				label: "# Not Performed Automatic Tests",
+				value: 0
+			}],
+			colors:['#00ff00','#ff0000','#e6e6ff'],
+			resize: true,
+			formatter: function (y, data) { return y + '/' + (2) } 
+		});
+		
+		Morris.Donut({
+			element: 'morris-pie-chart-regression-test-results',
+			data: [{
+				label: "# Passed Regression Tests",
+				value: 0
+			}, {
+				label: "# Failed Regression Tests",
+				value: 0
+			}, {
+				label: "# Not Performed Regression Tests",
+				value: 0
+			}],
+			colors:['#00ff00','#ff0000','#e6e6ff'],
+			resize: true,
+			formatter: function (y, data) { return y + '/' + (0) } 
+		});
+		
+		Morris.Donut({
+			element: 'morris-pie-chart-impacted-test-results',
+			data: [{
+				label: "# Passed Impacted Tests",
+				value: 0
+			}, {
+				label: "# Failed Impacted Tests",
+				value: 0
+			}, {
+				label: "# Not Performed Impacted Tests",
+				value: 0
+			}],
+			colors:['#00ff00','#ff0000','#e6e6ff'],
+			resize: true,
+			formatter: function (y, data) { return y + '/' + (0) } 
+		});
+		
+	});
+});
+
+</script> 

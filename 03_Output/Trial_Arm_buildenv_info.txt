@@ -1,0 +1,76 @@
+ELF = //cai1-sv00051/geeds/00-common/V-Core_Tools/CastleProjects/VIS_Sample_Project/03_Output/Trial_Arm.elf (date: 2022-02-09 12:50:55.167529400 +0200, size: 20680bytes)
+USER = ahatem
+HOST = CAI1-L12151
+
+++++++++++++++++++++
+
+CFLAGS_BSW_VECTOR = -noobj --long_long -G -dual_debug -c -farcalls -dwarf2 -no_misalign_pack -pragma_asm_inline -cpu=cortexm4 -w -preprocess_assembly_files -DBRS_DERIVATIVE_S32K14X -DBRS_OSC_CLK= -DBRS_TIMEBASE_CLOCK= -DBRS_OS_USECASE_OSGEN7 -DBRS_EVA_BOARD_ -DBRS_DERIVATIVE_GROUP_ -DBRS_PLATFORM_ARM -DBRS_COMP_GHS -DBRS_CPU_RAM_SIZE= -DBRS_CPU_RAM_START= -DOS_CFG_COMPILER_GREENHILLS
+
+ASFLAGS_BSW_VECTOR = -noobj --long_long -G -dual_debug -c -farcalls -dwarf2 -no_misalign_pack -pragma_asm_inline -cpu=cortexm4 -w -preprocess_assembly_files -DBRS_DERIVATIVE_S32K14X -DBRS_OSC_CLK= -DBRS_TIMEBASE_CLOCK= -DBRS_OS_USECASE_OSGEN7 -DBRS_EVA_BOARD_ -DBRS_DERIVATIVE_GROUP_ -DBRS_PLATFORM_ARM -DBRS_COMP_GHS -DBRS_CPU_RAM_SIZE= -DBRS_CPU_RAM_START= -DOS_CFG_COMPILER_GREENHILLS
+ 
+CFLAGS_BSW_VALEO = -noobj --long_long -G -dual_debug -c -farcalls -dwarf2 -no_misalign_pack -pragma_asm_inline -cpu=cortexm4 -w -preprocess_assembly_files -DBRS_DERIVATIVE_S32K14X -DBRS_OSC_CLK= -DBRS_TIMEBASE_CLOCK= -DBRS_OS_USECASE_OSGEN7 -DBRS_EVA_BOARD_ -DBRS_DERIVATIVE_GROUP_ -DBRS_PLATFORM_ARM -DBRS_COMP_GHS -DBRS_CPU_RAM_SIZE= -DBRS_CPU_RAM_START= -DOS_CFG_COMPILER_GREENHILLS
+
+ASFLAGS_BSW_VALEO = -noobj --long_long -G -dual_debug -c -farcalls -dwarf2 -no_misalign_pack -pragma_asm_inline -cpu=cortexm4 -w -preprocess_assembly_files -DBRS_DERIVATIVE_S32K14X -DBRS_OSC_CLK= -DBRS_TIMEBASE_CLOCK= -DBRS_OS_USECASE_OSGEN7 -DBRS_EVA_BOARD_ -DBRS_DERIVATIVE_GROUP_ -DBRS_PLATFORM_ARM -DBRS_COMP_GHS -DBRS_CPU_RAM_SIZE= -DBRS_CPU_RAM_START= -DOS_CFG_COMPILER_GREENHILLS
+ 
+CFLAGS_APPL = -noobj --long_long -G -dual_debug -c -farcalls -dwarf2 -no_misalign_pack -pragma_asm_inline -cpu=cortexm4 -w -preprocess_assembly_files -DBRS_DERIVATIVE_S32K14X -DBRS_OSC_CLK= -DBRS_TIMEBASE_CLOCK= -DBRS_OS_USECASE_OSGEN7 -DBRS_EVA_BOARD_ -DBRS_DERIVATIVE_GROUP_ -DBRS_PLATFORM_ARM -DBRS_COMP_GHS -DBRS_CPU_RAM_SIZE= -DBRS_CPU_RAM_START= -DOS_CFG_COMPILER_GREENHILLS
+
+ASFLAGS_APPL = -noobj --long_long -G -dual_debug -c -farcalls -dwarf2 -no_misalign_pack -pragma_asm_inline -cpu=cortexm4 -w -preprocess_assembly_files -DBRS_DERIVATIVE_S32K14X -DBRS_OSC_CLK= -DBRS_TIMEBASE_CLOCK= -DBRS_OS_USECASE_OSGEN7 -DBRS_EVA_BOARD_ -DBRS_DERIVATIVE_GROUP_ -DBRS_PLATFORM_ARM -DBRS_COMP_GHS -DBRS_CPU_RAM_SIZE= -DBRS_CPU_RAM_START= -DOS_CFG_COMPILER_GREENHILLS
+ 
+
+++++++++++++++++++++
+
+
+++++++++++++++++++++
+
+LDFLAGS = -cpu=cortexm4 -pragma_asm_inline -g -dual_debug -hex -e=_start1 --preprocess_linker_directive -IGenData -o  . -map=.map
+
+++++++++++++++++++++
+
+COMPILER:
+C:/Compilers/ARM/ARM/ccarm.exe:
+This Green Hills compiler uses the
+Edison Design Group C/C++ Front End, version 5.0 (Sep 30 2019 20:57:28)
+Copyright 1988-2018 Edison Design Group, Inc.
+
+C-ARM 2019.5.4 RELEASE VERSION: Copyright (C) 1983-2019 Green Hills Software.  All Rights Reserved.
+Release: Compiler v2019.5.4
+Build Directory: [Directory] COMP-VAL-WIN36:C:/autoval2/v2019.5-2019-09-30/win64-comp
+Revision: [VCInfo] http://toolsvc/branches/release-branch-2019-5-comp/src@658753 (built by auto-compiler)
+Revision Date: Tue Oct 01 06:31:09 2019
+
+Release Date: Tue Oct 01 02:01:04 2019
+
+Elan License Manager Copyright 1989-1998 Elan Computer Group, Inc.
+Fatal error #2330: cannot open source file "a.c"
+
+
+++++++++++++++++++++
+
+ASSEMBLER:
+C:/Compilers/ARM/ARM/ccarm.exe:
+EASE: Copyright (C) 1983-2019 Green Hills Software.  All Rights Reserved.
+Release: Compiler v2019.5.4
+Build Directory: [Directory] COMP-VAL-WIN36:C:/autoval2/v2019.5-2019-09-30/win64-comp
+Revision: [VCInfo] http://toolsvc/branches/release-branch-2019-5-comp/src@658753 (built by auto-compiler)
+Revision Date: Tue Oct 01 06:27:11 2019
+
+Release Date: Tue Oct 01 02:01:04 2019
+
+[asarm] (error #2095) cannot find file a.asm
+
+++++++++++++++++++++
+
+LINKER:
+C:/Compilers/ARM/ARM/ccarm.exe:
+ELXR: Copyright (C) 1983-2019 Green Hills Software.  All Rights Reserved.
+Release: Compiler v2019.5.4
+Build Directory: [Directory] COMP-VAL-WIN36:C:/autoval2/v2019.5-2019-09-30/win64-comp
+Revision: [VCInfo] http://toolsvc/branches/release-branch-2019-5-comp/src@658753 (built by auto-compiler)
+Revision Date: Tue Oct 01 05:46:30 2019
+
+Release Date: Tue Oct 01 02:01:04 2019
+
+[elxr] (error #16) cannot find file a.o
+
+++++++++++++++++++++
+

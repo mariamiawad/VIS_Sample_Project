@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CteSetup 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="CteSetup.xsd" Format="2">
+	
+	<!-- see the schema file CteSetup.xsd for the allowed elements -->
+	
+	<!--
+	<Variant ExuType="TS" Variant="MyVariant2">
+	</Variant>
+	
+	<Variant ExuType="TS" Variant="MyVariant1">
+		<Libraries>
+			<Library ClassName="prj.demo.PwmLib" InstanceName="green" >
+				<Parameter Type="ExuObject" Name="pwm" Value="dif0/objPWM_GREEN_STA"/>
+			</Library>
+			<Library ClassName="prj.demo.PwmLib" InstanceName="red" >
+				<Parameter Type="ExuObject" Name="pwm" Value="dif0/objPWM_GREEN_STA"/>
+			</Library>
+			<Library ClassName="stdlib.pps.ToellnerPowerSupply" >
+				<Parameter Type="ExuObject" Name="ToeDriver" Value="modMM/objGeneric/objToeDriver"/>
+			</Library>
+		</Libraries>
+		<Tests>
+			<Group Name="FunctionTest">
+				<Test ClassName="prj.demo.DemoTest"/>
+			</Group>
+		</Tests>
+	</Variant>
+	-->
+
+	<ObjectPathFilter>
+		<MatchingRegex>^mod../obj_MCONTROL/msgGeneralMessage\(([^)]*)\)</MatchingRegex>
+		<ReplaceRegex>$1</ReplaceRegex>
+	</ObjectPathFilter>
+
+	<!-- remove prefixes mod/obj/fnc/msg -->
+	<ObjectPathFilter>
+		<MatchingRegex>^mod(..)/</MatchingRegex>
+		<!-- with empty replace, the module is completely removed, 
+		     with '$1/' replace, the 2-letter name will stay -->
+		<ReplaceRegex></ReplaceRegex>
+	</ObjectPathFilter>
+	<ObjectPathFilter>
+		<MatchingRegex>(^|/)(obj|msg|fnc)</MatchingRegex>
+		<ReplaceRegex>$1</ReplaceRegex>
+	</ObjectPathFilter>
+	<ObjectPathFilter>
+		<MatchingRegex>(^|/)_MCONTROL</MatchingRegex>
+		<ReplaceRegex>$1</ReplaceRegex>
+	</ObjectPathFilter>
+	<ObjectPathFilter>
+		<MatchingRegex>^Exu (disconnected|connected) \(ID=/192.168.144.(\d+)\) (.*)</MatchingRegex>
+		<ReplaceRegex>Module IP=$2 $3</ReplaceRegex>
+	</ObjectPathFilter>
+
+	<!-- GeneralMessage removal, the text of it is enough -->
+	
+	<ObjectPathFilter>
+		<MatchingRegex>/WaitForEventTimeout\(.*</MatchingRegex>
+		<ReplaceRegex>pauseUntilEvent Timeout</ReplaceRegex>
+	</ObjectPathFilter>
+	<ObjectPathFilter>
+		<MatchingRegex>/WaitForEvent"(pauseUntilEvent\([^)]*\))".*</MatchingRegex>
+		<ReplaceRegex>$1</ReplaceRegex>
+	</ObjectPathFilter>
+	<ObjectPathFilter>
+		<MatchingRegex>^/(HilStarted|HilStartMarker|HilStart|HilEndMarker|HilEnd|HilFinished|TestStartMarker)\b.*</MatchingRegex>
+		<ReplaceRegex>$1</ReplaceRegex>
+	</ObjectPathFilter>
+	<ObjectPathFilter>
+		<MatchingRegex>/GeneralMessage\(([^)]*)\)</MatchingRegex>
+		<ReplaceRegex> $1</ReplaceRegex>
+	</ObjectPathFilter>
+	
+	<ObjectPathFilter>
+		<MatchingRegex>^Cmt Level Enter (\d+):</MatchingRegex>
+		<ReplaceRegex>&gt;&gt;&gt; $1</ReplaceRegex>
+	</ObjectPathFilter>
+	<ObjectPathFilter>
+		<MatchingRegex>^Cmt Level Leave (\d+):</MatchingRegex>
+		<ReplaceRegex>&lt;&lt;&lt; $1</ReplaceRegex>
+	</ObjectPathFilter>
+	
+	<ObjectPathFilter>
+		<MatchingRegex>^\[castle\..*\.QueueClosed\.\]\.msgQueueClosed</MatchingRegex>
+		<ReplaceRegex>Queue/Report closed </ReplaceRegex>
+	</ObjectPathFilter>
+	<ObjectPathFilter>
+		<MatchingRegex>^\[castle\..*\.QueueStarted\.\]\.msgQueueStarted</MatchingRegex>
+		<ReplaceRegex>Queue/Report started </ReplaceRegex>
+	</ObjectPathFilter>
+	<ObjectPathFilter>
+		<MatchingRegex>^\[.*\.\]\.msg([^ ]+)</MatchingRegex>
+		<ReplaceRegex>$1</ReplaceRegex>
+	</ObjectPathFilter>
+	
+	<!-- Enum value without the integer value and brackets -->
+	<ObjectPathFilter>
+		<MatchingRegex>(\(|, )\d+ «(\w+)»</MatchingRegex>
+		<ReplaceRegex>$1$2</ReplaceRegex>
+	</ObjectPathFilter>
+	
+</CteSetup>

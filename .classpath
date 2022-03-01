@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="com.valeo.sdk.castle.core.requiredLibraries"/>
+	<classpathentry kind="lib" path="config/firmware/config.jar"/>
+	<classpathentry kind="src" path="config"/>
+	<classpathentry kind="src" path="tests"/>
+	<classpathentry kind="lib" path="C:/Hatem_Workspace/ATFTools/Castle/VIS/castle.protocol.c5r_1.0.0.released.jar"/>
+	<classpathentry kind="lib" path="C:/Hatem_Workspace/ATFTools/Castle/VIS/castle.testenv.base_1.0.0.released.jar"/>
+	<classpathentry kind="lib" path="C:/Hatem_Workspace/ATFTools/Castle/VIS/castle.util_1.0.0.released.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

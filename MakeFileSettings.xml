@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MakeFileConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" IDEVersion="2.2">
+  <RH850_Project_Name>RH_Trial</RH850_Project_Name>
+  <RH850_SOURCES_APPL_APPLICATION_FILES>
+    <string>//CAI1-SV00051/geeds/00-common/V-Core_Tools/CastleProjects/VIS_Sample_Project/01_Source/02_Development/01_Startup/main.c</string>
+    <string>//CAI1-SV00051/geeds/00-common/V-Core_Tools/CastleProjects/VIS_Sample_Project/01_Source/02_Development/01_Startup/Startup.s</string>
+  </RH850_SOURCES_APPL_APPLICATION_FILES>
+  <RH850_COMPONENTS_BSW_VECTOR />
+  <RH850_CFLAGS>-noobj --long_long -G -dual_debug -c -farcalls -dwarf2 -no_misalign_pack -pragma_asm_inline -cpu=cortexm4 -w -preprocess_assembly_files</RH850_CFLAGS>
+  <RH850_LDFLAGS>-cpu=cortexm4 -pragma_asm_inline -g -dual_debug -hex -e=_start1 --preprocess_linker_directive -IGenData</RH850_LDFLAGS>
+  <RH850_USER_INCLUDES/>
+  <ARM_S32K_Project_Name>Trial_Arm</ARM_S32K_Project_Name>
+  <ARM_S32K_SOURCES_APPL_APPLICATION_FILES>
+    <string>//CAI1-SV00051/geeds/00-common/V-Core_Tools/CastleProjects/VIS_Sample_Project/01_Source/02_Development/01_Startup/main.c</string>
+    <string>//CAI1-SV00051/geeds/00-common/V-Core_Tools/CastleProjects/VIS_Sample_Project/01_Source/02_Development/01_Startup/Startup.s</string>
+  </ARM_S32K_SOURCES_APPL_APPLICATION_FILES>
+  <ARM_S32K_COMPONENTS_BSW_VECTOR />
+  <ARM_S32K_CFLAGS>-noobj --long_long -G -dual_debug -c -farcalls -dwarf2 -no_misalign_pack -pragma_asm_inline -cpu=cortexm4 -w -preprocess_assembly_files</ARM_S32K_CFLAGS>
+  <ARM_S32K_LDFLAGS>-cpu=cortexm4 -pragma_asm_inline -g -dual_debug -hex -e=_start1 --preprocess_linker_directive -IGenData</ARM_S32K_LDFLAGS>
+  <ARM_S32K_USER_INCLUDES />
+  <TASKING_Project_Name />
+  <TASKING_SOURCES_APPL_APPLICATION_FILES />
+  <TASKING_COMPONENTS_BSW_VECTOR />
+  <TASKING_CFLAGS />
+  <TASKING_LDFLAGS />
+  <TASKING_USER_INCLUDES />
+  <TASKING_PROJECT_NAME />
+  <TASKING_ECLIPSE_WORKSPACE />
+  <TASKING_PROJECT_BUILD_PATH />
+  <HighTec_BIN_NAME />
+  <HighTec_SW_SOURCE_DIRS_LIST />
+  <HighTec_SW_EXCLUDE_DIRS_LIST />
+  <HighTec_SW_EXCLUDE_FILES_LIST />
+  <HighTec_ASM_OPTIONS_LIST />
+  <HighTec_CC_OPTIONS_LIST />
+  <HighTec_LD_OPTIONS_LIST />
+  <HighTec_CURRENT_WORKSPACE />
+</MakeFileConfig>

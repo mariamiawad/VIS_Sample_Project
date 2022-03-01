@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-1.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>VehicleProject</SHORT-NAME>
+      <ELEMENTS>
+        <SYSTEM>
+          <SHORT-NAME>System</SHORT-NAME>
+          <FIBEX-ELEMENTS>
+            <FIBEX-ELEMENT-REF-CONDITIONAL>
+              <FIBEX-ELEMENT-REF DEST="CAN-TP-CONFIG">/TP/CAN00_CAN</FIBEX-ELEMENT-REF>
+            </FIBEX-ELEMENT-REF-CONDITIONAL>
+            <FIBEX-ELEMENT-REF-CONDITIONAL>
+              <FIBEX-ELEMENT-REF DEST="CAN-CLUSTER">/Cluster/CAN00</FIBEX-ELEMENT-REF>
+            </FIBEX-ELEMENT-REF-CONDITIONAL>
+            <FIBEX-ELEMENT-REF-CONDITIONAL>
+              <FIBEX-ELEMENT-REF DEST="ECU-INSTANCE">/ECU/SCU</FIBEX-ELEMENT-REF>
+            </FIBEX-ELEMENT-REF-CONDITIONAL>
+            <FIBEX-ELEMENT-REF-CONDITIONAL>
+              <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/TXDiagValeo_Tp2CanResp_D_1860T_oCAN00</FIBEX-ELEMENT-REF>
+            </FIBEX-ELEMENT-REF-CONDITIONAL>
+            <FIBEX-ELEMENT-REF-CONDITIONAL>
+              <FIBEX-ELEMENT-REF DEST="DCM-I-PDU">/PDU/TXDiagValeo_Tp2CanResp_D_1860T_oCAN00</FIBEX-ELEMENT-REF>
+            </FIBEX-ELEMENT-REF-CONDITIONAL>
+            <FIBEX-ELEMENT-REF-CONDITIONAL>
+              <FIBEX-ELEMENT-REF DEST="N-PDU">/PDU/TXDiagValeo_Tp2CanResp_D_1860T_Tp_oCAN00</FIBEX-ELEMENT-REF>
+            </FIBEX-ELEMENT-REF-CONDITIONAL>
+          </FIBEX-ELEMENTS>
+        </SYSTEM>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>TP</SHORT-NAME>
+      <ELEMENTS>
+        <CAN-TP-CONFIG>
+          <SHORT-NAME>CAN00_CAN</SHORT-NAME>
+          <COMMUNICATION-CLUSTER-REF DEST="CAN-CLUSTER">/Cluster/CAN00</COMMUNICATION-CLUSTER-REF>
+          <TP-ECUS>
+            <CAN-TP-ECU>
+              <CYCLE-TIME-MAIN-FUNCTION>0.005</CYCLE-TIME-MAIN-FUNCTION>
+              <ECU-INSTANCE-REF DEST="ECU-INSTANCE">/ECU/SCU</ECU-INSTANCE-REF>
+            </CAN-TP-ECU>
+          </TP-ECUS>
+          <TP-NODES>
+            <CAN-TP-NODE>
+              <SHORT-NAME>TN_SCU</SHORT-NAME>
+              <CONNECTOR-REF DEST="CAN-COMMUNICATION-CONNECTOR">/ECU/SCU/CN_CAN00</CONNECTOR-REF>
+            </CAN-TP-NODE>
+          </TP-NODES>
+        </CAN-TP-CONFIG>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>Cluster</SHORT-NAME>
+      <ELEMENTS>
+        <CAN-CLUSTER>
+          <SHORT-NAME>CAN00</SHORT-NAME>
+          <LONG-NAME>
+            <L-4 L="FOR-ALL">CAN_DBC_PUBLIC_VECTOR</L-4>
+          </LONG-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="DV:ToolData">
+                <SD GID="DV:ToolName">Vector Legacy Database Converter</SD>
+                <SD GID="DV:ToolVersion">1.8.17.0</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <CAN-CLUSTER-VARIANTS>
+            <CAN-CLUSTER-CONDITIONAL>
+              <PHYSICAL-CHANNELS>
+                <CAN-PHYSICAL-CHANNEL>
+                  <SHORT-NAME>CHNL</SHORT-NAME>
+                  <COMM-CONNECTORS>
+                    <COMMUNICATION-CONNECTOR-REF-CONDITIONAL>
+                      <COMMUNICATION-CONNECTOR-REF DEST="CAN-COMMUNICATION-CONNECTOR">/ECU/SCU/CN_CAN00</COMMUNICATION-CONNECTOR-REF>
+                    </COMMUNICATION-CONNECTOR-REF-CONDITIONAL>
+                  </COMM-CONNECTORS>
+                  <FRAME-TRIGGERINGS>
+                    <CAN-FRAME-TRIGGERING>
+                      <SHORT-NAME>FT_TXDiagValeo_Tp2CanResp_D_1860T</SHORT-NAME>
+                      <FRAME-PORT-REFS>
+                        <FRAME-PORT-REF DEST="FRAME-PORT">/ECU/SCU/CN_CAN00/FP_TXDiagValeo_Tp2CanResp_D_1860T_Tx</FRAME-PORT-REF>
+                      </FRAME-PORT-REFS>
+                      <FRAME-REF DEST="CAN-FRAME">/CanFrame/TXDiagValeo_Tp2CanResp_D_1860T_oCAN00</FRAME-REF>
+                      <PDU-TRIGGERINGS>
+                        <PDU-TRIGGERING-REF-CONDITIONAL>
+                          <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/Cluster/CAN00/CHNL/PT_TXDiagValeo_Tp2CanResp_D_1860T_Tp</PDU-TRIGGERING-REF>
+                        </PDU-TRIGGERING-REF-CONDITIONAL>
+                      </PDU-TRIGGERINGS>
+                      <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                      <IDENTIFIER>1860</IDENTIFIER>
+                    </CAN-FRAME-TRIGGERING>
+                  </FRAME-TRIGGERINGS>
+                  <PDU-TRIGGERINGS>
+                    <PDU-TRIGGERING>
+                      <SHORT-NAME>PT_TXDiagValeo_Tp2CanResp_D_1860T</SHORT-NAME>
+                      <I-PDU-PORT-REFS>
+                        <I-PDU-PORT-REF DEST="I-PDU-PORT">/ECU/SCU/CN_CAN00/PP_TXDiagValeo_Tp2CanResp_D_1860T_Tx</I-PDU-PORT-REF>
+                      </I-PDU-PORT-REFS>
+                      <I-PDU-REF DEST="DCM-I-PDU">/PDU/TXDiagValeo_Tp2CanResp_D_1860T_oCAN00</I-PDU-REF>
+                    </PDU-TRIGGERING>
+                    <PDU-TRIGGERING>
+                      <SHORT-NAME>PT_TXDiagValeo_Tp2CanResp_D_1860T_Tp</SHORT-NAME>
+                      <I-PDU-PORT-REFS>
+                        <I-PDU-PORT-REF DEST="I-PDU-PORT">/ECU/SCU/CN_CAN00/PP_TXDiagValeo_Tp2CanResp_D_1860T_Tp_Tx</I-PDU-PORT-REF>
+                      </I-PDU-PORT-REFS>
+                      <I-PDU-REF DEST="N-PDU">/PDU/TXDiagValeo_Tp2CanResp_D_1860T_Tp_oCAN00</I-PDU-REF>
+                    </PDU-TRIGGERING>
+                  </PDU-TRIGGERINGS>
+                </CAN-PHYSICAL-CHANNEL>
+              </PHYSICAL-CHANNELS>
+              <PROTOCOL-NAME>CAN</PROTOCOL-NAME>
+            </CAN-CLUSTER-CONDITIONAL>
+          </CAN-CLUSTER-VARIANTS>
+        </CAN-CLUSTER>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>ECU</SHORT-NAME>
+      <ELEMENTS>
+        <ECU-INSTANCE>
+          <SHORT-NAME>SCU</SHORT-NAME>
+          <COMM-CONTROLLERS>
+            <CAN-COMMUNICATION-CONTROLLER>
+              <SHORT-NAME>CT_CAN00</SHORT-NAME>
+              <CAN-COMMUNICATION-CONTROLLER-VARIANTS>
+                <CAN-COMMUNICATION-CONTROLLER-CONDITIONAL/>
+              </CAN-COMMUNICATION-CONTROLLER-VARIANTS>
+            </CAN-COMMUNICATION-CONTROLLER>
+          </COMM-CONTROLLERS>
+          <CONNECTORS>
+            <CAN-COMMUNICATION-CONNECTOR>
+              <SHORT-NAME>CN_CAN00</SHORT-NAME>
+              <COMM-CONTROLLER-REF DEST="CAN-COMMUNICATION-CONTROLLER">/ECU/SCU/CT_CAN00</COMM-CONTROLLER-REF>
+              <ECU-COMM-PORT-INSTANCES>
+                <FRAME-PORT>
+                  <SHORT-NAME>FP_TXDiagValeo_Tp2CanResp_D_1860T_Tx</SHORT-NAME>
+                  <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                </FRAME-PORT>
+                <I-PDU-PORT>
+                  <SHORT-NAME>PP_TXDiagValeo_Tp2CanResp_D_1860T_Tp_Tx</SHORT-NAME>
+                  <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                </I-PDU-PORT>
+                <I-PDU-PORT>
+                  <SHORT-NAME>PP_TXDiagValeo_Tp2CanResp_D_1860T_Tx</SHORT-NAME>
+                  <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                </I-PDU-PORT>
+              </ECU-COMM-PORT-INSTANCES>
+            </CAN-COMMUNICATION-CONNECTOR>
+          </CONNECTORS>
+        </ECU-INSTANCE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>CanFrame</SHORT-NAME>
+      <ELEMENTS>
+        <CAN-FRAME>
+          <SHORT-NAME>TXDiagValeo_Tp2CanResp_D_1860T_oCAN00</SHORT-NAME>
+          <FRAME-LENGTH>8</FRAME-LENGTH>
+          <PDU-TO-FRAME-MAPPINGS>
+            <PDU-TO-FRAME-MAPPING>
+              <SHORT-NAME>TXDiagValeo_Tp2CanResp_D_1860T_Tp</SHORT-NAME>
+              <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+              <PDU-REF DEST="N-PDU">/PDU/TXDiagValeo_Tp2CanResp_D_1860T_Tp_oCAN00</PDU-REF>
+              <START-POSITION>0</START-POSITION>
+            </PDU-TO-FRAME-MAPPING>
+          </PDU-TO-FRAME-MAPPINGS>
+        </CAN-FRAME>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>PDU</SHORT-NAME>
+      <ELEMENTS>
+        <DCM-I-PDU>
+          <SHORT-NAME>TXDiagValeo_Tp2CanResp_D_1860T_oCAN00</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="DV:DcmConfiguration">
+                <SD GID="DV:DcmConnectionCommunicationType">PHYSICAL</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <LENGTH>8</LENGTH>
+          <DIAG-PDU-TYPE>DIAG-RESPONSE</DIAG-PDU-TYPE>
+        </DCM-I-PDU>
+        <N-PDU>
+          <SHORT-NAME>TXDiagValeo_Tp2CanResp_D_1860T_Tp_oCAN00</SHORT-NAME>
+          <LENGTH>8</LENGTH>
+        </N-PDU>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

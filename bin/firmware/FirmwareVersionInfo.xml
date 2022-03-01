@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<Tag schemaLocation="Firmware.xsd">
+	<version>99.40-03.01.07-00.00</version>
+	<status>E-Proposed</status>
+	<description><![CDATA[
+	FIX  : [artf1328763] : PWM Zero Value Reading For Values with Duty Less than 15%
+	FIX  : [artf1290789] : Instability of PWM frequency Readings
+	]]>
+     </description>
+	<url>
+	</url>
+</Tag>

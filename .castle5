@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<projectinfo version="-1">
+    <dutproject name=""/>
+    <projectType type="Validation"/>
+    <teststrategy path=""/>
+    <castlefirmware path="config/firmware"/>
+    <master name="">
+        <sysspecs path="" version=""/>
+        <hwspecs path="" version=""/>
+        <software>
+            <specs path="" version=""/>
+            <exec path="" version=""/>
+        </software>
+        <ldfs/>
+        <dbcs/>
+        <test confpath="config" path="tests" respath="reports/c5r" version=""/>
+    </master>
+    <release>
+        <id/>
+        <approvalstatus>Pending</approvalstatus>
+        <approvedby/>
+        <statusdate/>
+    </release>
+</projectinfo>
